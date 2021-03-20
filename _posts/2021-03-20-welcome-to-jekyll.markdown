@@ -5,24 +5,12 @@ date:   2021-03-20 03:16:42 -0400
 categories: website update
 ---
 
-Jekyll requires blog post files to be named according to the following format:
+I'm not entirely sure what I want this website to be, but for now it will mainly be a blog/link to various projects I've made or other's projects that I really like.
 
-`YEAR-MONTH-DAY-title.MARKUP`
+I'll also try to add an RSS-Roll, hopefully it'll be a landmine of good feeds that I subscribe to.
 
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+I'll try to keep formatting on this somewhat consistent, but I'm not making any promises.
 
-Jekyll also offers powerful support for code snippets:
+The current project I'm working on is currently called [`Productivia`](https://thethe.dev) but quickly switched to `Productivity`. Hopefully this will end up bing a web/desktop/mobile based task system that levels out the workload you've been given to hopefully make your work less stressful.
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+[thethe.dev](https://thethe.dev) is still called Productivia because I've been too lazy to switch it back. Probably doesn't matter too much because it's going to be replaced with the finished product.
