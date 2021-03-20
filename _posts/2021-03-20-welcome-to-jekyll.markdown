@@ -1,11 +1,12 @@
 ---
 layout: post
-title:  "Welcome to CameronDugan.com!"
+title:  "Welcome to My Blog!"
 date:   2021-03-20 03:16:42 -0400
+permalink: /welcome/
 categories: website update
 ---
 
-I'm not entirely sure what I want this website to be, but for now it will mainly be a blog/link to various projects I've made or other's projects that I really like.
+I'm not entirely sure what I want this website to be, but for now it will mainly be a blog/links to various projects I've made or other's projects that I really like.
 
 I'll also try to add an RSS-Roll, hopefully it'll be a landmine of good feeds that I subscribe to.
 
