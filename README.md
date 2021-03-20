@@ -7,4 +7,4 @@
 
 ## Tech Stack
 
- + Just Jekyll
+ + Just [Jekyll](https://github.com/jekyll/jekyll)
