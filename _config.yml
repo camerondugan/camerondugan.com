@@ -24,9 +24,10 @@ author:
   name: Cameron Dugan
   email: cam@camerondugan.com
 description: >- # this means to ignore newlines until "baseurl:"
-  This is going to be a public portfolio/log of all the things that I'm doing
+  This is going to be a public blog/dev-log of all the things that I'm doing
   computer wise, and occasionally not. Obviously privacy is good,
-  so I'll try to avoid being too specific.
+  so I'll try to avoid being too specific. And hopefully you get more out of it
+  than I do
 # Build settings
 minima:
   skin: dark
