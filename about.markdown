@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Source code for this website can be found at 
+Source code for this website can be found at https://gitlab.com/cameron.dugan/camerondugan.com
 
 You can find the source code for Jekyll at https://www.github.com/[jekyll][jekyll-org]/[jekyll](jekyll-pro)
 
