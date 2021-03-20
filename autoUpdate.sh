@@ -1,2 +1,3 @@
 git pull
-cp -r _site ../camerondugan
+(cd /var/www/camerondugan.com &&
+	cp -r _site ../camerondugan)
