@@ -5,7 +5,7 @@
 layout: home
 ---
 
-# <center> Welcome to CameronDugan.com</center>
+# <center>:)</center>
 
 <br>
 
