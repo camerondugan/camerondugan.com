@@ -10,7 +10,7 @@ Plus it can be converted into a gemini site, which I will do in a bit, pretty wo
 
 Code for this website can be found in the about tab!
 
-<button onclick="window.location.href='https://camerondugan.com/blog';">Blog</button>
-<button onclick="window.location.href='https://searx.camerondugan.com';">Searx</button>
-<button onclick="window.location.href='https://fosstodon.org/@TheCam';">Mastodon</button>
-<button onclick="window.location.href='https://gitlab.com/cameron.dugan';">Gitlab</button>
+[Blog](https://camerondugan.com/blog)
+[Searx](https://searx.camerondugan.com)
+[Mastodon](https://fosstodon.org/@TheCam)
+[Gitlab](https://gitlab.com/cameron.dugan)
