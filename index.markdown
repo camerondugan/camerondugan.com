@@ -11,7 +11,6 @@ Plus it can be converted into a gemini site, which I will do in a bit, pretty wo
 Code for this website can be found in the about tab!
 
 <br>
-
 <br>
 <br>
 <br>
