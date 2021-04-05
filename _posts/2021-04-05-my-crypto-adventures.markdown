@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "My Crypto Adventures:"
+title:  "My Crypto Adventures"
 date:   2021-04-05 10:12:42 -0400
 categories: crypto blog update
 permalink: /crypto/
