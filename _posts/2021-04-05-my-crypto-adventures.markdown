@@ -1,9 +1,9 @@
 ---
 layout: post
 title:  "My Crypto Adventures:"
-date:   2021-03-20 03:16:42 -0400
-permalink: /welcome/
+date:   2021-04-05 10:12:42 -0400
 categories: crypto blog update
+permalink: /crypto/
 ---
 
 Hello and welcome to my second ever blog post...
