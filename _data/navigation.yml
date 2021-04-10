@@ -7,8 +7,11 @@
 - name: Searx
   link: https://searx.thethe.dev
 
+- name: Contact
+  link: /contact
+
 - name: About
   link: /about
 
-- name: Contact
-  link: /contact
+- name: RSS Feed
+  link: /feed.xml
