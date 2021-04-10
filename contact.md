@@ -10,7 +10,7 @@ Hello!
 
 You want to get in touch? Congratulations, you are in luck! All of my contact information is infact on this page, feel free to send a message through any of these means:
 
-Email: cam@camerondugan.com
+Email: [cam@camerondugan.com](mailto:cam@camerondugan.com)
 
 Mastodon: [TheCam@fosstodon.org](https://fosstodon.org/@TheCam)
 
