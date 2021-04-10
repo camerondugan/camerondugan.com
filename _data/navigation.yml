@@ -1,0 +1,14 @@
+- name: Home
+  link: /
+
+- name: Blog
+  link: /blog
+
+- name: Searx
+  link: https://searx.thethe.dev
+
+- name: About
+  link: /about
+
+- name: Contact
+  link: /contact
