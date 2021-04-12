@@ -1,5 +1,5 @@
 ---
-title: About | Simple Jekyll
+title: About | Cameron Dugan
 header: About
 description: This page tells you a little bit about this website.
 permalink: /about/

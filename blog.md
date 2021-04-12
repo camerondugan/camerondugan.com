@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Blog | Simple Jekyll
+title: Blog | Cameron Dugan
 header: Blog
 description: Where the magic happens - this is the blog!
 permalink: /blog/
