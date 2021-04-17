@@ -1,4 +1,37 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://www.camerondugan.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.camerondugan.com/" rel="alternate" type="text/html" hreflang="en" /><updated>2021-04-12T10:11:13-04:00</updated><id>https://www.camerondugan.com/feed.xml</id><subtitle>This is my Jekyll website that is running Simple.css</subtitle><author><name>Cameron Dugan</name></author><entry><title type="html">My Crypto Adventures</title><link href="https://www.camerondugan.com/blog/crypto/" rel="alternate" type="text/html" title="My Crypto Adventures" /><published>2021-04-05T00:00:00-04:00</published><updated>2021-04-05T00:00:00-04:00</updated><id>https://www.camerondugan.com/blog/my-crypto-adventures</id><content type="html" xml:base="https://www.camerondugan.com/blog/crypto/">&lt;p&gt;Hello and welcome to my second ever blog post…&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://www.camerondugan.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.camerondugan.com/" rel="alternate" type="text/html" hreflang="en" /><updated>2021-04-17T10:40:21-04:00</updated><id>https://www.camerondugan.com/feed.xml</id><subtitle>This is my Jekyll website that is running Simple.css</subtitle><author><name>Cameron Dugan</name></author><entry><title type="html">Procrastination and Motivation</title><link href="https://www.camerondugan.com/Procrastination/" rel="alternate" type="text/html" title="Procrastination and Motivation" /><published>2021-04-17T00:00:00-04:00</published><updated>2021-04-17T00:00:00-04:00</updated><id>https://www.camerondugan.com/procrastination</id><content type="html" xml:base="https://www.camerondugan.com/Procrastination/">&lt;p&gt;Motivation is overrated.&lt;/p&gt;
+
+&lt;p&gt;Something that I need to remember is that reflection has it’s limitations. It’s limitations being that after the 30 second mark, you’re probably just procrastinating.&lt;/p&gt;
+
+&lt;p&gt;Speaking of procrastination, this blog post is a way for me to take my mind off of the stuff I have to do in the next two days. I’ve got a lot. I tend to have problems with tasks when I don’t like doing it to the extent where I avoid thinking about it. The only way I’ve found a way to do these kinds of things is to try to make it something I automatically do without thinking. Usually by tacking it on the end of something I already do every day.&lt;/p&gt;
+
+&lt;p&gt;The two issues with this. If I don’t do that thing that triggers the automatic action, the task won’t get done. The second issue is that I don’t know that I didn’t do it. 
+My goal here is to think by writing and get to a solution that works. A secondary goal is to get better at writing, so I eventually don’t hesitate to make a post.&lt;/p&gt;
+
+&lt;p&gt;To mitigate the issue of not wanting to think about hard tasks I could try to streamline my calendar/task system, but I’m notorious for using that as a way to procrastinate. Maybe it’s a motivational issue?&lt;/p&gt;
+
+&lt;p&gt;Maybe… Or, I could try to solve the lack of motivation with some kind of reward? No… I can’t think of anything that would work as a reward. In order for there to be a reward, rules must be put in place.&lt;/p&gt;
+
+&lt;p&gt;Maybe adding some rules to my life would make it more structured and meaningful. It’s worth a shot. Time to think of some examples, I guess.&lt;/p&gt;
+
+&lt;p&gt;Layout: Problem: Solution by adhering a rule.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Distraction: Reduce distracting entertainment by removing things that make me start watching&lt;/li&gt;
+  &lt;li&gt;Distraction/Procrastination:
+    &lt;ol&gt;
+      &lt;li&gt;Make a template for an average day&lt;/li&gt;
+      &lt;li&gt;Plan out specific things I’ll work on with estimated duration.&lt;/li&gt;
+      &lt;li&gt;???&lt;/li&gt;
+      &lt;li&gt;Profit/Actually get things done&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Maybe I can avoid procrastination by forcing a habit of doing everything as early as I can, while changing my environment to help reduce distractions.&lt;/p&gt;
+
+&lt;p&gt;To ensure I don’t go completely insane, I think I’ll throw on music while I work to help my morale last long enough to get everything done.&lt;/p&gt;
+
+&lt;p&gt;Alrighty, I guess it’s time for me to go do the things I don’t want to do. Cya, have a great day!&lt;/p&gt;</content><author><name>Cameron Dugan</name></author><summary type="html">Motivation is overrated.</summary></entry><entry><title type="html">My Crypto Adventures</title><link href="https://www.camerondugan.com/blog/crypto/" rel="alternate" type="text/html" title="My Crypto Adventures" /><published>2021-04-05T00:00:00-04:00</published><updated>2021-04-05T00:00:00-04:00</updated><id>https://www.camerondugan.com/blog/my-crypto-adventures</id><content type="html" xml:base="https://www.camerondugan.com/blog/crypto/">&lt;p&gt;Hello and welcome to my second ever blog post…&lt;/p&gt;
 
 &lt;p&gt;Background:
 	I had saved up a bunch of crypto that I had mined in my free time over the course of about 10 or so months. Then I decided that I didn’t like having all of my money in bitcoin, so I decided to use a coin exchange to convert some of it to etherium. Enter: my mistake.&lt;/p&gt;
