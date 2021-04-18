@@ -15,4 +15,5 @@ If you decide that you are feeling `overwhelmed`, the fastest way to overcome th
 Take the flipside of `overwhelm`. Instead of something that you wish wouldn't happen, how about something that you wish will happen. Is there something that you've always wanted to do? Mabye a skill you've always wanted to learn. Whatever you want to do, the feeling of `overwhelm` can control you here as well. It can paralyze you, stop you from taking even the tiny steps towards the future you want. 
 
 I'm not saying I'm an expert, or even good at managing the `overwhelm`. It's just that I have a lot of experience with it. It's one of those things that builds while you don't manage it. Do yourself a favor and ask yourself where you see it appearing or growing and make that battle plan. I'll see you guys in the next blog post. 
-Have a wonderful day! :)
+
+Have a better day :)
