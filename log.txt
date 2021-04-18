@@ -1,0 +1,8 @@
+Configuration file: /home/cam/Projects/camerondugan.com/_config.yml
+            Source: /home/cam/Projects/camerondugan.com
+       Destination: /home/cam/Projects/camerondugan.com/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating... 
+       Jekyll Feed: Generating feed for posts
+                    done in 0.077 seconds.
+ Auto-regeneration: enabled for '/home/cam/Projects/camerondugan.com'
