@@ -10,7 +10,7 @@ Everyone has some amount of this feeling. An ominous feeling of almost guilt, or
 
 Take a minute and think about what you might be `overwhelmed` with at the current moment. Sometimes we don't even notice this feeling, almost like it has integrated itself into our lives. Ultimately if this feeling goes unnoticed, it can make our lives just that much more unhappy.
 
-If you decide that you are feeling `overwhelmed`, the fastest way to overcome that feeling is to make a battleplan. It might not be easy, but I guarantee that a good plan will help. Knowing what you will do to minimize or illiminate the outcome you fear.
+If you decide that you are feeling `overwhelmed`, the fastest way to overcome that feeling is to make a battleplan. It might not be easy, but I guarantee that a good plan will help. Knowing what you will do to minimize or illiminate the outcome helps both your state of mind in the current moment and you'll make a more informed decision when that dreaded moment eventually comes.
 
 Take the flipside of `overwhelm`. Instead of something that you wish wouldn't happen, how about something that you wish will happen. Is there something that you've always wanted to do? Mabye a skill you've always wanted to learn. Whatever you want to do, the feeling of `overwhelm` can control you here as well. It can paralyze you, stop you from taking even the tiny steps towards the future you want. 
 
