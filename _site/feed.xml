@@ -1,4 +1,23 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://www.camerondugan.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.camerondugan.com/" rel="alternate" type="text/html" hreflang="en" /><updated>2021-06-02T23:31:14-04:00</updated><id>https://www.camerondugan.com/feed.xml</id><subtitle>This is my Jekyll website that is running Simple.css</subtitle><author><name>Cameron Dugan</name></author><entry><title type="html">Dev Log 1</title><link href="https://www.camerondugan.com/devlog-1/" rel="alternate" type="text/html" title="Dev Log 1" /><published>2021-06-02T00:00:00-04:00</published><updated>2021-06-02T00:00:00-04:00</updated><id>https://www.camerondugan.com/devlog-1</id><content type="html" xml:base="https://www.camerondugan.com/devlog-1/">&lt;p&gt;Hi all, I want to retro-actively share my efforts to make  a game with pico8. My goal is to publish on itch.io or on my own website by the end of the year. I suspect its possible to finish the game well before then, but I know I’ll end up taking my time.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://www.camerondugan.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.camerondugan.com/" rel="alternate" type="text/html" hreflang="en" /><updated>2021-06-07T21:53:22-04:00</updated><id>https://www.camerondugan.com/feed.xml</id><subtitle>This is my Jekyll website that is running Simple.css</subtitle><author><name>Cameron Dugan</name></author><entry><title type="html">Dev Log 2</title><link href="https://www.camerondugan.com/devlog-2/" rel="alternate" type="text/html" title="Dev Log 2" /><published>2021-06-07T00:00:00-04:00</published><updated>2021-06-07T00:00:00-04:00</updated><id>https://www.camerondugan.com/devlog-2</id><content type="html" xml:base="https://www.camerondugan.com/devlog-2/">&lt;p&gt;Welcome back, I have finally decided on a direction for this game. You are a robot in a post human society and something isn’t right. Reality is slipping. Nothing from your sensors are to be trusted. To make things worse, red creatures seem to be making things worse.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/gifs/devlog/space_0.gif&quot; alt=&quot;picture&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Bugs fixed:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Weird player movement animation when one player bumps into a wall, and another player doesn’t.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Other things:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Added the red creatures.&lt;/li&gt;
+  &lt;li&gt;Made meditating robot float up and down&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Things to do tommorrow:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Creatures move in different ways when player moves&lt;/li&gt;
+  &lt;li&gt;Start making some starting levels that will hopefully make it into the final game&lt;/li&gt;
+&lt;/ol&gt;</content><author><name>Cameron Dugan</name></author><summary type="html">Welcome back, I have finally decided on a direction for this game. You are a robot in a post human society and something isn’t right. Reality is slipping. Nothing from your sensors are to be trusted. To make things worse, red creatures seem to be making things worse.</summary></entry><entry><title type="html">Dev Log 1</title><link href="https://www.camerondugan.com/devlog-1/" rel="alternate" type="text/html" title="Dev Log 1" /><published>2021-06-02T00:00:00-04:00</published><updated>2021-06-02T00:00:00-04:00</updated><id>https://www.camerondugan.com/devlog-1</id><content type="html" xml:base="https://www.camerondugan.com/devlog-1/">&lt;p&gt;Hi all, I want to retro-actively share my efforts to make  a game with pico8. My goal is to publish on itch.io or on my own website by the end of the year. I suspect its possible to finish the game well before then, but I know I’ll end up taking my time.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/devlog/space_1.png&quot; alt=&quot;picture&quot; /&gt;&lt;/p&gt;
 
