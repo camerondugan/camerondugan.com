@@ -1,4 +1,33 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://www.camerondugan.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.camerondugan.com/" rel="alternate" type="text/html" hreflang="en" /><updated>2021-06-07T21:53:22-04:00</updated><id>https://www.camerondugan.com/feed.xml</id><subtitle>This is my Jekyll website that is running Simple.css</subtitle><author><name>Cameron Dugan</name></author><entry><title type="html">Dev Log 2</title><link href="https://www.camerondugan.com/devlog-2/" rel="alternate" type="text/html" title="Dev Log 2" /><published>2021-06-07T00:00:00-04:00</published><updated>2021-06-07T00:00:00-04:00</updated><id>https://www.camerondugan.com/devlog-2</id><content type="html" xml:base="https://www.camerondugan.com/devlog-2/">&lt;p&gt;Welcome back, I have finally decided on a direction for this game. You are a robot in a post human society and something isn’t right. Reality is slipping. Nothing from your sensors are to be trusted. To make things worse, red creatures seem to be making things worse.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://www.camerondugan.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.camerondugan.com/" rel="alternate" type="text/html" hreflang="en" /><updated>2021-06-09T10:20:03-04:00</updated><id>https://www.camerondugan.com/feed.xml</id><subtitle>This is my Jekyll website that is running Simple.css</subtitle><author><name>Cameron Dugan</name></author><entry><title type="html">Dev Log 3</title><link href="https://www.camerondugan.com/devlog-3/" rel="alternate" type="text/html" title="Dev Log 3" /><published>2021-06-09T00:00:00-04:00</published><updated>2021-06-09T00:00:00-04:00</updated><id>https://www.camerondugan.com/devlog-3</id><content type="html" xml:base="https://www.camerondugan.com/devlog-3/">&lt;p&gt;&lt;img src=&quot;/assets/gifs/devlog/space_1.gif&quot; alt=&quot;picture&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I want to talk about what I did yesterday for the game.&lt;/p&gt;
+
+&lt;p&gt;What I wanted to get done:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Make the creatures move in different ways when player moves.&lt;/li&gt;
+  &lt;li&gt;Start making some starting rooms that will make it into the final game.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;What I actually got done:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;I fixed a major bug with activating dialogue with NPCs.
+    &lt;ul&gt;
+      &lt;li&gt;For NPCs that are bigger than one tile, it failed to recognize anything other than bumping into the top left-most tile.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;I created more rooms and realized where the fun of the game is: movement and puzzles. I know that sounds dumb, of course the fun is in moving around and doing things, but seriously, I forgot and was putting way too much focus on dialogue and other ridiculous stuff.&lt;/li&gt;
+  &lt;li&gt;I also changed the color palate based on how far the player was in the game.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/gifs/devlog/space_2.gif&quot; alt=&quot;picture&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;What I want to do with the game from here:&lt;/p&gt;
+
+&lt;p&gt;I think the game could be quite interesting with a time mechanic tied into the corruption mechanic.&lt;/p&gt;
+
+&lt;p&gt;My idea is to have corruption stay if the player doesn’t finish the room in a certain amount of time. Otherwise, the corruption will get reset by “the system”. This should allow for some nuance between completing the rooms fast and strategizing when to slow down.&lt;/p&gt;
+
+&lt;p&gt;I also plan to have more rooms added into the game.&lt;/p&gt;</content><author><name>Cameron Dugan</name></author><summary type="html"></summary></entry><entry><title type="html">Dev Log 2</title><link href="https://www.camerondugan.com/devlog-2/" rel="alternate" type="text/html" title="Dev Log 2" /><published>2021-06-07T00:00:00-04:00</published><updated>2021-06-07T00:00:00-04:00</updated><id>https://www.camerondugan.com/devlog-2</id><content type="html" xml:base="https://www.camerondugan.com/devlog-2/">&lt;p&gt;Welcome back, I have finally decided on a direction for this game. You are a robot in a post human society and something isn’t right. Reality is slipping. Nothing from your sensors are to be trusted. To make things worse, red creatures seem to be making things worse.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/gifs/devlog/space_0.gif&quot; alt=&quot;picture&quot; /&gt;&lt;/p&gt;
 
