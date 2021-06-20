@@ -1,11 +1,8 @@
 - name: Home
   link: /
 
-- name: Blog
+- name: Updates
   link: /blog
-
-- name: Searx
-  link: https://searx.thethe.dev
 
 - name: Contact
   link: /contact
