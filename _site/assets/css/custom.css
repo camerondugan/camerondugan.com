@@ -1,1 +1,6 @@
 /* Use this file to add any custom css you like */
+:root {
+  --accent-bg:#ffa0a0;
+  --accent:#ff5a5a;
+  --border:#212121;
+}
