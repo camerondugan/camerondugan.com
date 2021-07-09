@@ -1,17 +1,23 @@
 /* Use this file to add any custom css you like */
 :root {
-  --accent-bg:#ffa0a0;
-  --accent:#ff5a5a;
-  --border:#212121;
+  --accent-bg:#D4E5ED;
+  --bg:#EEE;
+  --text:#293241;
+  --text-light:#3d5a80;
+  --accent:#ee6c4d;
+  --border:#293241;
+  --base-fontsize:1.1rem;
+  --header-scale:1.3;
+  --line-height:1.4;
 }
 @media (prefers-color-scheme:dark) {
  :root {
-  --bg:#212121;
-  --accent-bg:#2B2B2B;
-  --text:#DCDCDC;
-  --text-light:#ABABAB;
-  --border:#666;
-  --accent:#FFB300;
+  --bg:#0F131A;
+  --accent-bg:#171C26;
+  --text:#e0fbfc;
+  --text-light:#98c1d9;
+  --border:#3d5a80;
+  --accent:#ee6c4d;
   --accent-light:#FFECB3;
   --code:#F06292;
   --preformatted:#CCC;
