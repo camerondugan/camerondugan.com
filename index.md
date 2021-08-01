@@ -11,4 +11,4 @@ Welcome to CameronDugan.com, a place where I put my projects and thoughts into t
 
 Vim is my favourite text editor, and it shall remain that way. Anywhere I absolutely need to use something else, I usually find a way to add vim's shortcuts back into the mix.
 
-I suggest you check out my customized [searx instance](https://searx.camerondugan.com) hosted over at [TheThe.dev](https://thethe.dev) where I try to host all of my web services. Some I plan on making from scratch, and others are open source software I've installed to make modern life more private.
+This website is running off of a raspberry pi 4, along with my email at this domain, took a long time, but I eventually set it up this way to avoid paying for my vps. They're great, but I've finally figured out the networking required to get this done and I'm quite happy about it. :)

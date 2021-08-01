@@ -1,5 +1,3 @@
-(cd /var/www/camerondugan.com &&
+(cd /home/pi/camerondugan.com &&
 	git pull
-	rm -rf ../camerondugan 
-	cp -r _site ../camerondugan
 )
