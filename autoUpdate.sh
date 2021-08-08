@@ -1,3 +1,5 @@
 (cd /home/pi/camerondugan.com &&
-	git pull
+	git reset --hard &&
+	git pull &&
+	bundle exec jekyll build
 )
