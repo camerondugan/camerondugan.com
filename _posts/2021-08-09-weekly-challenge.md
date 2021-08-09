@@ -6,11 +6,11 @@ permalink: /WeeklyProgramming/
 layout: post
 ---
 
-Weekly programming projects help programmers get better. I'm going to start publicly doing some to increase specific skills I want to work on.
+Programming projects help programmers get better. I'm going to start publicly doing some to increase specific skills I want to work on.
 
 Although I suspect nobody will read this, I want you to participate to whatever degree you feel is comfortable. Here are the rules:
 
-This week's theme is going to be *Text Generation*. Generate any kind of text, it has to be random. Searching for algorithms online is greatly encouraged.
+This week's theme is going to be *Text Generation*. Generate any kind of text, it has to be random to some degree. Searching for algorithms online is greatly encouraged.
 
 1. Complete the task to any degree using any language.
 1. A new task will come out every Monday.
