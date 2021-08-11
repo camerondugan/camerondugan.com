@@ -1,13 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://www.camerondugan.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.camerondugan.com/" rel="alternate" type="text/html" hreflang="en" /><updated>2021-08-11T11:37:18-04:00</updated><id>https://www.camerondugan.com/feed.xml</id><subtitle>This is my Jekyll website that is running Simple.css</subtitle><author><name>Cameron Dugan</name></author><entry><title type="html">Arbidor</title><link href="https://www.camerondugan.com/Arbidor/" rel="alternate" type="text/html" title="Arbidor" /><published>2021-08-11T00:00:00-04:00</published><updated>2021-08-11T00:00:00-04:00</updated><id>https://www.camerondugan.com/arbidor</id><content type="html" xml:base="https://www.camerondugan.com/Arbidor/">&lt;p&gt;&lt;a href=&quot;https://camerondugan.com/arbidor/play&quot;&gt;PLAY&lt;/a&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://www.camerondugan.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.camerondugan.com/" rel="alternate" type="text/html" hreflang="en" /><updated>2021-08-11T11:41:38-04:00</updated><id>https://www.camerondugan.com/feed.xml</id><subtitle>This is my Jekyll website that is running Simple.css</subtitle><author><name>Cameron Dugan</name></author><entry><title type="html">Arbidor</title><link href="https://www.camerondugan.com/Arbidor/" rel="alternate" type="text/html" title="Arbidor" /><published>2021-08-11T00:00:00-04:00</published><updated>2021-08-11T00:00:00-04:00</updated><id>https://www.camerondugan.com/arbidor</id><content type="html" xml:base="https://www.camerondugan.com/Arbidor/">&lt;p&gt;&lt;a href=&quot;https://camerondugan.com/arbidor/play&quot;&gt;PLAY&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Arbidor is a short game I programmed, it’s still unfinished and it’s definitely confusing. Intentional programming errors are everywhere, it’s your job to use them to your advantage to reach the end.&lt;/p&gt;
 
 &lt;p&gt;The top left indicates when the level will automatically reset.
 The top Right indicates when the whole game resets.&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Controlls: arrows to move, x/z to interact or reset the level at the cost of battery
-Controller is supported
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;dl&gt;
+  &lt;dt&gt;Controlls&lt;/dt&gt;
+  &lt;dd&gt;Arrows to move&lt;/dd&gt;
+  &lt;dd&gt;x/z to interact or reset the level at the cost of battery&lt;/dd&gt;
+  &lt;dd&gt;Most controllers are supported&lt;/dd&gt;
+&lt;/dl&gt;
 
 &lt;p&gt;Compiles to web, windows, mac, and linux&lt;/p&gt;</content><author><name>Cameron Dugan</name></author><summary type="html">PLAY</summary></entry><entry><title type="html">Weekly Programming</title><link href="https://www.camerondugan.com/WeeklyProgramming/" rel="alternate" type="text/html" title="Weekly Programming" /><published>2021-08-09T00:00:00-04:00</published><updated>2021-08-09T00:00:00-04:00</updated><id>https://www.camerondugan.com/weekly-challenge</id><content type="html" xml:base="https://www.camerondugan.com/WeeklyProgramming/">&lt;p&gt;Programming projects help programmers get better. I’m going to start publicly doing some to increase specific skills I want to work on.&lt;/p&gt;
 
