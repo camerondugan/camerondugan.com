@@ -12,6 +12,8 @@ This week's theme is going to be *Image Generation*. You can create a program th
 
 Hopefully these ideas help you create wacky results.
 
+The rules are as follows:
+
 1. Complete the task to any degree using any language.
 1. A new task will come out every Monday.
 1. Post the result somewhere by Sunday as proof of completion.
