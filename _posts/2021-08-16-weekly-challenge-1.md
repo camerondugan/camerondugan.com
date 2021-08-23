@@ -1,6 +1,6 @@
 ---
-title: Weekly Programming #1
-header: Weelky Programming #1
+title: Weekly Programming - Week 1
+header: Weekly Programming - Week 1
 description: Programming art generators
 permalink: /WeeklyProgramming/1/
 layout: post

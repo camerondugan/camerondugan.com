@@ -1,6 +1,6 @@
 ---
-title: Weekly Programming
-header: Weelky Programming
+title: Weekly Programming - Week 0
+header: Weekly Programming - Week 0
 description: Programming for the sake of programming
 permalink: /WeeklyProgramming/
 layout: post
