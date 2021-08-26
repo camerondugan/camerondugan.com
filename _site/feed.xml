@@ -1,4 +1,42 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://www.camerondugan.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.camerondugan.com/" rel="alternate" type="text/html" hreflang="en" /><updated>2021-08-25T22:36:34-04:00</updated><id>https://www.camerondugan.com/feed.xml</id><subtitle>This is my Jekyll website that is running Simple.css</subtitle><author><name>Cameron Dugan</name></author><entry><title type="html">Python Dream Bot</title><link href="https://www.camerondugan.com/Dream-Bot/" rel="alternate" type="text/html" title="Python Dream Bot" /><published>2021-08-18T00:00:00-04:00</published><updated>2021-08-18T00:00:00-04:00</updated><id>https://www.camerondugan.com/dream-bot</id><content type="html" xml:base="https://www.camerondugan.com/Dream-Bot/">&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Python Dream Bot&lt;/code&gt; is almost complete. What is the dream bot? I’m glad you asked!&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://www.camerondugan.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.camerondugan.com/" rel="alternate" type="text/html" hreflang="en" /><updated>2021-08-25T22:38:18-04:00</updated><id>https://www.camerondugan.com/feed.xml</id><subtitle>This is my Jekyll website that is running Simple.css</subtitle><author><name>Cameron Dugan</name></author><entry><title type="html">Weekly Programming - Week 2</title><link href="https://www.camerondugan.com/WeeklyProgramming/2/" rel="alternate" type="text/html" title="Weekly Programming - Week 2" /><published>2021-08-23T00:00:00-04:00</published><updated>2021-08-23T00:00:00-04:00</updated><id>https://www.camerondugan.com/WeeklyProgramming/weekly-challenge-2</id><content type="html" xml:base="https://www.camerondugan.com/WeeklyProgramming/2/">&lt;p&gt;Programming projects help programmers get better. I’m publicly announcing a project every week on Monday with the goal of helping you get better at programming along with me.&lt;/p&gt;
+
+&lt;p&gt;This week’s programming challenge is to make a &lt;em&gt;bot&lt;/em&gt; that plays this game.&lt;/p&gt;
+
+&lt;p&gt;The Game Of Trust:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Two points are up for grabs.&lt;/li&gt;
+  &lt;li&gt;Each Player can either choose to share or to steal.&lt;/li&gt;
+  &lt;li&gt;If Both players steal, nobody gets points.&lt;/li&gt;
+  &lt;li&gt;If one player steals, that player gets all of the points.&lt;/li&gt;
+  &lt;li&gt;If both players share, each player gets one point.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The &lt;em&gt;bot&lt;/em&gt; doesn’t have to play the game well, it just has to be capable of playing against a person and/or another &lt;em&gt;bot&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;The rules are as follows:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Complete the challenge to any degree using any language.&lt;/li&gt;
+  &lt;li&gt;A new challenge will come out every Monday.&lt;/li&gt;
+  &lt;li&gt;Post the result somewhere by Sunday as proof of completion.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;There will be scoring as follows:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Participants who tried, get a score of 1 for each project.&lt;/li&gt;
+  &lt;li&gt;Participants who learned something new get an additional 2 points.&lt;/li&gt;
+  &lt;li&gt;Participants who didn’t try get a score of 0.&lt;/li&gt;
+  &lt;li&gt;Participants who copy large chunks of code get their project score cut in half rounded down.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Scoring will be entirely done on the honor system. Feel free to include your current score along with your post.
+For example: my personal score is 4 at the time of writing.&lt;/p&gt;
+
+&lt;p&gt;Take your time, I’m excited to see what we can do!&lt;/p&gt;
+
+&lt;p&gt;If you liked this also check out: &lt;a href=&quot;../../WeeklyProgramming/1/&quot;&gt;Last Week’s Challenge&lt;/a&gt;
+and 
+&lt;a href=&quot;../../Dream-Bot/&quot;&gt;My Result From Last Week&lt;/a&gt;&lt;/p&gt;</content><author><name>Cameron Dugan</name></author><summary type="html">Programming projects help programmers get better. I’m publicly announcing a project every week on Monday with the goal of helping you get better at programming along with me.</summary></entry><entry><title type="html">Python Dream Bot</title><link href="https://www.camerondugan.com/Dream-Bot/" rel="alternate" type="text/html" title="Python Dream Bot" /><published>2021-08-18T00:00:00-04:00</published><updated>2021-08-18T00:00:00-04:00</updated><id>https://www.camerondugan.com/dream-bot</id><content type="html" xml:base="https://www.camerondugan.com/Dream-Bot/">&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Python Dream Bot&lt;/code&gt; is almost complete. What is the dream bot? I’m glad you asked!&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://www.pexels.com/photo/selective-focus-photo-of-brown-monkey-2213575/&quot;&gt;&lt;img src=&quot;/assets/images/dream-bot/original1.jpg&quot; alt=&quot;original1&quot; width=&quot;350&quot; /&gt;&lt;/a&gt;&lt;a href=&quot;/assets/images/dream-bot/dream1.png&quot;&gt;&lt;img src=&quot;/assets/images/dream-bot/dream1.png&quot; alt=&quot;dream1&quot; width=&quot;350&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
@@ -68,7 +106,7 @@
   &lt;li&gt;I fixed a major bug wi&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;Generated by Cameron Dugan’s Jekyll Post Generator&lt;/p&gt;</content><author><name>Cameron Dugan</name></author><summary type="html">To ensure I don’t go completely insane, I think I’ll throw on music while I work to help my morale last long enough to start a conversation, but not too much as to give people headaches.</summary></entry><entry><title type="html">Weekly Programming</title><link href="https://www.camerondugan.com/WeeklyProgramming/1/" rel="alternate" type="text/html" title="Weekly Programming" /><published>2021-08-16T00:00:00-04:00</published><updated>2021-08-16T00:00:00-04:00</updated><id>https://www.camerondugan.com/WeeklyProgramming/weekly-challenge-1</id><content type="html" xml:base="https://www.camerondugan.com/WeeklyProgramming/1/">&lt;p&gt;Programming projects help programmers get better. I’m going to start publicly doing some to increase specific skills I want to work on.&lt;/p&gt;
+&lt;p&gt;Generated by Cameron Dugan’s Jekyll Post Generator&lt;/p&gt;</content><author><name>Cameron Dugan</name></author><summary type="html">To ensure I don’t go completely insane, I think I’ll throw on music while I work to help my morale last long enough to start a conversation, but not too much as to give people headaches.</summary></entry><entry><title type="html">Weekly Programming - Week 1</title><link href="https://www.camerondugan.com/WeeklyProgramming/1/" rel="alternate" type="text/html" title="Weekly Programming - Week 1" /><published>2021-08-16T00:00:00-04:00</published><updated>2021-08-16T00:00:00-04:00</updated><id>https://www.camerondugan.com/WeeklyProgramming/weekly-challenge-1</id><content type="html" xml:base="https://www.camerondugan.com/WeeklyProgramming/1/">&lt;p&gt;Programming projects help programmers get better. I’m going to start publicly doing some to increase specific skills I want to work on.&lt;/p&gt;
 
 &lt;p&gt;This week’s theme is going to be &lt;em&gt;Image Generation&lt;/em&gt;. You can create a program that takes in a series of images, and outputs an image based on those previous works. You could also create a program that fills in missing/transparent sections of an image.&lt;/p&gt;
 
@@ -151,7 +189,7 @@ The top Right indicates when the whole game resets.&lt;/p&gt;
   &lt;dd&gt;Most controllers are supported&lt;/dd&gt;
 &lt;/dl&gt;
 
-&lt;p&gt;Compiles to web, windows, mac, and linux&lt;/p&gt;</content><author><name>Cameron Dugan</name></author><summary type="html">PLAY</summary></entry><entry><title type="html">Weekly Programming</title><link href="https://www.camerondugan.com/WeeklyProgramming/" rel="alternate" type="text/html" title="Weekly Programming" /><published>2021-08-09T00:00:00-04:00</published><updated>2021-08-09T00:00:00-04:00</updated><id>https://www.camerondugan.com/weekly-challenge</id><content type="html" xml:base="https://www.camerondugan.com/WeeklyProgramming/">&lt;p&gt;Programming projects help programmers get better. I’m going to start publicly doing some to increase specific skills I want to work on.&lt;/p&gt;
+&lt;p&gt;Compiles to web, windows, mac, and linux&lt;/p&gt;</content><author><name>Cameron Dugan</name></author><summary type="html">PLAY</summary></entry><entry><title type="html">Weekly Programming - Week 0</title><link href="https://www.camerondugan.com/WeeklyProgramming/" rel="alternate" type="text/html" title="Weekly Programming - Week 0" /><published>2021-08-09T00:00:00-04:00</published><updated>2021-08-09T00:00:00-04:00</updated><id>https://www.camerondugan.com/weekly-challenge</id><content type="html" xml:base="https://www.camerondugan.com/WeeklyProgramming/">&lt;p&gt;Programming projects help programmers get better. I’m going to start publicly doing some to increase specific skills I want to work on.&lt;/p&gt;
 
 &lt;p&gt;Although I suspect nobody will read this, I want you to participate to whatever degree you feel is comfortable. Here are the rules:&lt;/p&gt;
 
