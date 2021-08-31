@@ -1,6 +1,9 @@
 - name: Home
   link: /
 
+- name: Projects
+  link: /projects
+
 - name: Updates
   link: /blog
 
