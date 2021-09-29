@@ -1,5 +1,5 @@
 ---
-title: Home | CameronDugan
+title: Home
 header: "~"
 description: A simple website + blog.
 layout: default

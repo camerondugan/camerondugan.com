@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/assets/images/favicon.png" />
+    
+    <title>Using Flutter ~ CameronDugan.com</title>
+    <meta name="description" content="Making a cross platform app with Flutter" />
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+    <link rel="stylesheet" href="/assets/css/custom.css">
+    <a rel="me" href="https://fosstodon.org/@TheCam"></a>
+  </head>
+    
+  <body>
+
+    <header>
+      <h1>Succulent Flutter Ploject</h1>
+      <p>Making a cross platform app with Flutter</p>
+
+      <nav>
+  
+  <a href="/">Home</a>
+  
+  <a href="/projects">Projects</a>
+  
+  <a href="/blog">Updates</a>
+  
+  <a href="/contact">Contact</a>
+  
+  <a href="/about">About</a>
+  
+  <a href="/feed.xml">RSS Feed</a>
+  
+  <a href="/Resume.pdf">Resume</a>
+  
+</nav>
+
+    </header>
+
+    <main>
+      <p>📅 Wednesday, September 29 2021</p>
+
+<p><a href="/assets/images/succulent/Plant.png"><img src="/assets/images/succulent/Plant.png" alt="plant" width="200" /></a></p>
+
+<h2 id="lessons">Lessons:</h2>
+
+<ul>
+  <li>Find widgets on <a href="https://Pub.dev">pub.dev</a> that fit your project and are <em>null safe</em>, <em>null safety</em> makes your project better and inherently compatible with other <em>null safe</em> projects.
+    <ul>
+      <li>Learn more about <em>null safety</em> here: <a href="https://dart.dev/null-safety/understanding-null-safety">dart.dev</a></li>
+    </ul>
+  </li>
+  <li>Using <code class="language-plaintext highlighter-rouge">flutter clean</code> is your friend
+    <ul>
+      <li>Builds occassionally don’t work for no real reason. If this is the case, you can always run the clean command to potentially fix issues.</li>
+      <li>If this doesn’t work, you can build it to a different platform/os then back to the original platform.</li>
+    </ul>
+  </li>
+  <li>To my knowledge, you cannot use widgets to communicate with other widgets, I can’t say:
+    <div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">childWidget</span><span class="o">()</span>
+  <span class="n">build</span><span class="o">()</span> 
+      <span class="k">return</span> <span class="n">widget</span><span class="o">(</span>
+          <span class="nl">onTap:</span> <span class="o">()</span> <span class="o">{</span>
+              <span class="n">parentWidget</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">item</span><span class="o">);</span>
+              <span class="n">setState</span><span class="o">(){};</span>
+</code></pre></div>    </div>
+    <p>but I can say:</p>
+    <div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">//this is psuedo code</span>
+<span class="n">parentWidget</span><span class="o">(){</span>
+  <span class="n">mylist</span> <span class="o">=</span> <span class="o">[];</span> 
+
+  <span class="n">Widget</span> <span class="n">childWidget</span><span class="o">(</span><span class="n">list</span><span class="o">){</span>
+      <span class="k">return</span> <span class="n">widget</span><span class="o">(</span>
+          <span class="nl">onTap:</span> <span class="o">()</span> <span class="o">{</span>
+              <span class="n">mylist</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="s">"hello"</span><span class="o">)</span>
+              <span class="n">setState</span><span class="o">(){};</span>
+          <span class="o">}</span>
+  <span class="o">}</span>
+
+  <span class="n">build</span><span class="o">()</span> <span class="o">=&gt;</span> <span class="n">childWidget</span><span class="o">(</span><span class="n">mylist</span><span class="o">);</span>
+<span class="o">}</span>
+</code></pre></div>    </div>
+  </li>
+  <li>When using the scaffold widget to make the app, you want to use an indexed stack if you want to also use an animated navigation bar, to let the animation play out, instead of getting cut off when switching contexts.</li>
+</ul>
+
+
+<br>
+<hr>
+
+<h2>💬 Looking for comments?</h2>
+
+<p>I don't have comments on this site as they're difficult to manage and take up too much time. I'd rather concentrate on programming cool and new things than managing comments.</p>
+
+<p>Since you can't leave a comment, feel free to ✉️ <a href="/contact">contact me</a> instead.</p>
+
+    </main>
+
+    <footer>
+	    <p>Created by <a href="https://CameronDugan.com">Cameron Dugan</a> using <a href="https://jekyllrb.com">Jekyll</a> and <a href="https://simplecss.org">Simple.css</a>.</p>
+    </footer>
+
+  </body>
+</html>
