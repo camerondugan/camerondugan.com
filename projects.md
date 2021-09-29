@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Projects | Cameron Dugan
+title: Projects
 header: Projects
 description: Where ideas come to life!
 permalink: /projects/

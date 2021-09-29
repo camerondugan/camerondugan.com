@@ -1,5 +1,5 @@
 ---
-title: About | Cameron Dugan
+title: About
 header: About
 description: This page tells you a little bit about this website.
 permalink: /about/
