@@ -43,3 +43,5 @@ parentWidget(){
 }
 ```
 - When using the scaffold widget to make the app, you want to use an indexed stack if you want to also use an animated navigation bar, to let the animation play out, instead of getting cut off when switching contexts.
+
+I'll add binaries to this page shortly, see you next time!
