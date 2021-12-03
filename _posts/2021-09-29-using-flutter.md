@@ -1,6 +1,6 @@
 ---
 title: Using Flutter
-header: Succulent Flutter Ploject
+header: Succulent Flutter App
 description: Making a cross platform app with Flutter
 permalink: /using-flutter/
 layout: post

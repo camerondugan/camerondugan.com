@@ -15,12 +15,12 @@
  :root {
   --bg:#0F131A;
   --accent-bg:#171C26;
-  --text:#e0fbfc;
+  --text:#e4f5f6;
   --text-light:#98c1d9;
   --border:#3d5a80;
-  --accent:#ee6c4d;
+  --accent:#f7896e;
   --accent-light:#FFECB3;
-  --code:#aad7ff;
+  --code:#cce7ff;
   --disabled:#111;
  }
 }
