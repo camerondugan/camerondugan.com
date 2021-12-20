@@ -7,14 +7,11 @@
 - name: Updates
   link: /blog
 
+- name: Resume
+  link: /Resume.pdf
+
 - name: Contact
   link: /contact
 
 - name: About
   link: /about
-
-- name: RSS Feed
-  link: /feed.xml
-
-- name: Resume
-  link: /Resume.pdf
