@@ -24,3 +24,14 @@
   --disabled:#111;
  }
 }
+nav a.nav-current {
+  background: var(--border);
+  border-color: var(--border);
+  font-weight: 700;
+  opacity: 1; 
+}
+nav a:hover {
+    color: var(--text) !important;
+    border-color: var(--border);
+    background: var(--border);
+}
