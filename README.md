@@ -1,2 +1,2 @@
 # jekyll-simple.css
-A Jekyll website that's based on Simple.css
+Cameron Dugan's Website is using Jekyll with Simple.css
