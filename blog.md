@@ -2,7 +2,7 @@
 layout: default
 title: Blog
 header: Blog
-description: Where the magic happens - this is the blog!
+description: Thoughts and Projects in Tech!
 permalink: /blog/
 ---
 

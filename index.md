@@ -1,7 +1,7 @@
 ---
 title: Home
 header: "~"
-description: A simple website + blog.
+description: Cameron Dugan's Website
 layout: default
 ---
 

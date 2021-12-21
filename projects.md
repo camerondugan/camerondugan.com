@@ -2,7 +2,7 @@
 layout: default
 title: Projects
 header: Projects
-description: Where ideas come to life!
+description: Idea -> Plan -> Reality
 permalink: /projects/
 ---
 
