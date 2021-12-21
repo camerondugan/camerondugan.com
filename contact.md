@@ -1,7 +1,7 @@
 ---
 title: Contact
 header: Contact
-description: Want to get in touch? This page tells you how.
+description: The Place to Get in Touch
 permalink: /contact/
 layout: default
 ---
