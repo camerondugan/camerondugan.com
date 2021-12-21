@@ -2,7 +2,7 @@
 title: Using Flutter
 header: Succulent Flutter App
 description: Making a cross platform app with Flutter
-permalink: /using-flutter/
+permalink: /Using-Flutter/
 layout: post
 tags: Project
 ---
