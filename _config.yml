@@ -7,9 +7,9 @@ author: Cameron Dugan
 description: This is my Jekyll website that is running Simple.css
 lang: en
 locale: en_US
-url: "https://www.camerondugan.com"
+url: "https://www.CameronDugan.com"
 baseurl: ""
 
 # RSS feeds
 feed:
-  posts_limit: 100
+  posts_limit: 10000
