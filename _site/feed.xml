@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://www.camerondugan.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.camerondugan.com/" rel="alternate" type="text/html" hreflang="en" /><updated>2021-12-24T23:17:35-05:00</updated><id>https://www.camerondugan.com/feed.xml</id><subtitle>This is my Jekyll website that is running Simple.css</subtitle><author><name>Cameron Dugan</name></author><entry><title type="html">Linux Scripting</title><link href="https://www.camerondugan.com/Bash/" rel="alternate" type="text/html" title="Linux Scripting" /><published>2021-12-20T00:00:00-05:00</published><updated>2021-12-20T00:00:00-05:00</updated><id>https://www.camerondugan.com/linux-scripting</id><content type="html" xml:base="https://www.camerondugan.com/Bash/">&lt;p&gt;Needed something to post, so here’s some tips to make life on the command line a breeze.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://www.camerondugan.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.camerondugan.com/" rel="alternate" type="text/html" hreflang="en" /><updated>2021-12-25T10:39:58-05:00</updated><id>https://www.camerondugan.com/feed.xml</id><subtitle>This is my Jekyll website that is running Simple.css</subtitle><author><name>Cameron Dugan</name></author><entry><title type="html">Linux Scripting</title><link href="https://www.camerondugan.com/Bash/" rel="alternate" type="text/html" title="Linux Scripting" /><published>2021-12-20T00:00:00-05:00</published><updated>2021-12-20T00:00:00-05:00</updated><id>https://www.camerondugan.com/linux-scripting</id><content type="html" xml:base="https://www.camerondugan.com/Bash/">&lt;p&gt;Needed something to post, so here’s some tips to make life on the command line a breeze.&lt;/p&gt;
 
 &lt;p&gt;If you use linux, odds are you are either using bash or zsh. In your home folder, bash has a file called .bashrc and zsh has a file called .zshrc. Adding aliases to these files is a great way to make simple shortcuts for long and complicated commands. Here are some examples:&lt;/p&gt;
 
@@ -258,17 +258,19 @@ bees, ho&lt;/li&gt;
 
 &lt;p&gt;Arbidor is a short game I programmed, it’s still unfinished and it’s definitely confusing. Intentional programming errors are everywhere, it’s your job to use them to your advantage to reach the end.&lt;/p&gt;
 
+&lt;p&gt;Watch out, your battery drains while you play. Collect batteries to replenish your battery! The top left features a reset indicator, it lets you know when the game attempts a partial reset.&lt;/p&gt;
+
 &lt;p&gt;The top left indicates when the level will automatically reset.
 The top Right indicates when the whole game resets.&lt;/p&gt;
 
 &lt;dl&gt;
   &lt;dt&gt;Controls&lt;/dt&gt;
   &lt;dd&gt;Arrows to move&lt;/dd&gt;
-  &lt;dd&gt;x/z to interact or reset the level at the cost of battery&lt;/dd&gt;
+  &lt;dd&gt;x/z to interact or fully reset the level at the cost of battery&lt;/dd&gt;
   &lt;dd&gt;Most controllers are supported&lt;/dd&gt;
 &lt;/dl&gt;
 
-&lt;p&gt;Compiles to web, windows, mac, and linux&lt;/p&gt;</content><author><name>Cameron Dugan</name></author><category term="Project" /><summary type="html">PLAY</summary></entry><entry><title type="html">Weekly Programming - Week 0</title><link href="https://www.camerondugan.com/WeeklyProgramming/" rel="alternate" type="text/html" title="Weekly Programming - Week 0" /><published>2021-08-09T00:00:00-04:00</published><updated>2021-08-09T00:00:00-04:00</updated><id>https://www.camerondugan.com/weekly-challenge</id><content type="html" xml:base="https://www.camerondugan.com/WeeklyProgramming/">&lt;p&gt;Programming projects help programmers get better. I’m going to start publicly doing some to increase specific skills I want to work on.&lt;/p&gt;
+&lt;p&gt;Compiles to web, Windows, Mac, and Linux&lt;/p&gt;</content><author><name>Cameron Dugan</name></author><category term="Project" /><summary type="html">PLAY</summary></entry><entry><title type="html">Weekly Programming - Week 0</title><link href="https://www.camerondugan.com/WeeklyProgramming/" rel="alternate" type="text/html" title="Weekly Programming - Week 0" /><published>2021-08-09T00:00:00-04:00</published><updated>2021-08-09T00:00:00-04:00</updated><id>https://www.camerondugan.com/weekly-challenge</id><content type="html" xml:base="https://www.camerondugan.com/WeeklyProgramming/">&lt;p&gt;Programming projects help programmers get better. I’m going to start publicly doing some to increase specific skills I want to work on.&lt;/p&gt;
 
 &lt;p&gt;Although I suspect nobody will read this, I want you to participate to whatever degree you feel is comfortable. Here are the rules:&lt;/p&gt;
 
