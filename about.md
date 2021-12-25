@@ -1,7 +1,7 @@
 ---
 title: About
 header: About
-description: More about this website
+description: More About this Website
 permalink: /about/
 layout: default
 ---
