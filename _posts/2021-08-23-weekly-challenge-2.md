@@ -2,7 +2,7 @@
 title: Weekly Programming - Week 2
 header: Weekly Programming - Week 2
 description: Programming a game player
-permalink: /WeeklyProgramming/2/
+permalink: /blog/weekly-programming/2/
 layout: post
 ---
 

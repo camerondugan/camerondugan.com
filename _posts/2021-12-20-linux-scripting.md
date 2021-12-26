@@ -2,7 +2,7 @@
 title: Linux Scripting
 header: Linux Scripting
 description: Removing repetitive tasks
-permalink: /Bash/
+permalink: /blog/bash/
 layout: post
 ---
 

@@ -2,7 +2,7 @@
 title: Procrastination and Motivation
 header: Procrastination and Motivation
 description: A note to self
-permalink: /Procrastination/
+permalink: /blog/procrastination/
 layout: post
 ---
 

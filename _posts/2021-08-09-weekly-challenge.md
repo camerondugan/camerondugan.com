@@ -2,7 +2,7 @@
 title: Weekly Programming - Week 0
 header: Weekly Programming - Week 0
 description: Programming for the sake of programming
-permalink: /WeeklyProgramming/
+permalink: /blog/weekly-programming/0/
 layout: post
 ---
 
