@@ -2,7 +2,7 @@
 title: The Overwhelm
 header: The Overwhelm
 description: Conquering the unknown
-permalink: /overwhelm/
+permalink: /blog/overwhelm/
 layout: post
 ---
 

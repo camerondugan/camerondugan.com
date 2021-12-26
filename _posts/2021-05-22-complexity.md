@@ -2,7 +2,7 @@
 title: Complexity
 header: Complexity
 description: How complexity influences people.
-permalink: /complexity/
+permalink: /blog/complexity/
 layout: post
 ---
 

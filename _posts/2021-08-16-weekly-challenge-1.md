@@ -2,7 +2,7 @@
 title: Weekly Programming - Week 1
 header: Weekly Programming - Week 1
 description: Programming art generators
-permalink: /WeeklyProgramming/1/
+permalink: /blog/weekly-programming/1/
 layout: post
 ---
 

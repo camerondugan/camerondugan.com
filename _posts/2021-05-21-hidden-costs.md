@@ -2,7 +2,7 @@
 title: Hidden Costs
 header: Hidden Costs
 description: Examples and generalizations of how systems disguise their motives.
-permalink: /hidden-costs/
+permalink: /blog/hidden-costs/
 layout: post
 ---
 
