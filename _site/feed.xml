@@ -1,4 +1,31 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://www.camerondugan.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.camerondugan.com/" rel="alternate" type="text/html" hreflang="en" /><updated>2021-12-26T11:01:56-05:00</updated><id>https://www.camerondugan.com/feed.xml</id><subtitle>This is my Jekyll website that is running Simple.css</subtitle><author><name>Cameron Dugan</name></author><entry><title type="html">Why RSS isn’t Mainstream</title><link href="https://www.camerondugan.com/blog/rss/" rel="alternate" type="text/html" title="Why RSS isn’t Mainstream" /><published>2021-12-26T00:00:00-05:00</published><updated>2021-12-26T00:00:00-05:00</updated><id>https://www.camerondugan.com/blog/rss-mainstream</id><content type="html" xml:base="https://www.camerondugan.com/blog/rss/">&lt;p&gt;&lt;abbr title=&quot;Really Simple Sindication&quot;&gt;RSS&lt;/abbr&gt; is an amazing tool for staying up to date across thousands of websites, but something mission critical is missing. There simply isn’t anything to that will recommend new feeds. This makes building up your feed list a hastle, especially if websites don’t list their feed urls anywhere. As I’ve continued to use &lt;abbr title=&quot;Really Simple Sindication&quot;&gt;RSS&lt;/abbr&gt;, I see an increase in it’s value as a tool to create a more decentralized and safer internet.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://www.camerondugan.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.camerondugan.com/" rel="alternate" type="text/html" hreflang="en" /><updated>2022-01-01T15:06:16-05:00</updated><id>https://www.camerondugan.com/feed.xml</id><subtitle>This is my Jekyll website that is running Simple.css</subtitle><author><name>Cameron Dugan</name></author><entry><title type="html">Happy New Year</title><link href="https://www.camerondugan.com/blog/2022/" rel="alternate" type="text/html" title="Happy New Year" /><published>2022-01-01T00:00:00-05:00</published><updated>2022-01-01T00:00:00-05:00</updated><id>https://www.camerondugan.com/blog/happy-new-year</id><content type="html" xml:base="https://www.camerondugan.com/blog/2022/">&lt;p&gt;Hello, just wanting to wish everyone a happy new year! 
+To start of the new year, I want to review the software I’m using this year, and mention the software I’m looking forward to using:&lt;/p&gt;
+
+&lt;h3 id=&quot;software-i-liked-from-2021&quot;&gt;Software I Liked From 2021:&lt;/h3&gt;
+
+&lt;dl&gt;
+  &lt;dt&gt;&lt;strong&gt;Feeder on Android&lt;/strong&gt;&lt;/dt&gt;
+  &lt;dd&gt;An RSS client for Android, the only feature missing is a synced client for desktop, everything else works great.&lt;/dd&gt;
+  &lt;dt&gt;&lt;strong&gt;SyncThing on Everything&lt;/strong&gt;&lt;/dt&gt;
+  &lt;dd&gt;A folder syncing client I wish I tried sooner, I’m currently syncing my home folder across all of my devices with a single exclusion rule of ‘&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.*&lt;/code&gt;’ to prevent config issues.&lt;/dd&gt;
+  &lt;dt&gt;&lt;strong&gt;Doodle on Android&lt;/strong&gt;&lt;/dt&gt;
+  &lt;dd&gt;A FOSS replacement for the Google Pixel line of wallpapers. Even if you own a pixel phone, you can have access to the other lines of pixel wallpapers. Also there’s a ton of customization.&lt;/dd&gt;
+  &lt;dt&gt;&lt;strong&gt;NetGuard on Android&lt;/strong&gt;&lt;/dt&gt;
+  &lt;dd&gt;App by app firewall to prevent lazily programmed and insecure apps you want to install from accessing the internet. You can also choose to block internet access in the background. Also can give apps just access to wifi/cellular. A truelly great application, prevents a lot of offline games from loading ads.&lt;/dd&gt;
+  &lt;dt&gt;&lt;strong&gt;VS Code / Code on Linux&lt;/strong&gt;&lt;/dt&gt;
+  &lt;dd&gt;An open source version of Visual Studio Code with countless extensions. It is a text editor that works with every programming language, vim mode, and no need for modifying a config file to change settings. Works like a charm. Also has a built in terminal emulator.&lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;h3 id=&quot;software-for-2022&quot;&gt;Software For 2022:&lt;/h3&gt;
+
+&lt;dl&gt;
+  &lt;dt&gt;&lt;strong&gt;Obsidian on Everything&lt;/strong&gt;&lt;/dt&gt;
+  &lt;dd&gt;A markdown note taking application with backlinking. Backlinking means that if I name a note ‘linux’, anytime I write the word ‘linux’ in another note, it automatically suggests a new link to that note. Plus it can visually graph all of the notes and links to other notes. I plan to use this with SyncThing as an online note-taking replacement.&lt;/dd&gt;
+  &lt;dt&gt;&lt;strong&gt;Tor Browser on Everything&lt;/strong&gt;&lt;/dt&gt;
+  &lt;dd&gt;I’ve known the Tor Browser has existed for a while now, but only recently I found out that bridges exist, and can easily be requested from the tor settings tab. Bridges can and often do speed up tor by quite a bit. I always assumed that Tor was just super slow. I will be using Tor a whole lot more with what I’m experiencing as about 4-10x the speed without bridges.&lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;p&gt;Thanks for reading, let’s have a great 2022!&lt;/p&gt;</content><author><name>Cameron Dugan</name></author><summary type="html">Hello, just wanting to wish everyone a happy new year! To start of the new year, I want to review the software I’m using this year, and mention the software I’m looking forward to using:</summary></entry><entry><title type="html">Why RSS isn’t Mainstream</title><link href="https://www.camerondugan.com/blog/rss/" rel="alternate" type="text/html" title="Why RSS isn’t Mainstream" /><published>2021-12-26T00:00:00-05:00</published><updated>2021-12-26T00:00:00-05:00</updated><id>https://www.camerondugan.com/blog/rss-mainstream</id><content type="html" xml:base="https://www.camerondugan.com/blog/rss/">&lt;p&gt;&lt;abbr title=&quot;Really Simple Sindication&quot;&gt;RSS&lt;/abbr&gt; is an amazing tool for staying up to date across thousands of websites, but something mission critical is missing. There simply isn’t anything to that will recommend new feeds. This makes building up your feed list a hastle, especially if websites don’t list their feed urls anywhere. As I’ve continued to use &lt;abbr title=&quot;Really Simple Sindication&quot;&gt;RSS&lt;/abbr&gt;, I see an increase in it’s value as a tool to create a more decentralized and safer internet.&lt;/p&gt;
 
 &lt;p&gt;We need a Spotify, Pandora, or a Facebook for but just for &lt;abbr title=&quot;Really Simple Sindication&quot;&gt;RSS&lt;/abbr&gt; and without the creepy tracking/cyber-stalking. Just a simple website with a recommendation engine built off of other people’s feeds. A good feature on top of the recommendation would be to have a public profile on the site, that you can link your friends to with feeds you recommend to others.&lt;/p&gt;
 
@@ -7,6 +34,35 @@
 &lt;p&gt;Honestly, since the idea isn’t crazy big, and if this doesn’t already exist, I think I’ll take a stab at trying to make this eventually.&lt;/p&gt;
 
 &lt;p&gt;If you also want to see this happen or if you know of a website that already does this, please &lt;a href=&quot;/contact&quot;&gt;contact me&lt;/a&gt;.&lt;/p&gt;</content><author><name>Cameron Dugan</name></author><summary type="html">RSS is an amazing tool for staying up to date across thousands of websites, but something mission critical is missing. There simply isn’t anything to that will recommend new feeds. This makes building up your feed list a hastle, especially if websites don’t list their feed urls anywhere. As I’ve continued to use RSS, I see an increase in it’s value as a tool to create a more decentralized and safer internet.</summary></entry><entry><title type="html">Linux Scripting</title><link href="https://www.camerondugan.com/blog/bash/" rel="alternate" type="text/html" title="Linux Scripting" /><published>2021-12-20T00:00:00-05:00</published><updated>2021-12-20T00:00:00-05:00</updated><id>https://www.camerondugan.com/blog/linux-scripting</id><content type="html" xml:base="https://www.camerondugan.com/blog/bash/">&lt;p&gt;Needed something to post, so here’s some tips to make life on the command line a breeze.&lt;/p&gt;
+
+&lt;p&gt;If you use linux, odds are you are either using bash or zsh. In your home folder, bash has a file called .bashrc and zsh has a file called .zshrc. Adding aliases to these files is a great way to make simple shortcuts for long and complicated commands. Here are some examples:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#Git
+alias add=&apos;git add&apos;
+alias commit=&apos;git commit&apos;
+alias push=&apos;git push&apos;
+alias pull=&apos;git pull&apos;
+alias status=&apos;git status&apos;
+alias log=&apos;git log&apos;
+alias clone=&apos;git clone&apos;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Aliases can replace anything you would type into your terminal:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#Backups
+alias bak=&apos;timeshift --check &amp;gt;&amp;gt; ~/Logs/timeshift.log&apos;
+alias restore=&apos;timeshift --restore&apos;
+#Scripts
+alias longscript=&apos;bash ~/Scripts/LongScript.sh&apos;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Anything you type into the terminal can be turned into a bash script by typing each command line by line into a text file and saving it as a .sh file. All you need to do to run the file is run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bash scriptName.sh&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Aliases are great, but automatically running scripts don’t have to be typed on a terminal at all. This can be done with cron, a simple service that can run scripts at specific times, at reboot or login, and every x number of hours/days/minutes.&lt;/p&gt;
+
+&lt;p&gt;Install a package from your package manager called cronie or cron. If you can’t find one of those, look up what your distrobution uses, and install that. Next is to make cron run at startup through systemd. The command is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;systemctl enable --now cronie&lt;/code&gt; (or crond).&lt;/p&gt;
+
+&lt;p&gt;Now that crond is setup, running &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;crontab -e&lt;/code&gt; will open a text editor that will allow you to add scripts that run automatically.&lt;/p&gt;</content><author><name>Cameron Dugan</name></author><summary type="html">Needed something to post, so here’s some tips to make life on the command line a breeze.</summary></entry><entry><title type="html">Linux Scripting</title><link href="https://www.camerondugan.com/Bash/" rel="alternate" type="text/html" title="Linux Scripting" /><published>2021-12-20T00:00:00-05:00</published><updated>2021-12-20T00:00:00-05:00</updated><id>https://www.camerondugan.com/linux-scripting.sync-conflict-20211227-133316-4ODONUT</id><content type="html" xml:base="https://www.camerondugan.com/Bash/">&lt;p&gt;Needed something to post, so here’s some tips to make life on the command line a breeze.&lt;/p&gt;
 
 &lt;p&gt;If you use linux, odds are you are either using bash or zsh. In your home folder, bash has a file called .bashrc and zsh has a file called .zshrc. Adding aliases to these files is a great way to make simple shortcuts for long and complicated commands. Here are some examples:&lt;/p&gt;
 
