@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://www.camerondugan.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.camerondugan.com/" rel="alternate" type="text/html" hreflang="en" /><updated>2022-01-01T15:06:16-05:00</updated><id>https://www.camerondugan.com/feed.xml</id><subtitle>This is my Jekyll website that is running Simple.css</subtitle><author><name>Cameron Dugan</name></author><entry><title type="html">Happy New Year</title><link href="https://www.camerondugan.com/blog/2022/" rel="alternate" type="text/html" title="Happy New Year" /><published>2022-01-01T00:00:00-05:00</published><updated>2022-01-01T00:00:00-05:00</updated><id>https://www.camerondugan.com/blog/happy-new-year</id><content type="html" xml:base="https://www.camerondugan.com/blog/2022/">&lt;p&gt;Hello, just wanting to wish everyone a happy new year! 
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://www.camerondugan.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.camerondugan.com/" rel="alternate" type="text/html" hreflang="en" /><updated>2022-01-01T15:07:51-05:00</updated><id>https://www.camerondugan.com/feed.xml</id><subtitle>This is my Jekyll website that is running Simple.css</subtitle><author><name>Cameron Dugan</name></author><entry><title type="html">Happy New Year</title><link href="https://www.camerondugan.com/blog/2022/" rel="alternate" type="text/html" title="Happy New Year" /><published>2022-01-01T00:00:00-05:00</published><updated>2022-01-01T00:00:00-05:00</updated><id>https://www.camerondugan.com/blog/happy-new-year</id><content type="html" xml:base="https://www.camerondugan.com/blog/2022/">&lt;p&gt;Hello, just wanting to wish everyone a happy new year! 
 To start of the new year, I want to review the software I’m using this year, and mention the software I’m looking forward to using:&lt;/p&gt;
 
 &lt;h3 id=&quot;software-i-liked-from-2021&quot;&gt;Software I Liked From 2021:&lt;/h3&gt;
@@ -34,35 +34,6 @@ To start of the new year, I want to review the software I’m using this year, a
 &lt;p&gt;Honestly, since the idea isn’t crazy big, and if this doesn’t already exist, I think I’ll take a stab at trying to make this eventually.&lt;/p&gt;
 
 &lt;p&gt;If you also want to see this happen or if you know of a website that already does this, please &lt;a href=&quot;/contact&quot;&gt;contact me&lt;/a&gt;.&lt;/p&gt;</content><author><name>Cameron Dugan</name></author><summary type="html">RSS is an amazing tool for staying up to date across thousands of websites, but something mission critical is missing. There simply isn’t anything to that will recommend new feeds. This makes building up your feed list a hastle, especially if websites don’t list their feed urls anywhere. As I’ve continued to use RSS, I see an increase in it’s value as a tool to create a more decentralized and safer internet.</summary></entry><entry><title type="html">Linux Scripting</title><link href="https://www.camerondugan.com/blog/bash/" rel="alternate" type="text/html" title="Linux Scripting" /><published>2021-12-20T00:00:00-05:00</published><updated>2021-12-20T00:00:00-05:00</updated><id>https://www.camerondugan.com/blog/linux-scripting</id><content type="html" xml:base="https://www.camerondugan.com/blog/bash/">&lt;p&gt;Needed something to post, so here’s some tips to make life on the command line a breeze.&lt;/p&gt;
-
-&lt;p&gt;If you use linux, odds are you are either using bash or zsh. In your home folder, bash has a file called .bashrc and zsh has a file called .zshrc. Adding aliases to these files is a great way to make simple shortcuts for long and complicated commands. Here are some examples:&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#Git
-alias add=&apos;git add&apos;
-alias commit=&apos;git commit&apos;
-alias push=&apos;git push&apos;
-alias pull=&apos;git pull&apos;
-alias status=&apos;git status&apos;
-alias log=&apos;git log&apos;
-alias clone=&apos;git clone&apos;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Aliases can replace anything you would type into your terminal:&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#Backups
-alias bak=&apos;timeshift --check &amp;gt;&amp;gt; ~/Logs/timeshift.log&apos;
-alias restore=&apos;timeshift --restore&apos;
-#Scripts
-alias longscript=&apos;bash ~/Scripts/LongScript.sh&apos;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Anything you type into the terminal can be turned into a bash script by typing each command line by line into a text file and saving it as a .sh file. All you need to do to run the file is run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bash scriptName.sh&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Aliases are great, but automatically running scripts don’t have to be typed on a terminal at all. This can be done with cron, a simple service that can run scripts at specific times, at reboot or login, and every x number of hours/days/minutes.&lt;/p&gt;
-
-&lt;p&gt;Install a package from your package manager called cronie or cron. If you can’t find one of those, look up what your distrobution uses, and install that. Next is to make cron run at startup through systemd. The command is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;systemctl enable --now cronie&lt;/code&gt; (or crond).&lt;/p&gt;
-
-&lt;p&gt;Now that crond is setup, running &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;crontab -e&lt;/code&gt; will open a text editor that will allow you to add scripts that run automatically.&lt;/p&gt;</content><author><name>Cameron Dugan</name></author><summary type="html">Needed something to post, so here’s some tips to make life on the command line a breeze.</summary></entry><entry><title type="html">Linux Scripting</title><link href="https://www.camerondugan.com/Bash/" rel="alternate" type="text/html" title="Linux Scripting" /><published>2021-12-20T00:00:00-05:00</published><updated>2021-12-20T00:00:00-05:00</updated><id>https://www.camerondugan.com/linux-scripting.sync-conflict-20211227-133316-4ODONUT</id><content type="html" xml:base="https://www.camerondugan.com/Bash/">&lt;p&gt;Needed something to post, so here’s some tips to make life on the command line a breeze.&lt;/p&gt;
 
 &lt;p&gt;If you use linux, odds are you are either using bash or zsh. In your home folder, bash has a file called .bashrc and zsh has a file called .zshrc. Adding aliases to these files is a great way to make simple shortcuts for long and complicated commands. Here are some examples:&lt;/p&gt;
 
