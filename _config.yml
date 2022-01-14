@@ -4,11 +4,11 @@ plugins:
 
 # SEO Stuff
 author: Cameron Dugan
-description: This is my Jekyll website that is running Simple.css
+description: This is my Jekyll website that uses Simple.css
 lang: en
 locale: en_US
 url: "https://www.CameronDugan.com"
-baseurl: ""
+#baseurl: ""
 
 # RSS feeds
 feed:
