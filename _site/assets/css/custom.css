@@ -1,25 +1,28 @@
 /* Use this file to add any custom css you like */
 :root {
-  --accent-bg:#D4E5ED;
-  --bg:#EEEEE;
+  --accent-bg:#f0f0f0;
+  --bg:#f5f5f5;
   --text:#293241;
-  --text-light:#3d5a80;
-  --accent:#ee6c4d;
-  --border:#293241;
+  --text-light:#4a5a75;
+  --accent:#ff8e73;
+  --accent-light:#ffffff;
+  --border:#dae6f2;
+  --border-light:#e3eefa;
   --base-fontsize:1.3rem;
   --header-scale:1.15;
   --line-height:1.5;
-  --code:#3c78ac;
+  --code:#144e82;
 }
 @media (prefers-color-scheme:dark) {
  :root {
-  --bg:#0F131A;
-  --accent-bg:#171C26;
-  --text:#e4f5f6;
-  --text-light:#98c1d9;
-  --border:#3d5a80;
-  --accent:#f7896e;
-  --accent-light:#FFECB3;
+  --bg:#171717;
+  --accent-bg:#1a1a1a;
+  --text:#ebebeb;
+  --text-light:#b8cdd9;
+  --border:#363b40;
+  --border-light:#485057;
+  --accent:#f79279;
+  --accent-light:#242424;
   --code:#cce7ff;
   --disabled:#111;
  }
@@ -29,18 +32,24 @@ header {
 }
 nav a {
   scale:1.2;
-  margin-inline: 20px;
-  border:0px solid var(--border);
+  margin-inline: 17px;
+  border:0px solid var(--bg);
   background:var(--bg);
 }
 nav a.nav-current {
   background: var(--border);
   border-color: var(--border);
-  font-weight: 700;
-  opacity: 1; 
+  font-weight: 600;
+}
+nav a.nav-current:hover {
+    color: var(--text) !important;
+    filter: drop-shadow(3px 5px 2px #000000);
+    border-color: var(--border-light);
+    background: var(--border-light);
 }
 nav a:hover {
     color: var(--text) !important;
-    border-color: var(--border);
-    background: var(--border);
+    filter: drop-shadow(3px 5px 2px #000000);
+    border-color: var(--accent-light);
+    background: var(--accent-light);
 }
