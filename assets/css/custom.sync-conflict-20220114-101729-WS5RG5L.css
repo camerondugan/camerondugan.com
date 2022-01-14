@@ -1,0 +1,46 @@
+/* Use this file to add any custom css you like */
+:root {
+  --accent-bg:#D4E5ED;
+  --bg:#EEEEE;
+  --text:#293241;
+  --text-light:#3d5a80;
+  --accent:#ee6c4d;
+  --border:#293241;
+  --base-fontsize:1.3rem;
+  --header-scale:1.15;
+  --line-height:1.5;
+  --code:#3c78ac;
+}
+@media (prefers-color-scheme:dark) {
+ :root {
+  --bg:#0F131A;
+  --accent-bg:#171C26;
+  --text:#e4f5f6;
+  --text-light:#98c1d9;
+  --border:#3d5a80;
+  --accent:#f7896e;
+  --accent-light:#FFECB3;
+  --code:#cce7ff;
+  --disabled:#111;
+ }
+}
+header {
+    border-bottom:4px dashed var(--border);
+}
+nav a {
+  scale:1.2;
+  margin-inline: 20px;
+  border:0px solid var(--border);
+  background:var(--bg);
+}
+nav a.nav-current {
+  background: var(--border);
+  border-color: var(--border);
+  font-weight: 700;
+  opacity: 1; 
+}
+nav a:hover {
+    color: var(--text) !important;
+    border-color: var(--border);
+    background: var(--border);
+}
