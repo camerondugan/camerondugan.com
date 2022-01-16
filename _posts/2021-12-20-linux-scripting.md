@@ -4,6 +4,7 @@ header: Linux Scripting
 description: Removing repetitive tasks
 permalink: /blog/bash/
 layout: post
+tags: code linux commandline
 ---
 
 Needed something to post, so here's some tips to make life on the command line a breeze.

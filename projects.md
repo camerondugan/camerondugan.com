@@ -5,26 +5,26 @@ header: Projects
 description: Idea -> Plan -> Reality
 permalink: /projects/
 ---
-{% assign posts = site.posts | where_exp: "post", "post.tags contains 'Project'" %}
-{% for post in posts %}
-  <p>
-  📅 
-  {% assign d = post.date | date: "%d" | plus:'0' %}
-  {{ post.date | date: "%b" }} 
-  {% case d %}
-  {% when 1 or 21 or 31 %}{{ d }}st
-  {% when 2 or 22 %}{{ d }}nd
-  {% when 3 or 23 %}{{ d }}rd
-  {% else %}{{ d }}th
-  {% endcase %} 
-  {{ post.date | date: "%Y" }}
-  <br><br>
-  <a href="{{ post.url }}">{{ post.title }}</a>
-  <br>
+{% assign posts = site.posts | where_exp: "post", "post.tags contains 'project'" %}
+{% for post in posts limit: 50 %}
+  <p style="text-align:left;">
+    <b><a href="{{ post.url }}">{{ post.title }}</a></b>
+    <span style="float:right;">
+      📅 
+      {% assign d = post.date | date: "%d" | plus:'0' %}
+      {{ post.date | date: "%b" }} 
+      {% case d %}
+      {% when 1 or 21 or 31 %}{{ d }}st
+      {% when 2 or 22 %}{{ d }}nd
+      {% when 3 or 23 %}{{ d }}rd
+      {% else %}{{ d }}th
+      {% endcase %} 
+      {{ post.date | date: "%Y" }}
+    </span>
+  </p>
   {{ post.description }}
   <br>
-  {{ post.excerpt | truncatewords: 40 | markdownify}}
-  </p>
+  {{ post.content | truncatewords: 30 | markdownify}}
   {% if post.title != posts.last.title %}
   ___
   {% endif %}

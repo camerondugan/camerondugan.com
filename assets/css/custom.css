@@ -30,6 +30,18 @@
 header {
     border-bottom:4px dashed var(--border);
 }
+h1 { 
+  text-align: center;
+}
+h2 { 
+  text-align: center;
+}
+h3 { 
+  text-align: center;
+}
+h4 { 
+  text-align: center;
+}
 nav a {
   scale:1.2;
   margin-inline: 17px;
@@ -43,13 +55,13 @@ nav a.nav-current {
 }
 nav a.nav-current:hover {
     color: var(--text) !important;
-    filter: drop-shadow(3px 5px 2px #000000);
     border-color: var(--border-light);
     background: var(--border-light);
 }
 nav a:hover {
+    scale: 1.235;
     color: var(--text) !important;
-    filter: drop-shadow(3px 5px 2px #000000);
+    filter: drop-shadow(4px 7px 2px #000000);
     border-color: var(--accent-light);
     background: var(--accent-light);
 }

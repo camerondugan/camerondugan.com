@@ -4,6 +4,7 @@ header: Happy New Year
 description: Software I use and will use more
 layout: post
 permalink: /blog/2022/
+tags: opensource android linux
 ---
 
 Hello, just wanting to wish everyone a happy new year! 

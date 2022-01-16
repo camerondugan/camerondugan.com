@@ -4,6 +4,7 @@ header: Complexity
 description: How complexity influences people.
 permalink: /blog/complexity/
 layout: post
+tags: thinking hardware code
 ---
 
 The growing complexity in computer science and electronics influences everyone.
