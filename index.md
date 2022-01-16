@@ -5,7 +5,7 @@ description: Cameron Dugan's Website
 layout: default
 ---
 
-{% assign posts = site.posts | where_exp: "post", "post.tags.first != 'Project'" %}
+{% assign posts = site.posts | where_exp: "post", "post.tags.first != 'project'" %}
 ### Blog Post #{{posts | size}}:
 ---
 {% for post in posts limit: 1 %}
