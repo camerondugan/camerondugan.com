@@ -4,6 +4,7 @@ header: Weekly Programming - Week 1
 description: Programming art generators
 permalink: /blog/weekly-programming/1/
 layout: post
+tags: contest code generation images
 ---
 
 Programming projects help programmers get better. I'm going to start publicly doing some to increase specific skills I want to work on.

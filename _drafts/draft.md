@@ -1,37 +1,61 @@
 ---
-title: Happy New Year
-header: Happy New Year
-description: I Talk About Software on Jan 1st.
+title: My Website Is Improving!
+description: Working with liquid HTML
 layout: post
-permalink: /blog/2022/
+permalink: /blog/website-improvements/
+tags: code website progress
 ---
 
-Hello, just wanting to wish everyone a happy new year! 
-To start of the new year, I want to review the software I'm using this year, and mention the software I'm looking forward to using:
+You might have noticed that posts now has a few extra little widgets and layout enhancements, and that's because you're right!
 
-### Software I Liked From 2021:
+I've been working on improving the styling and layout for a little bit now, and I'm glad to be able to show them off.
 
-**Feeder on Android**
-: An RSS client for Android, the only feature missing is a synced client for desktop, everything else works great.
+* Because liquid html doesn't naturally have random number generators, I've created some code that very strongly mimics random. (Although reading the code it doesn't look like it should be random). It must be a bug in the generator, maybe it's pulling variables in the wrong order and getting modulo of null? Not sure, I'm just glad that it works.
 
-**SyncThing on Everything**
-: A folder syncing client I wish I tried sooner, I'm currently syncing my home folder across all of my devices with a single exclusion rule of '`.*`' to prevent config issues.
+* I've also changed the color scheme to work for both dark and light themes, (I had a bug with my navbar on light mode).
 
-**Doodle on Android**
-: A FOSS replacement for the Google Pixel line of wallpapers. Even if you own a pixel phone, you can have access to the other lines of pixel wallpapers. Also there's a ton of customization.
+* The home page is no longer a blerb about myself, but a hub to recent posts
 
-**NetGuard on Android**
-: App by app firewall to prevent lazily programmed and insecure apps you want to install from accessing the internet. You can also choose to block internet access in the background. Also can give apps just access to wifi/cellular. A truelly great application, prevents a lot of offline games from loading ads.
+* Posts have links to other related posts! Adapted from [mishacreatix.com](https://www.mishacreatrix.com/jekyll-related-posts).
 
-**VS Code / Code on Linux**
-: An open source version of Visual Studio Code with countless extensions. It is a text editor that works with every programming language, vim mode, and no need for modifying a config file to change settings. Works like a charm. Also has a built in terminal emulator.
+{% raw %}
+```html
+<h2>🪧 Enjoy Reading This?</h2>
+<p>Here are some more you might like to read next:</p>
+    
+{% assign maxRelated = 3 %}
+{% assign minCommonTags = 1 %}
+{% assign maxRelatedCounter = 0 %}
+    
+<ul>
+	{% for post in site.posts %}
+    	{% assign sameTagCount = 0 %}
+        {% assign commonTags = '' %}
+    
+		{% for tag in post.tags %}
+        	{% if post.url != page.url %}
+            	{% if page.tags contains tag %}
+            	{% assign sameTagCount = sameTagCount | plus: 1 %}
+            	{% endif %}
+            {% endif %}
+		{% endfor %}
+    
+        {% if sameTagCount >= minCommonTags %}
+    		<li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
 
-### Software For 2022:
+            {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
+            {% if maxRelatedCounter >= maxRelated %}
+                {% break %}
+            {% endif %}
+		{% endif %}
+	{% endfor %}
+	{% assign newestCount = maxRelated | minus: maxRelatedCounter %}
+	{% for post in site.posts limit: newestCount %} 
+    		<li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+	{% endfor %}
+		
+</ul>
+```
+{% endraw %}
 
-**Obsidian on Everything**
-: A markdown note taking application with backlinking. Backlinking means that if I name a note 'linux', anytime I write the word 'linux' in another note, it automatically suggests a new link to that note. Plus it can visually graph all of the notes and links to other notes. I plan to use this with SyncThing as an online note-taking replacement.
-
-**Tor Browser on Everything**
-: I've known the Tor Browser has existed for a while now, but only recently I found out that bridges exist, and can easily be requested from the tor settings tab. Bridges can and often do speed up tor by quite a bit. I always assumed that Tor was just super slow. I will be using Tor a whole lot more with what I'm experiencing as about 4-10x the speed without bridges.
-
-Thanks for reading, let's have a great 2022!
+I knew how to do none of this a month ago, but now I can edit my website to statically generate a ton of stuff.

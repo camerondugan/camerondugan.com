@@ -6,26 +6,27 @@ description: Thoughts and Projects in Tech!
 permalink: /blog/
 ---
 
-{% for post in site.posts %}
-  <p>
-  📅 
-  {% assign d = post.date | date: "%d" | plus:'0' %}
-  {{ post.date | date: "%b" }} 
-  {% case d %}
-  {% when 1 or 21 or 31 %}{{ d }}st
-  {% when 2 or 22 %}{{ d }}nd
-  {% when 3 or 23 %}{{ d }}rd
-  {% else %}{{ d }}th
-  {% endcase %} 
-  {{ post.date | date: "%Y" }}
-  <br><br>
-  <a href="{{ post.url }}">{{ post.title }}</a>
-  <br>
+{% assign posts = site.posts | where_exp: "post", "post.tags.first != 'project'" %}
+{% for post in posts limit: 50 %}
+  <p style="text-align:left;">
+    <b><a href="{{ post.url }}">{{ post.title }}</a></b>
+    <span style="float:right;">
+      📅 
+      {% assign d = post.date | date: "%d" | plus:'0' %}
+      {{ post.date | date: "%b" }} 
+      {% case d %}
+      {% when 1 or 21 or 31 %}{{ d }}st
+      {% when 2 or 22 %}{{ d }}nd
+      {% when 3 or 23 %}{{ d }}rd
+      {% else %}{{ d }}th
+      {% endcase %} 
+      {{ post.date | date: "%Y" }}
+    </span>
+  </p>
   {{ post.description }}
   <br>
-  {{ post.excerpt | truncatewords: 40 | markdownify}}
-  </p>
-  {% if post.title != site.posts.last.title %}
+  {{ post.content | strip | truncatewords: 30 | markdownify}}
+  {% if post.title != posts.last.title %}
   ___
   {% endif %}
 {% endfor %}

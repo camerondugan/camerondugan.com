@@ -5,12 +5,54 @@ description: Cameron Dugan's Website
 layout: default
 ---
 
-Hello!
+{% assign posts = site.posts | where_exp: "post", "post.tags.first != 'Project'" %}
+### Blog Post #{{posts | size}}:
+---
+{% for post in posts limit: 1 %}
+  <p style="text-align:left;">
+    <b><a href="{{ post.url }}">{{ post.title }}</a></b>
+    <span style="float:right;">
+      📅 
+      {% assign d = post.date | date: "%d" | plus:'0' %}
+      {{ post.date | date: "%b" }} 
+      {% case d %}
+      {% when 1 or 21 or 31 %}{{ d }}st
+      {% when 2 or 22 %}{{ d }}nd
+      {% when 3 or 23 %}{{ d }}rd
+      {% else %}{{ d }}th
+      {% endcase %} 
+      {{ post.date | date: "%Y" }}
+    </span>
+  </p>
+  {{ post.description }}
+  <br>
+  {{ post.content | truncatewords: 30 | markdownify}}
+{% endfor %}
 
-Welcome to CameronDugan.com, a place where I put my projects and thoughts about technology. I'm a Linux enthusiast deeply enjoying Gnome's desktop environment. Usually installing software on Linux is a hastle, but with paru on Arch Linux. If it exists for Linux, odds are it can be installed without relying on Flatpak, Snaps, or Appbundles, which can be inconvenient to install and manage.
+---
 
-Vim is my favorite text editor, and it shall remain that way. Anywhere I absolutely need to use something else, I usually find a way to add vim's shortcuts back into the mix.
+<br>
 
-This website and my email is `usually` running off of a Raspberry Pi 4. It took a while, but I eventually set it up at home to reduce the overall costs of running this website. My previous VPS was great, but I've figured out the networking required to get this done and I'm quite happy about the lower cost.
-
-The Projects tab is exclusively projects from my blog, and mainly includes explanations on how my projects work. If I've missed something you want to see explained, I'll gladly include it! I hope you find something interesting!
+{% assign projects = site.posts | where_exp: "post", "post.tags contains 'project'" %}
+### Fun Project #{{projects | size}}:
+---
+{% for post in projects limit: 1 %}
+  <p style="text-align:left;">
+    <b><a href="{{ post.url }}">{{ post.title }}</a></b>
+    <span style="float:right;">
+      📅 
+      {% assign d = post.date | date: "%d" | plus:'0' %}
+      {{ post.date | date: "%b" }} 
+      {% case d %}
+      {% when 1 or 21 or 31 %}{{ d }}st
+      {% when 2 or 22 %}{{ d }}nd
+      {% when 3 or 23 %}{{ d }}rd
+      {% else %}{{ d }}th
+      {% endcase %} 
+      {{ post.date | date: "%Y" }}
+    </span>
+  </p>
+  {{ post.description }}
+  <br>
+  {{ post.content | truncatewords: 30 | markdownify}}
+{% endfor %}

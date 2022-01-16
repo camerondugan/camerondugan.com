@@ -4,7 +4,7 @@ header: Succulent Flutter App
 description: Making a cross platform app with Flutter
 permalink: /blog/using-flutter/
 layout: post
-tags: Project
+tags: project website code
 ---
 
 [![plant](/assets/images/succulent/Plant.png){: width="200"}](/assets/images/succulent/Plant.png)
