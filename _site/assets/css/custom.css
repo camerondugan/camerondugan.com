@@ -34,8 +34,8 @@
   nav a {
     padding: 0.7rem 1rem;
     display: inline;
+    color: --text;
     font-size: 1.1rem;
-    color:var(--accent);
     text-decoration:none;
     line-height: 3;
   }
