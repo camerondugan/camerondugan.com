@@ -12,6 +12,7 @@
   --header-scale:1.15;
   --line-height:1.5;
   --code:#144e82;
+  
 }
 @media (prefers-color-scheme:dark) {
  :root {
@@ -25,7 +26,19 @@
   --accent-light:#242424;
   --code:#cce7ff;
   --disabled:#111;
+ 
  }
+}
+/* fix mobile nav to look good */
+@media only screen and (max-width:750px) {
+  nav a {
+    padding: 0.7rem 1rem;
+    display: inline;
+    font-size: 1.1rem;
+    color:var(--accent);
+    text-decoration:none;
+    line-height: 3;
+  }
 }
 header {
     border-bottom:4px dashed var(--border);
