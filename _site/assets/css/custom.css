@@ -26,15 +26,15 @@
   --accent-light:#242424;
   --code:#cce7ff;
   --disabled:#111;
- 
  }
 }
 /* fix mobile nav to look good */
 @media only screen and (max-width:750px) {
-  nav a {
+  nav a,
+  nav a:visited {
     padding: 0.7rem 1rem;
     display: inline;
-    color: --text;
+    color: var(--text);
     font-size: 1.1rem;
     text-decoration:none;
     line-height: 3;
