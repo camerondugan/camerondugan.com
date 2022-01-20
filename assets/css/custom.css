@@ -28,7 +28,7 @@
   --disabled:#111;
  }
 }
-/* fix mobile nav to look good */
+/* fix mobile nav to look good  */
 @media only screen and (max-width:750px) {
   nav a,
   nav a:visited {
@@ -39,7 +39,7 @@
     text-decoration:none;
     line-height: 3;
   }
-}
+} 
 header {
     border-bottom:4px dashed var(--border);
 }
@@ -58,7 +58,7 @@ h4 {
 nav a {
   scale:1.2;
   margin-inline: 17px;
-  border:0px solid var(--bg);
+  border: none;
   background:var(--bg);
 }
 nav a.nav-current {
@@ -66,15 +66,15 @@ nav a.nav-current {
   border-color: var(--border);
   font-weight: 600;
 }
-nav a.nav-current:hover {
-    color: var(--text) !important;
-    border-color: var(--border-light);
-    background: var(--border-light);
-}
 nav a:hover {
     scale: 1.235;
-    color: var(--text) !important;
+    color: var(--text)!important;
     filter: drop-shadow(4px 7px 2px #000000);
     border-color: var(--accent-light);
     background: var(--accent-light);
+}
+nav a.nav-current:hover {
+    color: var(--text);
+    border-color: var(--border-light);
+    background: var(--border-light);
 }
