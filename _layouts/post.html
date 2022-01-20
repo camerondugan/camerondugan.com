@@ -2,25 +2,25 @@
 layout: default
 ---
 {% for post in site.posts %}{% if post.title == page.title %}{% assign postNum = site.posts | size | minus: forloop.index0 %}{% endif %}{% endfor %}
-{% assign adjectives = "Mediocre,Wimpy,Strong,Weak,Slow,Fast,Abnormal,Direct,Distant,Basic,Faint,Subtle" | split: ',' %}
+{% assign adjectives = "Tractor Beam,Analog,Neuralink,Quantom,Mars Satellite,Retroreflector,Skynet,Initech Landline" | split: ',' %}
 {% assign adjective = adjectives | sample: 1 %}
 {% assign max = adjectives.size %}
 {% assign diff = max | minus: 0 %}
 {% assign randomNumber = postNum | modulo: diff %}
-<code> Transmission <b>#{{postNum}}</b>
-- Signal: <b>{{adjective}}</b>
-</code> 
 <span style="float:right;">📅 {% assign d = page.date | date: "%d" | plus:'0' %}{{ page.date | date: "%b" }} {% case d %}{% when 1 or 21 or 31 %}{{ d }}st{% when 2 or 22 %}{{ d }}nd{% when 3 or 23 %}{{ d }}rd{% else %}{{ d }}th{% endcase %} {{ page.date | date: "%Y" }}</span>
+<span style="float:left;"><code> Transmission <b>#{{postNum}}</b> Connection: <b>{{adjective}}</b></code></span>
+<br>
+<hr>
 
 {{ content }}
 
 <br>
-
 <hr>
 
 <h2>🪧 Enjoy Reading This?</h2>
 <p>Here are some more you might like to read next:</p>
     
+<ul>
 {% assign maxRelated = 3 %}
 {% assign minCommonTags = 2 %}
 {% assign maxRelatedCounter = 0 %}
@@ -37,7 +37,7 @@ layout: default
 		{% endfor %}
     
         {% if sameTagCount >= minCommonTags and post.title != page.title %}
-			<p><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> - 📅 {% assign d = post.date | date: "%d" | plus:'0' %}{{ post.date | date: "%b" }} {% case d %}{% when 1 or 21 or 31 %}{{ d }}st{% when 2 or 22 %}{{ d }}nd{% when 3 or 23 %}{{ d }}rd{% else %}{{ d }}th{% endcase %} {{ post.date | date: "%Y" }}
+			<li><p><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> - 📅 {% assign d = post.date | date: "%d" | plus:'0' %}{{ post.date | date: "%b" }} {% case d %}{% when 1 or 21 or 31 %}{{ d }}st{% when 2 or 22 %}{{ d }}nd{% when 3 or 23 %}{{ d }}rd{% else %}{{ d }}th{% endcase %} {{ post.date | date: "%Y" }}
             {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
             {% if maxRelatedCounter >= maxRelated %}
                 {% break %}
@@ -50,11 +50,11 @@ layout: default
             {% break %}
         {% endif %}
         {% if post.title != page.title %}
-    		<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+			<li><p><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> - 📅 {% assign d = post.date | date: "%d" | plus:'0' %}{{ post.date | date: "%b" }} {% case d %}{% when 1 or 21 or 31 %}{{ d }}st{% when 2 or 22 %}{{ d }}nd{% when 3 or 23 %}{{ d }}rd{% else %}{{ d }}th{% endcase %} {{ post.date | date: "%Y" }}
 			{% assign newestCount = newestCount | minus: 1 %}
         {% endif %}
 	{% endfor %}
-
+</ul>
 <br>
 <hr>
 
