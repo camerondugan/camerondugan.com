@@ -2,7 +2,7 @@
 layout: default
 ---
 {% for post in site.posts %}{% if post.title == page.title %}{% assign postNum = site.posts | size | minus: forloop.index0 %}{% endif %}{% endfor %}
-{% assign adjectives = "Tractor Beam,Analog,Neuralink,Quantom,Mars Satellite,Retroreflector,Skynet,Initech Landline" | split: ',' %}
+{% assign adjectives = "Tractor Beam,Analog,Neuralink,Quantum,Mars Satellite,Retroreflector,Skynet,Initech Landline" | split: ',' %}
 {% assign adjective = adjectives | sample: 1 %}
 {% assign max = adjectives.size %}
 {% assign diff = max | minus: 0 %}
