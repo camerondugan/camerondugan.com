@@ -18,41 +18,42 @@ I've been working on improving the styling and layout for a little bit now, and 
 
 * Posts have links to other related posts! Adapted from [mishacreatix.com](https://www.mishacreatrix.com/jekyll-related-posts).
 
+    * The following liquid html gets posts from the blog, and returns only unique links to blog posts sorted first by common tags, then by date
 {% raw %}
 ```html
 <h2>🪧 Enjoy Reading This?</h2>
 <p>Here are some more you might like to read next:</p>
     
-{% assign maxRelated = 3 %}
-{% assign minCommonTags = 1 %}
+{% assign maxRelated = 5 %}
+{% assign maxCommonTags = 20 %} 
+{% assign seenPostsString = "" %}
 {% assign maxRelatedCounter = 0 %}
-    
-<ul>
+{% for thisCommonTag in (0..maxCommonTags) %}
 	{% for post in site.posts %}
     	{% assign sameTagCount = 0 %}
-        {% assign commonTags = '' %}
-    
+    	{% assign commonTags = '' %}
 		{% for tag in post.tags %}
-        	{% if post.url != page.url %}
+			{% if post.url != page.url %}
             	{% if page.tags contains tag %}
-            	{% assign sameTagCount = sameTagCount | plus: 1 %}
+            		{% assign sameTagCount = sameTagCount | plus: 1 %}
             	{% endif %}
-            {% endif %}
+        	{% endif %}
 		{% endfor %}
-    
-        {% if sameTagCount >= minCommonTags %}
-    		<li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-
-            {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
-            {% if maxRelatedCounter >= maxRelated %}
-                {% break %}
-            {% endif %}
+		{% assign thisCommonTagLimit = maxCommonTags | minus: thisCommonTag %}
+		{% if seenPosts contains post.url %}
+		{% else %}
+    		{% if sameTagCount >= thisCommonTagLimit and post.url != page.url %}
+        		{% if maxRelatedCounter >= maxRelated %}
+            		{% break %}
+        		{% endif %}
+				<li><p><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> - 📅 {% assign d = post.date | date: "%d" | plus:'0' %}{{ post.date | date: "%b" }} {% case d %}{% when 1 or 21 or 31 %}{{ d }}st{% when 2 or 22 %}{{ d }}nd{% when 3 or 23 %}{{ d }}rd{% else %}{{ d }}th{% endcase %} {{ post.date | date: "%Y" }}
+        		{% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
+				{% assign seenPostsString = seenPostsString | append: ',' | append: post.url %}
+				{% assign seenPosts = seenPostsString | removeFirst: ',' | split: ',' %}
+			{% endif %}
 		{% endif %}
 	{% endfor %}
-	{% assign newestCount = maxRelated | minus: maxRelatedCounter %}
-	{% for post in site.posts limit: newestCount %} 
-    		<li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-	{% endfor %}
+{% endfor %}
 		
 </ul>
 ```
