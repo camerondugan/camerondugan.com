@@ -2,7 +2,7 @@
 layout: default
 ---
 {% for post in site.posts %}{% if post.title == page.title %}{% assign postNum = site.posts | size | minus: forloop.index0 %}{% endif %}{% endfor %}
-{% assign adjectives = "Tractor Beam,Analog,Neuralink,Quantum,Mars Satellite,Retroreflector,Skynet,Initech Landline" | split: ',' %}
+{% assign adjectives = "QR Code,Tractor Beam,Neuralink,Quantum,Mars Satellite,Retroreflector,Skynet,Initech Landline" | split: ',' %}
 {% assign adjective = adjectives | sample: 1 %}
 {% assign max = adjectives.size %}
 {% assign diff = max | minus: 0 %}
@@ -21,39 +21,36 @@ layout: default
 <p>Here are some more you might like to read next:</p>
     
 <ul>
-{% assign maxRelated = 3 %}
-{% assign minCommonTags = 2 %}
+{% assign maxRelated = 5 %}
+{% assign maxCommonTags = 20 %} 
+{% assign seenPostsString = "" %}
 {% assign maxRelatedCounter = 0 %}
-    
+{% for thisCommonTag in (0..maxCommonTags) %}
 	{% for post in site.posts %}
     	{% assign sameTagCount = 0 %}
-        {% assign commonTags = '' %}
+    	{% assign commonTags = '' %}
 		{% for tag in post.tags %}
-			{% if post.title != page.title %}
+			{% if post.url != page.url %}
             	{% if page.tags contains tag %}
             		{% assign sameTagCount = sameTagCount | plus: 1 %}
             	{% endif %}
-            {% endif %}
+        	{% endif %}
 		{% endfor %}
-    
-        {% if sameTagCount >= minCommonTags and post.title != page.title %}
-			<li><p><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> - 📅 {% assign d = post.date | date: "%d" | plus:'0' %}{{ post.date | date: "%b" }} {% case d %}{% when 1 or 21 or 31 %}{{ d }}st{% when 2 or 22 %}{{ d }}nd{% when 3 or 23 %}{{ d }}rd{% else %}{{ d }}th{% endcase %} {{ post.date | date: "%Y" }}
-            {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
-            {% if maxRelatedCounter >= maxRelated %}
-                {% break %}
-            {% endif %}
+		{% assign thisCommonTagLimit = maxCommonTags | minus: thisCommonTag %}
+		{% if seenPosts contains post.url %}
+		{% else %}
+    		{% if sameTagCount >= thisCommonTagLimit and post.url != page.url %}
+        		{% if maxRelatedCounter >= maxRelated %}
+            		{% break %}
+        		{% endif %}
+				<li><p><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> - 📅 {% assign d = post.date | date: "%d" | plus:'0' %}{{ post.date | date: "%b" }} {% case d %}{% when 1 or 21 or 31 %}{{ d }}st{% when 2 or 22 %}{{ d }}nd{% when 3 or 23 %}{{ d }}rd{% else %}{{ d }}th{% endcase %} {{ post.date | date: "%Y" }}
+        		{% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
+				{% assign seenPostsString = seenPostsString | append: ',' | append: post.url %}
+				{% assign seenPosts = seenPostsString | removeFirst: ',' | split: ',' %}
+			{% endif %}
 		{% endif %}
 	{% endfor %}
-	{% assign newestCount = maxRelated | minus: maxRelatedCounter %}
-	{% for post in site.posts %} 
-		{% if newestCount <= 0 %}
-            {% break %}
-        {% endif %}
-        {% if post.title != page.title %}
-			<li><p><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> - 📅 {% assign d = post.date | date: "%d" | plus:'0' %}{{ post.date | date: "%b" }} {% case d %}{% when 1 or 21 or 31 %}{{ d }}st{% when 2 or 22 %}{{ d }}nd{% when 3 or 23 %}{{ d }}rd{% else %}{{ d }}th{% endcase %} {{ post.date | date: "%Y" }}
-			{% assign newestCount = newestCount | minus: 1 %}
-        {% endif %}
-	{% endfor %}
+{% endfor %}
 </ul>
 <br>
 <hr>

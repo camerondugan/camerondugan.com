@@ -1,20 +1,19 @@
 ---
-title: Quantom Internet
-description: The internet is never finished.
+title: Observations about QR codes
+description: Thinking about usability
 layout: post
-permalink: /blog/quantom-internet/
-tags: quantom future thinking
+permalink: /blog/qrcodes/
+tags: qrcode observation thinking
 ---
 
-The internet has reached a stage that I feel comfortable in calling pretty darn fast. The only problem is that we need to physically wire our devices together in order for them to become useful. Quantom Internet is a theoretical invention where, because of Quantom entaglement, we can enstablish secure, remote connections with other devices without a physical connection to an ISP. Instead, communication would happen at the quantom level, perfectly instant at any distance. 
+QR codes are quite handy for quickly sharing physically relavant information. For example, restaurant menus, instruction manuals, etc.
 
-Quantom Internet could efficienty behave as a super quantom computer. Quantom computers are already op, but what if they could network together to poll resources and information. 
+The only problem, is that if the QR code is in a slightly inconvenient spot, it's almost always faster to just use duckduckgo or google to search for what the QR code is supposed to provide. 
 
-Why it would be another computer revolution:
-+ Limitless pooled computing for science and for fun
-+ Users could get paid to improve slow services.
-+ Actually instant communication globaly
-+ It sounds cool
+Words regurgitated in a cave man like fashion into a search engine will either bring you to the QR code's url, or a better source to the same information.
 
-Why this probably won't happen:
-+ Quantom Entaglement on purpose at the moment requires close proximity to be established, and it doesn't last long
+Very rarely there are things that a search engine can't find and put into the first slot. In this case, the QR code has a purpose.
+
+Maybe QR codes should just link to a well chosen search for the thing the QR code is trying to show, that way when the url the QR code stored becomes invalid, it doesn't matter because the search engine automatically provides alternatives.
+
+But that's just how I think, nobody has to agree.
