@@ -3,6 +3,6 @@
 	git reset --hard origin > /dev/null
 	git pull > /dev/null
 	echo "Building website..."
-	bundle exec jekyll build
+	sudo bundle exec jekyll build
 	echo "Done"
 )
