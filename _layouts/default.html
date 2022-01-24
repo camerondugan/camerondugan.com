@@ -7,7 +7,7 @@
     {% assign title = page.title | append: " ~ CameronDugan.com" %}
     <title>{{ title }}</title>
     <meta name="description" content="{{ page.description }}" />
-    <link rel="stylesheet" href="https://cdn.simplecss.org/simple-v1.css">
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
     <link rel="stylesheet" href="/assets/css/custom.css">
     <a rel="me" href="https://fosstodon.org/@TheCam"></a>
   </head>
@@ -15,10 +15,13 @@
   <body>
 
     <header>
-      <h1>{{ page.title }}</h1>
-      <p>{{ page.description }}</p>
-
+      <p></p>
+      <p></p>
       {% include navigation.html %}
+      <p></p>
+      <p></p>
+      <h1>{{ page.title }}</h1>
+      <i>{{ page.description }}</i>
     </header>
 
     <main>

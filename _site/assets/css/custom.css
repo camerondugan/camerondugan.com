@@ -60,6 +60,7 @@ nav a {
   margin-inline: 17px;
   border: none;
   background:var(--bg);
+  transition: .25s;
 }
 nav a.nav-current {
   background: var(--border);
