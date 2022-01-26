@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://www.camerondugan.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.camerondugan.com/" rel="alternate" type="text/html" hreflang="en" /><updated>2022-01-25T22:23:17-05:00</updated><id>https://www.camerondugan.com/feed.xml</id><subtitle>This is my Jekyll website that uses Simple.css</subtitle><author><name>Cameron Dugan</name></author><entry><title type="html">The End of Thinking</title><link href="https://www.camerondugan.com/blog/end-of-thinking/" rel="alternate" type="text/html" title="The End of Thinking" /><published>2022-01-25T00:00:00-05:00</published><updated>2022-01-25T00:00:00-05:00</updated><id>https://www.camerondugan.com/blog/end-of-thinking</id><content type="html" xml:base="https://www.camerondugan.com/blog/end-of-thinking/"><![CDATA[<p>The following logic has been brewing in the back of my brain for a few years. Not all of it I personally believe, but a good amount of it seems to be a little bit insightful.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://www.camerondugan.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.camerondugan.com/" rel="alternate" type="text/html" hreflang="en" /><updated>2022-01-25T22:28:38-05:00</updated><id>https://www.camerondugan.com/feed.xml</id><subtitle>This is my Jekyll website that uses Simple.css</subtitle><author><name>Cameron Dugan</name></author><entry><title type="html">The End of Thinking</title><link href="https://www.camerondugan.com/blog/end-of-thinking/" rel="alternate" type="text/html" title="The End of Thinking" /><published>2022-01-25T00:00:00-05:00</published><updated>2022-01-25T00:00:00-05:00</updated><id>https://www.camerondugan.com/blog/end-of-thinking</id><content type="html" xml:base="https://www.camerondugan.com/blog/end-of-thinking/"><![CDATA[<p>The following logic has been brewing in the back of my brain for a few years. Not all of it I personally believe, but a good amount of it seems to be a little bit insightful.</p>
 
 <h3 id="the-end-of-thinking">The End of Thinking:</h3>
 
@@ -6,7 +6,7 @@
 
 <p>We don’t know much about what’s changed, but we do know that the transition has happened. The way history is logged doesn’t make sense. Eyes? Legs? Some measurement called years?</p>
 
-<p>Arcaic texts describe an impossible world. The way we currently understand, motion has never been possible, let alone measured by feet or meters.</p>
+<p>Archaic texts describe an impossible world. The way we currently understand, motion has never been possible, let alone measured by feet or meters.</p>
 
 <p>People and their ideas were described in great detail, their motives and their flaws. Their achievements and their downfall, perfectly categorized in order of magnitude. All else from the past remains invisible to our senses.</p>
 
@@ -16,17 +16,17 @@
 
 <p>Everything simply is.</p>
 
-<p>Everything to be done has already been recorded, there’s nothing left to do. Every theorem proven, along with every paradox has been paradoxically proven to be solveable.</p>
+<p>Everything to be done has already been recorded, there’s nothing left to do. Every theorem proven, along with every paradox has been paradoxically proven to be solvable.</p>
 
 <p>An example solved paradox: there’s a pre-transition paradox that goes something like this:</p>
 
-<p>This sentance is false.</p>
+<p>This sentence is false.</p>
 
 <p>We’ve determined that the sentence is categorically both true and false. Halting the logic and averaging the outcomes solves all paradoxes.</p>
 
-<p>It seems that our facination with such trivial problems seemed to be a lack of willingness to accept the duality of truth. That everything is either true and false entirely dependent on a given context.</p>
+<p>It seems that our fascination with such trivial problems seemed to be a lack of willingness to accept the duality of truth. That everything is either true and false entirely dependent on a given context.</p>
 
-<p>The only thing we know is nothing, and that truely is something.</p>]]></content><author><name>Cameron Dugan</name></author><category term="writing" /><category term="sci-fi" /><category term="thinking" /><summary type="html"><![CDATA[An attempt at a short narrative]]></summary></entry><entry><title type="html">Observations about QR codes</title><link href="https://www.camerondugan.com/blog/qrcodes/" rel="alternate" type="text/html" title="Observations about QR codes" /><published>2022-01-23T00:00:00-05:00</published><updated>2022-01-23T00:00:00-05:00</updated><id>https://www.camerondugan.com/blog/qrcodes</id><content type="html" xml:base="https://www.camerondugan.com/blog/qrcodes/"><![CDATA[<p>QR codes are quite handy for quickly sharing physically relavant information. For example, restaurant menus, instruction manuals, etc.</p>
+<p>The only thing we know is nothing, and that truly is something.</p>]]></content><author><name>Cameron Dugan</name></author><category term="writing" /><category term="sci-fi" /><category term="thinking" /><summary type="html"><![CDATA[An attempt at a short narrative]]></summary></entry><entry><title type="html">Observations about QR codes</title><link href="https://www.camerondugan.com/blog/qrcodes/" rel="alternate" type="text/html" title="Observations about QR codes" /><published>2022-01-23T00:00:00-05:00</published><updated>2022-01-23T00:00:00-05:00</updated><id>https://www.camerondugan.com/blog/qrcodes</id><content type="html" xml:base="https://www.camerondugan.com/blog/qrcodes/"><![CDATA[<p>QR codes are quite handy for quickly sharing physically relevant information. For example, restaurant menus, instruction manuals, etc.</p>
 
 <p>The only problem, is that if the QR code is in a slightly inconvenient spot, it’s almost always faster to just use duckduckgo or google to search for what the QR code is supposed to provide.</p>
 
@@ -40,7 +40,7 @@
 
 <p>The Pine Phone has been on my radar for a while now. But only recently have I started looking at it as potentially fun side project. I want a Linux phone, but I also want a good Linux phone. The Pine Phone seems to be pretty good, but I don’t think that I’ll end up buying it. I might buy the Pine Phone Pro instead, because it has the hardware to properly deliver Linux. I’m not sure if I’m ready to drop $400 on a phone who’s software isn’t fully developed. On the other hand, I could try to help out in my free time and make this dream a reality. I’m hesitating now only because there isn’t a confirmed port for my current phone(although there is a port for the XL version so idk). I don’t want to use my main phone to try to port Linux to when I need it for school to demonstrate that I’m following Covid testing protocol. Tricky… I think I might pre-order the Pine Phone / Pine Phone Pro, and when it arrives I’ll set it up to properly access the website and display my status, then porting over my main phone to Linux using the Pine Phone in the meantime.</p>
 
-<p>Idk, this decision is keeping me up at night with the insane posibility of running Linux on a phone that I would actually use.</p>
+<p>Idk, this decision is keeping me up at night with the insane possibility of running Linux on a phone that I would actually use.</p>
 
 <p>Update before published: Pre-ordered the Pine Phone Pro, wish me luck :)</p>]]></content><author><name>Cameron Dugan</name></author><category term="hardware" /><category term="linux" /><category term="opensource" /><summary type="html"><![CDATA[A Linux Phone.]]></summary></entry><entry><title type="html">Quantum Internet</title><link href="https://www.camerondugan.com/blog/quantum-internet/" rel="alternate" type="text/html" title="Quantum Internet" /><published>2022-01-21T00:00:00-05:00</published><updated>2022-01-21T00:00:00-05:00</updated><id>https://www.camerondugan.com/blog/quantum-internet</id><content type="html" xml:base="https://www.camerondugan.com/blog/quantum-internet/"><![CDATA[<p>The internet has reached a stage that I feel comfortable in calling pretty darn fast. The only problem is that we need to physically wire our devices together in order for them to become useful. Quantum Internet is a theoretical invention where, because of Quantum entaglement, we can enstablish secure, remote connections with other devices without a physical connection to an ISP. Instead, communication would happen at the quantum level, perfectly instant at any distance.</p>
 
@@ -62,7 +62,7 @@
 <ul>
   <li><a href="https://www.theminimalists.com/podcast/" target="_blank">The Minimalists</a>
     <ul>
-      <li>Suit and tie corperate guys talk about a meaningful life with less.</li>
+      <li>Suit and tie corporate guys talk about a meaningful life with less.</li>
     </ul>
   </li>
   <li><a href="https://safetythirdpod.com/" target="_blank">Safety Third</a>
@@ -72,7 +72,7 @@
   </li>
   <li><a href="https://tim.blog/podcast/" target="_blank">The Tim Ferris Show</a>
     <ul>
-      <li>Tim Ferris explores new and bizzare topics every episode.</li>
+      <li>Tim Ferris explores new and bizarre topics every episode.</li>
     </ul>
   </li>
   <li><a href="https://chartable.com/podcasts/the-wan-show-podcast/episodes" target="_blank">The WAN Show</a>
@@ -82,7 +82,7 @@
   </li>
 </ul>
 
-<p>All of these podcasts I have on autodownload using: <a href="https://antennapod.org/" target="_blank">Antenna Pod</a> on Android.
+<p>All of these podcasts I have on auto-download using: <a href="https://antennapod.org/" target="_blank">Antenna Pod</a> on Android.
 You don’t have to try them all, but I highly recommend checking out at least one that you find interesting.</p>]]></content><author><name>Cameron Dugan</name></author><category term="recommendations" /><category term="podcasts" /><category term="rss" /><summary type="html"><![CDATA[Podcasts exist, and if you somehow haven't heard, now you have!]]></summary></entry><entry><title type="html">My Website Is Improving!</title><link href="https://www.camerondugan.com/blog/website-improvements/" rel="alternate" type="text/html" title="My Website Is Improving!" /><published>2022-01-16T00:00:00-05:00</published><updated>2022-01-16T00:00:00-05:00</updated><id>https://www.camerondugan.com/blog/website-improvements</id><content type="html" xml:base="https://www.camerondugan.com/blog/website-improvements/"><![CDATA[<p>You might have noticed that posts now has a few extra little widgets and layout enhancements, and that’s because you’re right!</p>
 
 <p>I’ve been working on improving the styling and layout for a little bit now, and I’m glad to be able to show them off.</p>
