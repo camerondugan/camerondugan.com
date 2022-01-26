@@ -14,7 +14,7 @@ Enter the year X. Not a particular year, but a theoretical year from the past, w
 
 We don't know much about what's changed, but we do know that the transition has happened. The way history is logged doesn't make sense. Eyes? Legs? Some measurement called years?
 
-Arcaic texts describe an impossible world. The way we currently understand, motion has never been possible, let alone measured by feet or meters.
+Archaic texts describe an impossible world. The way we currently understand, motion has never been possible, let alone measured by feet or meters.
 
 People and their ideas were described in great detail, their motives and their flaws. Their achievements and their downfall, perfectly categorized in order of magnitude. All else from the past remains invisible to our senses.
 
@@ -24,14 +24,14 @@ Time doesn't make any sense either. Things are or they are not, and there is no 
 
 Everything simply is.
 
-Everything to be done has already been recorded, there's nothing left to do. Every theorem proven, along with every paradox has been paradoxically proven to be solveable.
+Everything to be done has already been recorded, there's nothing left to do. Every theorem proven, along with every paradox has been paradoxically proven to be solvable.
 
 An example solved paradox: there's a pre-transition paradox that goes something like this: 
 
-This sentance is false.
+This sentence is false.
 
 We've determined that the sentence is categorically both true and false. Halting the logic and averaging the outcomes solves all paradoxes. 
 
-It seems that our facination with such trivial problems seemed to be a lack of willingness to accept the duality of truth. That everything is either true and false entirely dependent on a given context.
+It seems that our fascination with such trivial problems seemed to be a lack of willingness to accept the duality of truth. That everything is either true and false entirely dependent on a given context.
 
-The only thing we know is nothing, and that truely is something.
+The only thing we know is nothing, and that truly is something.
