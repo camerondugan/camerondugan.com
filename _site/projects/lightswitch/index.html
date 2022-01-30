@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/assets/images/favicon.ico" />
     
-    <title>The Overwhelm ~ CameronDugan.com</title>
-    <meta name="description" content="Conquering the unknown" />
+    <title>Automatic Lightswitch ~ CameronDugan.com</title>
+    <meta name="description" content="Servo + Arduino + 3d printer = magic" />
     <link rel="stylesheet" href="https://cdn.simplecss.org/simple-v1.css">
     <link rel="stylesheet" href="/assets/css/custom.css">
     <a rel="me" href="https://fosstodon.org/@TheCam"></a>
@@ -59,8 +59,8 @@
 
       <p></p>
       <p></p>
-      <h1>The Overwhelm</h1>
-      <i>Conquering the unknown</i>
+      <h1>Automatic Lightswitch</h1>
+      <i>Servo + Arduino + 3d printer = magic</i>
     </header>
 
     <main>
@@ -70,22 +70,42 @@
 
 
 
-<span style="float:right;">📅 Apr 18th 2021</span>
-<span style="float:left;"><code> Transmission <b>#3</b> Connection: <b>Tractor Beam</b></code></span>
+<span style="float:right;">📅 Jan 29th 2022</span>
+<span style="float:left;"><code> Transmission <b>#28</b> Connection: <b>Initech Landline</b></code></span>
 <br>
 <hr>
 
-<p>Everyone has some amount of this feeling. An ominous feeling of almost guilt, or fear of what’s up ahead. Whether its a homework assignment, a test, or maybe an important meeting, a flight you can’t miss, or really anything that you aren’t looking forward to.</p>
+<p>I found an 3d print file (stl) for a project I have wanted internally for a while now.</p>
 
-<p>Take a minute and think about what you might be <code class="language-plaintext highlighter-rouge">overwhelmed</code> with at the current moment. Sometimes we don’t even notice this feeling, almost like it has integrated itself into our lives. Ultimately if this feeling goes unnoticed, it can make our lives just that much more unhappy.</p>
+<p>I have and will consistently forget to go to bed. It’s a problem. My thinking is that if the lights in the room turned off on their own after a certain time, I would notice and choose to wrap things up for the night.</p>
 
-<p>If you decide that you are feeling <code class="language-plaintext highlighter-rouge">overwhelmed</code>, the fastest way to overcome that feeling is to make a battleplan. It might not be easy, but I guarantee that a good plan will help. Knowing what you will do to minimize or illiminate the outcome helps both your state of mind in the current moment and you’ll make a more informed decision when that dreaded moment eventually comes.</p>
+<p>This is the plan in my head:</p>
+<ol>
+  <li>Buy Arduino + servo</li>
+  <li>Find / model a 3d print to attatch the servo to the lightswitch.</li>
+  <li>Code up the Arduino to flick the switch every 12 hours or so.</li>
+</ol>
 
-<p>Take the flipside of <code class="language-plaintext highlighter-rouge">overwhelm</code>. Instead of something that you wish wouldn’t happen, how about something that you wish will happen. Is there something that you’ve always wanted to do? Mabye a skill you’ve always wanted to learn. Whatever you want to do, the feeling of <code class="language-plaintext highlighter-rouge">overwhelm</code> can control you here as well. It can paralyze you, stop you from taking even the tiny steps towards the future you want.</p>
+<h3 id="problems">Problems</h3>
+<ul>
+  <li>The seeeduino I chose doesn’t exactly specify how to get 5v output, so I purchased a 5v power supply+breadboard setup thinking this would fix my problems. The servo needed a 5v power source, but apparently (in this case) it has to be the same supply as the ardiuno in order to function. The solution for this was to find the vin / vout solder points on the back of the board and solder the servo wires straight to there.</li>
+  <li>Finding a model was difficult because I guess very few people on thingiverse are interested in Arduino powered light switches. Ultimately, I found exactly what I was looking for by browsing in the related section of an unrelated thingiverse entry. <a href="https://www.thingiverse.com/thing:1156995">Original file found here.</a></li>
+  <li>The last problem to tackle was the Arduino code, here’s how I tackled this problem:
+    <ul>
+      <li>Import the servo library</li>
+      <li>create a delay, range and offset variable</li>
+      <li>tweak the angle range and angle offset to properly flick the switch in a non-violent manner.</li>
+      <li>Also realize that the Arduino should put the servo arm back in-between on/off to allow the lights to be flicked by non-robot beings.</li>
+      <li>Now added a duration for how long to attempt to flick the switch before returning to neutral position</li>
+      <li>realize now that I’ve programmed a day to equal 24 hours and 6 seconds.</li>
+      <li>Subtract wait time between flicks by flick attempt duration to attempt to ensure 24 hour flick cycle.</li>
+    </ul>
+  </li>
+</ul>
 
-<p>I’m not saying I’m an expert, or even good at managing the <code class="language-plaintext highlighter-rouge">overwhelm</code>. It’s just that I have a lot of experience with it. It’s one of those things that build while you don’t manage it. Do yourself a favor and ask yourself where you see it appearing or growing and make that battle plan.</p>
+<p><img src="/assets/images/projects/switch.jpg" alt="picture" /></p>
 
-<p>Have a better day :)</p>
+<p>And there you have it, a working Arduino powerd lightswitch that people can also interact with.</p>
 
 
 <br>
@@ -4383,12 +4403,6 @@
 		
 		
     		
-        		
-				<li><p><a href="/blog/procrastination/">Procrastination and Motivation</a> - 📅 Apr 17th 2021
-        		
-				
-				
-			
 		
 	
     	
@@ -4415,8 +4429,88 @@
 		
 		
     		
+		
+	
+    	
+    	
+		
+		
+		
+    		
+		
+	
+    	
+    	
+		
+		
+		
+    		
+		
+	
+    	
+    	
+		
+		
+		
+    		
+		
+	
+    	
+    	
+		
+		
+		
+    		
+		
+	
+    	
+    	
+		
+		
+		
+    		
+		
+	
+    	
+    	
+		
+		
+		
+    		
+		
+	
+    	
+    	
+		
+		
+		
+    		
+		
+	
+    	
+    	
+		
+		
+		
+    		
+		
+	
+    	
+    	
+		
+		
+		
+    		
+		
+	
+    	
+    	
+		
+		
+		
+    		
         		
-				<li><p><a href="/blog/end-of-thinking/">The End of Thinking</a> - 📅 Jan 25th 2022
+				<li><p><a href="/blog/arduinos/">Arduinos</a> - 📅 Dec 2nd 2021
         		
 				
 				
@@ -4430,7 +4524,7 @@
 		
     		
         		
-				<li><p><a href="/blog/qrcodes/">Observations about QR codes</a> - 📅 Jan 23rd 2022
+				<li><p><a href="/blog/using-flutter/">Using Flutter</a> - 📅 Sep 29th 2021
         		
 				
 				
@@ -4452,21 +4546,7 @@
 		
     		
         		
-				<li><p><a href="/blog/quantum-internet/">Quantum Internet</a> - 📅 Jan 21st 2022
-        		
-				
-				
-			
-		
-	
-    	
-    	
-		
-		
-		
-    		
-        		
-				<li><p><a href="/blog/quantom-internet/">Quantom Internet</a> - 📅 Jan 21st 2022
+				<li><p><a href="/blog/dream-bot/">Python Dream Bot</a> - 📅 Aug 18th 2021
         		
 				
 				
@@ -4495,6 +4575,42 @@
 		
 		
     		
+		
+	
+    	
+    	
+		
+		
+		
+    		
+        		
+				<li><p><a href="/blog/arbidor/">Arbidor</a> - 📅 Aug 11th 2021
+        		
+				
+				
+			
+		
+	
+    	
+    	
+		
+		
+		
+    		
+		
+	
+    	
+    	
+		
+		
+		
+    		
+        		
+				<li><p><a href="/blog/devlog-3/">Dev Log 3</a> - 📅 Jun 9th 2021
+        		
+				
+				
+			
 		
 	
     	
@@ -4506,6 +4622,14 @@
         		
             		
 
+	
+    	
+    	
+		
+		
+		
+    		
+		
 	
     	
     	
