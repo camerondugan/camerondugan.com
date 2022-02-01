@@ -6,7 +6,7 @@ permalink: /blog/end-of-thinking/
 tags: writing sci-fi thinking
 ---
 
-The following logic has been brewing in the back of my brain for a few years. Not all of it I personally believe, but a good amount of it seems to be a little bit insightful. 
+The following logic has been brewing in the back of my brain for a few years. Not all of it I personally believe, but a good amount of it seems to be a little bit insightful. **A work of fiction.**
 
 ### The End of Thinking:
 
