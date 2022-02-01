@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/assets/images/favicon.ico" />
     
-    <title>Automatic Lightswitch ~ CameronDugan.com</title>
-    <meta name="description" content="Servo + Arduino + 3d printer = magic" />
+    <title>Companion Databases ~ CameronDugan.com</title>
+    <meta name="description" content="Hyper personalized databases for everyday people." />
     <link rel="stylesheet" href="https://cdn.simplecss.org/simple-v1.css">
     <link rel="stylesheet" href="/assets/css/custom.css">
     <a rel="me" href="https://fosstodon.org/@TheCam"></a>
@@ -59,8 +59,8 @@
 
       <p></p>
       <p></p>
-      <h1>Automatic Lightswitch</h1>
-      <i>Servo + Arduino + 3d printer = magic</i>
+      <h1>Companion Databases</h1>
+      <i>Hyper personalized databases for everyday people.</i>
     </header>
 
     <main>
@@ -70,42 +70,50 @@
 
 
 
-<span style="float:right;">📅 Jan 29th 2022</span>
-<span style="float:left;"><code> Transmission <b>#28</b> Connection: <b>Skynet</b></code></span>
+<span style="float:right;">📅 Feb 1st 2022</span>
+<span style="float:left;"><code> Transmission <b>#29</b> Connection: <b>Retroreflector</b></code></span>
 <br>
 <hr>
 
-<p>I found an 3d print file (stl) for a project I have wanted internally for a while now.</p>
+<h3 id="background-info">Background Info</h3>
 
-<p>I have and will consistently forget to go to bed. It’s a problem. My thinking is that if the lights in the room turned off on their own after a certain time, I would notice and choose to wrap things up for the night.</p>
+<p>I’ve been watching youtube programmers for a while now, and recently I was watching a <a href="https://www.youtube.com/c/KalleHallden">Kalle Hallden</a> youtube video.</p>
 
-<p>This is the plan in my head:</p>
-<ol>
-  <li>Buy Arduino + servo</li>
-  <li>Find / model a 3d print to attatch the servo to the lightswitch.</li>
-  <li>Code up the Arduino to flick the switch every 12 hours or so.</li>
-</ol>
+<p>He mentions an idea I’ve traced back to originating from Derek Sivers(although I’m sure he’s not the only one to think of this).</p>
 
-<h3 id="problems">Problems</h3>
-<ul>
-  <li>The seeeduino I chose doesn’t exactly specify how to get 5v output, so I purchased a 5v power supply+breadboard setup thinking this would fix my problems. The servo needed a 5v power source, but apparently (in this case) it has to be the same supply as the ardiuno in order to function. The solution for this was to find the vin / vout solder points on the back of the board and solder the servo wires straight to there.</li>
-  <li>Finding a model was difficult because I guess very few people on thingiverse are interested in Arduino powered light switches. Ultimately, I found exactly what I was looking for by browsing in the related section of an unrelated thingiverse entry. <a href="https://www.thingiverse.com/thing:1156995">Original file found here.</a></li>
-  <li>The last problem to tackle was the Arduino code, here’s how I tackled this problem:
-    <ul>
-      <li>Import the servo library</li>
-      <li>create a delay, range and offset variable</li>
-      <li>tweak the angle range and angle offset to properly flick the switch in a non-violent manner.</li>
-      <li>Also realize that the Arduino should put the servo arm back in-between on/off to allow the lights to be flicked by non-robot beings.</li>
-      <li>Now added a duration for how long to attempt to flick the switch before returning to neutral position</li>
-      <li>realize now that I’ve programmed a day to equal 24 hours and 6 seconds.</li>
-      <li>Subtract wait time between flicks by flick attempt duration to attempt to ensure 24 hour flick cycle.</li>
-    </ul>
-  </li>
-</ul>
+<p>I found Derek Sivers on the <a href="https://tim.blog/podcast/">Tim Ferris Podcast</a> on episodes: 137, 439, and 370.5.</p>
 
-<p><img src="/assets/images/projects/switch.jpg" alt="picture" /></p>
+<p>The grand idea boils down to writing a personal database custom to your exact situation. I’ve nicknamed this: the companion database.</p>
 
-<p>And there you have it, a working Arduino powerd lightswitch that people can also interact with.</p>
+<h3 id="the-concept">The Concept</h3>
+
+<p>This database will hold all the information you would ever want to log such as: daily exercise, your children’s dumb sayings, future/current assignments/projects and their status, favorite things over time, important quotes, etc.</p>
+
+<p>Lets say I want to record all of the articles I read. I would create a new data type called ‘article’ with the fields: title, date read(optional: defaults to current day), date published(optional), description(optional).</p>
+
+<p>Then later, if I realize that I also want to create a detailed review of an article, I have a few options. I can either add optional review and rating fields, or I can create a new data type called ‘reviews’ that must have a reference to an existing data entry, and the fields mentioned earlier.</p>
+
+<p>If you wanted, you could even use it as a doomsday mechanism, where after 12 months of non-use it could presume you to be dead, send a confirmation email to your address, after ~1 or 2 weeks it will either release the whole database or just sections to the public.</p>
+
+<p>I think that such a database would be great. Alternatives like spreadsheets are a bad fit for this and often proprietary.</p>
+
+<h3 id="the-implementation">The Implementation</h3>
+
+<p>Traditionally something like this could only be done by software enthusiasts. A low-tech solution would be to write everything down in a notebook physically or digitally. This works, but lacks any automation, enforced structure, or automatically derived data.</p>
+
+<p>The solution I propose is to write a multi-platform software gui to a plaintext-based database with support for all the basic database things. Creating data types and required/optional relationships, but all under a super easy to understand interface that boils the concepts down into it’s most simple and easily understood terminology.</p>
+
+<p>All of the information has to be stored in plain-text, because I want this to last and work without the software, allowing it to work on any device with a text editor.</p>
+
+<p>Bonus: the software could graph anything from the database such as activity over time, events with dates and their duration, stat for data-type over time, etc.</p>
+
+<p>Ideally the system would work great with folder syncing software like SyncThing or rsync.</p>
+
+<h3 id="final-thoughts">Final Thoughts</h3>
+
+<p>I know I’m probably over-hyping the system, but I think it’s relatively novel and incredibly flexible. (just realized you could keep track of things in fridge and set an expire date etc). If plain-text companion databases don’t already exist, I want to make this happen.</p>
+
+<p>If they do exist in a similar way to what I’m describing, please contact me, I’d love to know.</p>
 
 
 <br>
@@ -4589,88 +4597,8 @@
 		
 		
     		
-		
-	
-    	
-    	
-		
-		
-		
-    		
-		
-	
-    	
-    	
-		
-		
-		
-    		
-		
-	
-    	
-    	
-		
-		
-		
-    		
-		
-	
-    	
-    	
-		
-		
-		
-    		
-		
-	
-    	
-    	
-		
-		
-		
-    		
-		
-	
-    	
-    	
-		
-		
-		
-    		
-		
-	
-    	
-    	
-		
-		
-		
-    		
-		
-	
-    	
-    	
-		
-		
-		
-    		
-		
-	
-    	
-    	
-		
-		
-		
-    		
-		
-	
-    	
-    	
-		
-		
-		
-    		
         		
-				<li><p><a href="/blog/arduinos/">Arduinos</a> - 📅 Dec 2nd 2021
+				<li><p><a href="/blog/end-of-thinking/">The End of Thinking</a> - 📅 Jan 25th 2022
         		
 				
 				
@@ -4684,7 +4612,7 @@
 		
     		
         		
-				<li><p><a href="/blog/using-flutter/">Using Flutter</a> - 📅 Sep 29th 2021
+				<li><p><a href="/blog/qrcodes/">Observations about QR codes</a> - 📅 Jan 23rd 2022
         		
 				
 				
@@ -4706,7 +4634,21 @@
 		
     		
         		
-				<li><p><a href="/blog/dream-bot/">Python Dream Bot</a> - 📅 Aug 18th 2021
+				<li><p><a href="/blog/quantum-internet/">Quantum Internet</a> - 📅 Jan 21st 2022
+        		
+				
+				
+			
+		
+	
+    	
+    	
+		
+		
+		
+    		
+        		
+				<li><p><a href="/blog/quantom-internet/">Quantom Internet</a> - 📅 Jan 21st 2022
         		
 				
 				
@@ -4744,7 +4686,7 @@
 		
     		
         		
-				<li><p><a href="/blog/arbidor/">Arbidor</a> - 📅 Aug 11th 2021
+				<li><p><a href="/blog/rss/">Why RSS isn't Mainstream</a> - 📅 Dec 26th 2021
         		
 				
 				
@@ -4765,12 +4707,94 @@
 		
 		
     		
-        		
-				<li><p><a href="/blog/devlog-3/">Dev Log 3</a> - 📅 Jun 9th 2021
-        		
-				
-				
-			
+		
+	
+    	
+    	
+		
+		
+		
+    		
+		
+	
+    	
+    	
+		
+		
+		
+    		
+		
+	
+    	
+    	
+		
+		
+		
+    		
+		
+	
+    	
+    	
+		
+		
+		
+    		
+		
+	
+    	
+    	
+		
+		
+		
+    		
+		
+	
+    	
+    	
+		
+		
+		
+    		
+		
+	
+    	
+    	
+		
+		
+		
+    		
+		
+	
+    	
+    	
+		
+		
+		
+    		
+		
+	
+    	
+    	
+		
+		
+		
+    		
+		
+	
+    	
+    	
+		
+		
+		
+    		
+		
+	
+    	
+    	
+		
+		
+		
+    		
 		
 	
     	
@@ -4782,6 +4806,14 @@
         		
             		
 
+	
+    	
+    	
+		
+		
+		
+    		
+		
 	
     	
     	
