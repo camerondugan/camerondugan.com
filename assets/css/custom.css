@@ -55,27 +55,39 @@ h3 {
 h4 { 
   text-align: center;
 }
+a{
+  text-decoration-line: unset;
+  background: var(--accent-bg);
+  border-radius: 4px;
+  padding: 2.5px;
+  padding-top: 2px;
+  padding-bottom: 0px;
+  transition: .25s;
+}
+a:hover {
+  filter: drop-shadow(4px 7px 2px #000000);
+  background: var(--accent);
+  color: var(--bg);
+}
 nav a {
-  scale:1.2;
+  scale:1.15;
   margin-inline: 17px;
   border: none;
   background:var(--bg);
-  transition: .25s;
 }
 nav a.nav-current {
   background: var(--border);
   border-color: var(--border);
-  font-weight: 600;
+  font-weight: bold;
 }
 nav a:hover {
-    scale: 1.235;
-    color: var(--text)!important;
-    filter: drop-shadow(4px 7px 2px #000000);
-    border-color: var(--accent-light);
-    background: var(--accent-light);
+  scale: 1.235;
+  color: var(--text)!important;
+  border-color: var(--accent-light);
+  background: var(--accent-light);
 }
 nav a.nav-current:hover {
-    color: var(--text);
-    border-color: var(--border-light);
-    background: var(--border-light);
+  color: var(--text);
+  border-color: var(--border-light);
+  background: var(--border-light);
 }
