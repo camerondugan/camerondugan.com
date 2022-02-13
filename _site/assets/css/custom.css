@@ -39,9 +39,14 @@
     text-decoration:none;
     line-height: 3;
   }
-} 
+}
+nav {
+  padding-top: 5px;
+  padding-bottom: 35px;
+}
 header {
-    border-bottom:4px dashed var(--border);
+  padding-top: 0px;
+  border-bottom:4px dashed var(--border);
 }
 h1 { 
   text-align: center;
