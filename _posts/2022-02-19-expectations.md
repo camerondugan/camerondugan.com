@@ -1,6 +1,6 @@
 ---
-title: The Burden of Expectations
-description: Why gifted individuals burnout
+title: The Cost of Expectations
+description: Why gifted individuals tend to burnout
 layout: post
 permalink: /blog/expectations/
 tags: thinking experience youtube
