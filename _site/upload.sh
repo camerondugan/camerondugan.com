@@ -4,4 +4,4 @@ echo "Pushing to git..."
 git add . > /dev/null
 git commit -m "uploading" > /dev/null
 git push > /dev/null
-echo "Pushed with name uploading"
+echo "Pushed with the name: uploading"
