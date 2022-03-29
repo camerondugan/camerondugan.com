@@ -1,4 +1,24 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://www.camerondugan.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.camerondugan.com/" rel="alternate" type="text/html" hreflang="en" /><updated>2022-03-29T11:55:14-04:00</updated><id>https://www.camerondugan.com/feed.xml</id><subtitle>This is my Jekyll website that uses Simple.css</subtitle><author><name>Cameron Dugan</name></author><entry><title type="html">The OP-1 Synth</title><link href="https://www.camerondugan.com/blog/op1/" rel="alternate" type="text/html" title="The OP-1 Synth" /><published>2022-02-28T00:00:00-05:00</published><updated>2022-02-28T00:00:00-05:00</updated><id>https://www.camerondugan.com/blog/op1</id><content type="html" xml:base="https://www.camerondugan.com/blog/op1/"><![CDATA[<p>The OP-1 is a computer-keyboard sized synth with just enough capability to mostly replace a DAW.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://www.camerondugan.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.camerondugan.com/" rel="alternate" type="text/html" hreflang="en" /><updated>2022-03-29T11:59:33-04:00</updated><id>https://www.camerondugan.com/feed.xml</id><subtitle>This is my Jekyll website that uses Simple.css</subtitle><author><name>Cameron Dugan</name></author><entry><title type="html">People Don’t Code</title><link href="https://www.camerondugan.com/blog/expectations/" rel="alternate" type="text/html" title="People Don’t Code" /><published>2022-03-29T00:00:00-04:00</published><updated>2022-03-29T00:00:00-04:00</updated><id>https://www.camerondugan.com/blog/people-dont-code</id><content type="html" xml:base="https://www.camerondugan.com/blog/expectations/"><![CDATA[<p>Hello again, been busy working on an AI for a class I’m taking, strange issues with keras and data cardinality are stopping progress currently.</p>
+
+<p>This had me thinking about why people don’t code. Society relies on software to such an extreme degree that it seems that programming would be an essential tool taught in schools to help most desk/laptop style jobs. In-fact, I would have gone as far to argue that programming should be used as the primary method of solving modern problems. Solve them once, hopefully never have to solve it again.</p>
+
+<p><img src="/assets/images/cool-graphics/tubes.jpg" alt="picture" /></p>
+
+<p>This brings me to my understanding today, that people are tired and don’t want to have to sit through every semantic or syntactical error just to solve a problem they already know how to solve by hand.</p>
+
+<p>Knowing how to program well is very useful, knowing how to program poorly is practically worthless. I appreciate institutional efforts to incorporate computers and software into education, but seems like it almost should be the center, where a lot of problems can be expressed and solved just as fast, if not faster through computer programs.</p>
+
+<p>Obviously I’m biased, and there are exceptions, and I don’t know exactly what I’m talking about, but it seems like a good idea to provide the option of an education purely through a computer science lens.</p>
+
+<p>Matlab and R are the closest things to what I want to express. Classrooms use Matlab and R, but mostly as calculator replacements.</p>
+
+<p>Just realized that students would probably code like they’re still using a calculator and gain no benefit and much headache from a lazy inclusion of programming.</p>
+
+<p><img src="/assets/images/cool-graphics/human+AI.jpg" alt="image" /></p>
+
+<p>Being able to better work with our machine friends is going to be a key part of our future, and learning to speak some of their language is a great start.</p>
+
+<p>And thats what’s been on my mind recently, thanks for reading! I’ll post more stuff soon (probably about that AI I’m working on).</p>]]></content><author><name>Cameron Dugan</name></author><category term="thinking" /><category term="experience" /><category term="code" /><summary type="html"><![CDATA[Thoughts and Updates]]></summary></entry><entry><title type="html">The OP-1 Synth</title><link href="https://www.camerondugan.com/blog/op1/" rel="alternate" type="text/html" title="The OP-1 Synth" /><published>2022-02-28T00:00:00-05:00</published><updated>2022-02-28T00:00:00-05:00</updated><id>https://www.camerondugan.com/blog/op1</id><content type="html" xml:base="https://www.camerondugan.com/blog/op1/"><![CDATA[<p>The OP-1 is a computer-keyboard sized synth with just enough capability to mostly replace a DAW.</p>
 
 <p>I’m a programmer with quite a bit of piano playing experience. My idea with the purchase of the OP-1 was to be able to make my own sounds and music for whatever software I end up making.</p>
 
