@@ -1,8 +1,8 @@
 ---
-title: People Don't Code
+title: Why People Don't Code
 description: Thoughts and Updates
 layout: post
-permalink: /blog/expectations/
+permalink: /blog/whypeopledontcode/
 tags: thinking experience code
 ---
 
