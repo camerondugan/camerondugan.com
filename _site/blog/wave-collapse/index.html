@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/assets/images/favicon.ico" />
     
-    <title>Using Flutter ~ CameronDugan.com</title>
-    <meta name="description" content="Making a cross platform app with Flutter" />
+    <title>Wave Function Collapse ~ CameronDugan.com</title>
+    <meta name="description" content="Programming Something That Already Exists Without Knowing it Exists" />
     <link rel="stylesheet" href="https://cdn.simplecss.org/simple-v1.css">
     <link rel="stylesheet" href="/assets/css/custom.css">
   </head>
@@ -53,8 +53,8 @@
     
 </nav>
 
-      <h1>Using Flutter</h1>
-      <i>Making a cross platform app with Flutter</i>
+      <h1>Wave Function Collapse</h1>
+      <i>Programming Something That Already Exists Without Knowing it Exists</i>
     </header>
 
     <main>
@@ -64,56 +64,40 @@
 
 
 
-<span style="float:right;">📅 Sep 29th 2021</span>
-<span style="float:left;"><code> Transmission <b>#16</b> Connection: <b>Neuralink</b></code></span>
+<span style="float:right;">📅 Apr 28th 2022</span>
+<span style="float:left;"><code> Transmission <b>#34</b> Connection: <b>Tractor Beam</b></code></span>
 <br>
 <hr>
 
-<p><a href="/assets/images/succulent/Plant.png"><img src="/assets/images/succulent/Plant.png" alt="plant" width="200" /></a></p>
+<p>Hello!</p>
 
-<h2 id="lessons">Lessons:</h2>
+<p>I’ve been bingeing more YouTube content recently and I discovered that there was something called Wave Function Collapse. Basically, given a grid, and some tiles with special rules, write an algorithm that places those tiles in the grid following those rules. Basically Sudoku but more generalized.</p>
 
-<ul>
-  <li>Find widgets on <a href="https://Pub.dev">pub.dev</a> that fit your project and are <em>null safe</em>, <em>null safety</em> makes your project better and inherently compatible with other <em>null safe</em> projects.
-    <ul>
-      <li>Learn more about <em>null safety</em> here: <a href="https://dart.dev/null-safety/understanding-null-safety">dart.dev</a></li>
-    </ul>
-  </li>
-  <li>Using <code class="language-plaintext highlighter-rouge">flutter clean</code> is your friend
-    <ul>
-      <li>Builds occassionally don’t work for no real reason. If this is the case, you can always run the clean command to potentially fix issues.</li>
-      <li>If this doesn’t work, you can build it to a different platform/os then back to the original platform.</li>
-    </ul>
-  </li>
-  <li>To my knowledge, you cannot use widgets to communicate with other widgets, I can’t say:
-    <div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">childWidget</span><span class="o">()</span>
-  <span class="n">build</span><span class="o">()</span> 
-      <span class="k">return</span> <span class="n">widget</span><span class="o">(</span>
-          <span class="nl">onTap:</span> <span class="o">()</span> <span class="o">{</span>
-              <span class="n">parentWidget</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">item</span><span class="o">);</span>
-              <span class="n">setState</span><span class="o">(){};</span>
-</code></pre></div>    </div>
-    <p>but I can say:</p>
-    <div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">//this is psuedo code</span>
-<span class="n">parentWidget</span><span class="o">(){</span>
-  <span class="n">mylist</span> <span class="o">=</span> <span class="o">[];</span> 
+<p>This immediately reminded me of a script I wrote in Godot for infinite 3d world generation. I wanted to have specific rooms or hallways placed in a useable way.
+I also used “weights” on each tile to make some tiles appear much more frequently.</p>
 
-  <span class="n">Widget</span> <span class="n">childWidget</span><span class="o">(</span><span class="n">list</span><span class="o">){</span>
-      <span class="k">return</span> <span class="n">widget</span><span class="o">(</span>
-          <span class="nl">onTap:</span> <span class="o">()</span> <span class="o">{</span>
-              <span class="n">mylist</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="s">"hello"</span><span class="o">)</span>
-              <span class="n">setState</span><span class="o">(){};</span>
-          <span class="o">}</span>
-  <span class="o">}</span>
+<p>I created a bunch of “tiles” and added rules saying where other tiles can connect, and generate x number of blocks away from the player, much like Minecraft.</p>
 
-  <span class="n">build</span><span class="o">()</span> <span class="o">=&gt;</span> <span class="n">childWidget</span><span class="o">(</span><span class="n">mylist</span><span class="o">);</span>
-<span class="o">}</span>
-</code></pre></div>    </div>
-  </li>
-  <li>When using the scaffold widget to make the app, you want to use an indexed stack if you want to also use an animated navigation bar, to let the animation play out, instead of getting cut off when switching contexts.</li>
-</ul>
+<p>Apparently, what I created is an imperfect version of Wave Function Collapse.</p>
 
-<p>I’ll add binaries to this page shortly, see you next time!</p>
+<p>Here’s my understanding of what Wave Function Collapse should do.</p>
+
+<ol>
+  <li>Find the space with the least valid possible tiles</li>
+  <li>Place one of the possible tiles</li>
+  <li>Repeat until no more tiles can be filled.</li>
+</ol>
+
+<p>Obviously, with some back-tracking for when no tiles can be placed, but the board is still not full.</p>
+
+<p>It’s so cool to find out that something you worked on in the past are problems that have been perfectly solved by others, and that you can learn from the differences in methods of solution.</p>
+
+<p>Usages of the Wave Function Collapse seem to be for procedural generation or for puzzle solving.</p>
+
+<p>Here’s the links to the videos that reminded me of it:</p>
+
+<p><a href="https://www.youtube.com/watch?v=2SuvO4Gi7uY">Youtube Video #1</a>
+<a href="https://www.youtube.com/watch?v=20KHNA9jTsE">Youtube Video #2</a></p>
 
 
 <br>
@@ -5171,6 +5155,295 @@
 		
 		
     		
+		
+	
+    	
+		
+		
+		
+		
+    		
+		
+	
+    	
+		
+		
+		
+		
+    		
+		
+	
+    	
+		
+		
+		
+		
+    		
+		
+	
+    	
+		
+		
+		
+		
+    		
+		
+	
+    	
+		
+		
+		
+		
+    		
+		
+	
+    	
+		
+		
+		
+		
+    		
+		
+	
+    	
+		
+		
+		
+		
+    		
+		
+	
+    	
+		
+		
+		
+		
+    		
+		
+	
+    	
+		
+		
+		
+		
+    		
+		
+	
+    	
+		
+		
+		
+		
+    		
+		
+	
+    	
+		
+		
+		
+		
+    		
+		
+	
+    	
+		
+		
+		
+		
+    		
+		
+	
+    	
+		
+		
+		
+		
+    		
+		
+	
+    	
+		
+		
+		
+		
+    		
+		
+	
+    	
+		
+		
+		
+		
+    		
+		
+	
+    	
+		
+		
+		
+		
+    		
+		
+	
+    	
+		
+		
+		
+		
+    		
+		
+	
+    	
+		
+		
+		
+		
+    		
+		
+	
+    	
+		
+		
+		
+		
+    		
+		
+	
+    	
+		
+		
+		
+		
+    		
+		
+	
+
+	
+    	
+		
+		
+		
+		
+    		
+		
+	
+    	
+		
+		
+		
+		
+    		
+		
+	
+    	
+		
+		
+		
+		
+    		
+				<li><p><a href="/blog/whypeopledontcode/">Why People Don't Code</a> - 📅 Mar 29th 2022
+        		
+				
+				
+			
+		
+	
+    	
+		
+		
+		
+		
+    		
+		
+	
+    	
+		
+		
+		
+		
+    		
+		
+	
+    	
+		
+		
+		
+		
+    		
+				<li><p><a href="/blog/obsidian/">I've Found It</a> - 📅 Feb 12th 2022
+        		
+				
+				
+			
+		
+	
+    	
+		
+		
+		
+		
+    		
+				<li><p><a href="/blog/companion-databases/">Companion Databases</a> - 📅 Feb 1st 2022
+        		
+				
+				
+			
+		
+	
+    	
+		
+		
+		
+		
+    		
+		
+	
+    	
+		
+		
+		
+		
+    		
+		
+	
+    	
+		
+		
+		
+		
+    		
+		
+	
+    	
+		
+		
+		
+		
+    		
+		
+	
+    	
+		
+		
+		
+		
+    		
+		
+	
+    	
+		
+		
+		
+		
+    		
+		
+	
+    	
+		
+		
+		
+		
+    		
 				<li><p><a href="/blog/website-improvements/">My Website Is Improving!</a> - 📅 Jan 16th 2022
         		
 				
@@ -5200,119 +5473,12 @@
 		
 		
     		
-		
-	
-    	
-		
-		
-		
-		
-    		
-		
-	
-    	
-		
-		
-		
-		
-    		
-		
-	
-    	
-		
-		
-		
-		
-    		
-		
-	
-    	
-		
-		
-		
-		
-    		
-				<li><p><a href="/blog/dream-bot/">Python Dream Bot</a> - 📅 Aug 18th 2021
+				<li><p><a href="/blog/bash/">Linux Scripting</a> - 📅 Dec 20th 2021
         		
 				
 				
 			
 		
-	
-    	
-		
-		
-		
-		
-    		
-		
-	
-    	
-		
-		
-		
-		
-    		
-		
-	
-    	
-		
-		
-		
-		
-    		
-		
-	
-    	
-		
-		
-		
-		
-    		
-				<li><p><a href="/blog/arbidor/">Arbidor</a> - 📅 Aug 11th 2021
-        		
-				
-				
-			
-		
-	
-    	
-		
-		
-		
-		
-    		
-		
-	
-    	
-		
-		
-		
-		
-    		
-				<li><p><a href="/blog/devlog-3/">Dev Log 3</a> - 📅 Jun 9th 2021
-        		
-				
-				
-			
-		
-	
-    	
-		
-		
-		
-		
-    		
-				<li><p><a href="/blog/devlog-2/">Dev Log 2</a> - 📅 Jun 7th 2021
-        		
-				
-				
-			
-		
-	
-    	
-            		
-
 	
     	
             		
