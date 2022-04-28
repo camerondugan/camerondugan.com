@@ -1,4 +1,46 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://www.camerondugan.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.camerondugan.com/" rel="alternate" type="text/html" hreflang="en" /><updated>2022-03-29T11:59:33-04:00</updated><id>https://www.camerondugan.com/feed.xml</id><subtitle>This is my Jekyll website that uses Simple.css</subtitle><author><name>Cameron Dugan</name></author><entry><title type="html">People Don’t Code</title><link href="https://www.camerondugan.com/blog/expectations/" rel="alternate" type="text/html" title="People Don’t Code" /><published>2022-03-29T00:00:00-04:00</published><updated>2022-03-29T00:00:00-04:00</updated><id>https://www.camerondugan.com/blog/people-dont-code</id><content type="html" xml:base="https://www.camerondugan.com/blog/expectations/"><![CDATA[<p>Hello again, been busy working on an AI for a class I’m taking, strange issues with keras and data cardinality are stopping progress currently.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://www.camerondugan.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.camerondugan.com/" rel="alternate" type="text/html" hreflang="en" /><updated>2022-04-28T14:13:48-04:00</updated><id>https://www.camerondugan.com/feed.xml</id><subtitle>This is my Jekyll website that uses Simple.css</subtitle><author><name>Cameron Dugan</name></author><entry><title type="html">Wave Function Collapse</title><link href="https://www.camerondugan.com/blog/wave-collapse/" rel="alternate" type="text/html" title="Wave Function Collapse" /><published>2022-04-28T00:00:00-04:00</published><updated>2022-04-28T00:00:00-04:00</updated><id>https://www.camerondugan.com/blog/wavefunctioncollapse</id><content type="html" xml:base="https://www.camerondugan.com/blog/wave-collapse/"><![CDATA[<p>Hello!</p>
+
+<p>I’ve been bingeing more YouTube content recently and I discovered that there was something called Wave Function Collapse. Basically, given a grid, and some tiles with special rules, write an algorithm that places those tiles in the grid following those rules. Basically Sudoku but more generalized.</p>
+
+<p>This immediately reminded me of a script I wrote in Godot for infinite 3d world generation. I wanted to have specific rooms or hallways placed in a useable way.
+I also used “weights” on each tile to make some tiles appear much more frequently.</p>
+
+<p>I created a bunch of “tiles” and added rules saying where other tiles can connect, and generate x number of blocks away from the player, much like Minecraft.</p>
+
+<p>Apparently, what I created is an imperfect version of Wave Function Collapse.</p>
+
+<p>Here’s my understanding of what Wave Function Collapse should do.</p>
+
+<ol>
+  <li>Find the space with the least valid possible tiles</li>
+  <li>Place one of the possible tiles</li>
+  <li>Repeat until no more tiles can be filled.</li>
+</ol>
+
+<p>Obviously, with some back-tracking for when no tiles can be placed, but the board is still not full.</p>
+
+<p>It’s so cool to find out that something you worked on in the past are problems that have been perfectly solved by others, and that you can learn from the differences in methods of solution.</p>
+
+<p>Usages of the Wave Function Collapse seem to be for procedural generation or for puzzle solving.</p>
+
+<p>Here’s the links to the videos that reminded me of it:</p>
+
+<p><a href="https://www.youtube.com/watch?v=2SuvO4Gi7uY">Youtube Video #1</a>
+<a href="https://www.youtube.com/watch?v=20KHNA9jTsE">Youtube Video #2</a></p>]]></content><author><name>Cameron Dugan</name></author><category term="code" /><category term="3d" /><category term="godot" /><category term="game" /><category term="dev" /><summary type="html"><![CDATA[Programming Something That Already Exists Without Knowing it Exists]]></summary></entry><entry><title type="html">Things Lead to Their Opposites</title><link href="https://www.camerondugan.com/blog/opposites/" rel="alternate" type="text/html" title="Things Lead to Their Opposites" /><published>2022-04-02T00:00:00-04:00</published><updated>2022-04-02T00:00:00-04:00</updated><id>https://www.camerondugan.com/blog/opposites</id><content type="html" xml:base="https://www.camerondugan.com/blog/opposites/"><![CDATA[<p>It’s hard to remember sometimes that things lead to their opposites. That in order to be hungry, you must have been full. In order for you to be happy, you must have some kind of sadness to compare the experience to.</p>
+
+<p>These things are all true because they have to be.</p>
+
+<p><img src="/assets/images/cool-graphics/circuitry.jpg" alt="circuitry" /></p>
+
+<p>Change only occurs because there was and then there wasn’t. Logic like this drives humanity. Nothing is constant… is the only constant. Adapting and overcoming is standard mode of operation and is thus not an adaptation. Contradiction is a standard part of any logic system, it’s inescapable. Logic is infinitely complex but in many ways so simple, that it would be unthinkable for it to not contradict itself somewhere.</p>
+
+<p>Beliefs are systems of logic that exist to simply the infinitely complex reality we live in. Beliefs are tools to be used and not pieces of our identity. Identity changes constantly, and holding onto it too tightly can cause unnecessary suffering. No belief is 100% accurate, there are always contradictions, and there is always some margin of error.</p>
+
+<p><img src="/assets/images/cool-graphics/architecture.jpg" alt="circuitry" /></p>
+
+<p>And if you re-learn anything from this post: Don’t believe every thought that you think.</p>
+
+<p>Also, human behavior change mainly starts with habits, not a state of mind, and especially not a list of strange sentences.</p>]]></content><author><name>Cameron Dugan</name></author><category term="thinking" /><category term="experience" /><summary type="html"><![CDATA[A generalization that's generally true]]></summary></entry><entry><title type="html">Why People Don’t Code</title><link href="https://www.camerondugan.com/blog/whypeopledontcode/" rel="alternate" type="text/html" title="Why People Don’t Code" /><published>2022-03-29T00:00:00-04:00</published><updated>2022-03-29T00:00:00-04:00</updated><id>https://www.camerondugan.com/blog/people-dont-code</id><content type="html" xml:base="https://www.camerondugan.com/blog/whypeopledontcode/"><![CDATA[<p>Hello again, been busy working on an AI for a class I’m taking, strange issues with keras and data cardinality are stopping progress currently.</p>
 
 <p>This had me thinking about why people don’t code. Society relies on software to such an extreme degree that it seems that programming would be an essential tool taught in schools to help most desk/laptop style jobs. In-fact, I would have gone as far to argue that programming should be used as the primary method of solving modern problems. Solve them once, hopefully never have to solve it again.</p>
 
