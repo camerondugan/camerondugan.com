@@ -2,7 +2,7 @@
 title: Being An Arch User
 description: An Unexpected Consequence
 layout: post
-permalink: /blog/wave-collapse/
+permalink: /blog/arch-rasbian/
 tags: linux dev arch
 ---
 
@@ -29,4 +29,4 @@ Repair/Reinstallation time from 1-3hrs down to 30min tops.
 That's my weird story for today, thanks for sticking around :)
 
 P.S.
-I do know that I can install ARM based Arch distros onto the pi, but I'm lazy and it's already setup. Maybe another day, I've been looking into [NIX](https://nixos.org/), maybe that's a good choice, we'll see...
+I do know that I can install ARM based Arch distros onto the pi, but I'm lazy and it's already setup. Maybe another day, I've been looking into [NIXOS](https://nixos.org/), maybe that's a good choice, we'll see...
