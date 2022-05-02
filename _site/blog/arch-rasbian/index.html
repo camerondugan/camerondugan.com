@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/assets/images/favicon.ico" />
     
-    <title>Weekly Programming - Week 2 ~ CameronDugan.com</title>
-    <meta name="description" content="Programming a game player" />
+    <title>Being An Arch User ~ CameronDugan.com</title>
+    <meta name="description" content="An Unexpected Consequence" />
     <link rel="stylesheet" href="https://cdn.simplecss.org/simple-v1.css">
     <link rel="stylesheet" href="/assets/css/custom.css">
   </head>
@@ -53,8 +53,8 @@
     
 </nav>
 
-      <h1>Weekly Programming - Week 2</h1>
-      <i>Programming a game player</i>
+      <h1>Being An Arch User</h1>
+      <i>An Unexpected Consequence</i>
     </header>
 
     <main>
@@ -64,50 +64,35 @@
 
 
 
-<span style="float:right;">📅 Aug 23rd 2021</span>
-<span style="float:left;"><code> Transmission <b>#15</b> Connection: <b>QR Code</b></code></span>
+<span style="float:right;">📅 May 2nd 2022</span>
+<span style="float:left;"><code> Transmission <b>#35</b> Connection: <b>Quantum</b></code></span>
 <br>
 <hr>
 
-<p>Programming projects help programmers get better. I’m publicly announcing a project every week on Monday with the goal of helping you get better at programming along with me.</p>
+<p>Hi,</p>
 
-<p>This week’s programming challenge is to make a <em>bot</em> that plays this game.</p>
+<p>I woke up today wanting to make my <a href="https://https://www.raspberrypi.org/">Raspberry Pi</a> even more useful.</p>
 
-<p>The Game Of Trust:</p>
-<ol>
-  <li>Two points are up for grabs.</li>
-  <li>Each Player can either choose to share or to steal.</li>
-  <li>If Both players steal, nobody gets points.</li>
-  <li>If one player steals, that player gets all of the points.</li>
-  <li>If both players share, each player gets one point.</li>
-</ol>
+<p>Currently, it’s tasked with hosting <a href="https://camerondugan.com">this website</a>, and it used to host an email until it randomly stopped working after an update.</p>
 
-<p>The <em>bot</em> doesn’t have to play the game well, it just has to be capable of playing against a person and/or another <em>bot</em>.</p>
+<p>Anyways, I tried to setup <a href="https://syncthing.net/">Syncthing</a> as a pseudo NAS, to let me auto-sync my files remotely without needing both the destination and the source online at the same time.</p>
 
-<p>The rules are as follows:</p>
+<p>I installed <a href="https://syncthing.net/">Syncthing</a>, and setup <a href="https://www.nginx.com/resources/glossary/nginx/">nginx</a> to passthrough the gui port localhost:8384 for <a href="https://syncthing.net/">Syncthing</a> to a specific url on my website. This worked, the user interface for <a href="https://syncthing.net/">Syncthing</a> appeared and I was able to connect to other devices. The problem: no files were being synced.</p>
 
-<ol>
-  <li>Complete the challenge to any degree using any language.</li>
-  <li>A new challenge will come out every Monday.</li>
-  <li>Post the result somewhere by Sunday as proof of completion.</li>
-</ol>
+<p>The exact issue I was having was a tcp connection version mismatch, one device wanted to use 303 and another wanted 301.</p>
 
-<p>There will be scoring as follows:</p>
-<ul>
-  <li>Participants who tried, get a score of 1 for each project.</li>
-  <li>Participants who learned something new get an additional 2 points.</li>
-  <li>Participants who didn’t try get a score of 0.</li>
-  <li>Participants who copy large chunks of code get their project score cut in half rounded down.</li>
-</ul>
+<p>I spent probably about 20 minutes tinkering with <a href="https://www.nginx.com/resources/glossary/nginx/">nginx</a> before realizing that everything was working perfectly and it wasn’t some strange <a href="https://www.nginx.com/resources/glossary/nginx/">nginx</a> background filtering or conversion. It’s just that I am so used to <a href="https://archlinux.org/">Arch</a> packages being up to date, that I never even considered that I would have to manually setup the <a href="https://syncthing.net/">Syncthing</a> repo for the <a href="https://https://www.raspberrypi.org/">Raspberry Pi</a>.</p>
 
-<p>Scoring will be entirely done on the honor system. Feel free to include your current score along with your post.
-For example: my personal score is 4 at the time of writing.</p>
+<p>After setting up apt to fetch the latest version of <a href="https://syncthing.net/">Syncthing</a>, everything ran perfectly smoothly. I just can’t believe that this is a thing people still have to do to install updated software on Linux. I understand why it hasn’t been fixed, but I would have expected maybe a community wiki+script pre-installed that connects package names to their official PPAs for you. Other distros should probably have one over-arching piece of software that can handle installing pretty much anything in one quick command like <a href="https://archlinux.org/">Arch</a> does (like the paru command and it’s substitutes). Maybe this exists, idk, and I’m not super interested. I just got used to expecting easily installible updated software on <a href="https://archlinux.org/">Arch</a>.</p>
 
-<p>Take your time, I’m excited to see what we can do!</p>
+<p>Also for anyone interested, I got tired of fixing my <a href="https://archlinux.org/">Arch</a> install when it rarely broke, so I just switched to <a href="https://garudalinux.org/">Garuda</a>, which has more than all the settings and software I would have setup anyway.</p>
 
-<p>If you liked this also check out: <a href="../../WeeklyProgramming/1/">Last Week’s Challenge</a>
-and 
-<a href="../../Dream-Bot/">My Result From Last Week</a></p>
+<p>Repair/Reinstallation time from 1-3hrs down to 30min tops.</p>
+
+<p>That’s my weird story for today, thanks for sticking around :)</p>
+
+<p>P.S.
+I do know that I can install ARM based Arch distros onto the pi, but I’m lazy and it’s already setup. Maybe another day, I’ve been looking into <a href="https://nixos.org/">NIXOS</a>, maybe that’s a good choice, we’ll see…</p>
 
 
 <br>
@@ -5253,161 +5238,7 @@ and
 		
 		
     		
-		
-	
-    	
-		
-		
-		
-		
-    		
-		
-	
-    	
-		
-		
-		
-		
-    		
-		
-	
-    	
-		
-		
-		
-		
-    		
-		
-	
-    	
-		
-		
-		
-		
-    		
-		
-	
-    	
-		
-		
-		
-		
-    		
-		
-	
-    	
-		
-		
-		
-		
-    		
-		
-	
-    	
-		
-		
-		
-		
-    		
-		
-	
-    	
-		
-		
-		
-		
-    		
-		
-	
-    	
-		
-		
-		
-		
-    		
-		
-	
-    	
-		
-		
-		
-		
-    		
-		
-	
-    	
-		
-		
-		
-		
-    		
-		
-	
-    	
-		
-		
-		
-		
-    		
-		
-	
-    	
-		
-		
-		
-		
-    		
-		
-	
-    	
-		
-		
-		
-		
-    		
-		
-	
-    	
-		
-		
-		
-		
-    		
-		
-	
-    	
-		
-		
-		
-		
-    		
-				<li><p><a href="/blog/weekly-programming/1/">Weekly Programming - Week 1</a> - 📅 Aug 16th 2021
-        		
-				
-				
-			
-		
-	
-    	
-		
-		
-		
-		
-    		
-				<li><p><a href="/blog/costs-bot/">costs-bot</a> - 📅 Aug 16th 2021
-        		
-				
-				
-			
-		
-	
-    	
-		
-		
-		
-		
-    		
-				<li><p><a href="/blog/bee-movie/">Bee Movie</a> - 📅 Aug 12th 2021
+				<li><p><a href="/blog/obsidian/">I've Found It</a> - 📅 Feb 12th 2022
         		
 				
 				
@@ -5428,11 +5259,150 @@ and
 		
 		
     		
-				<li><p><a href="/blog/weekly-programming/0/">Weekly Programming - Week 0</a> - 📅 Aug 9th 2021
-        		
-				
-				
-			
+		
+	
+    	
+		
+		
+		
+		
+    		
+		
+	
+    	
+		
+		
+		
+		
+    		
+		
+	
+    	
+		
+		
+		
+		
+    		
+		
+	
+    	
+		
+		
+		
+		
+    		
+		
+	
+    	
+		
+		
+		
+		
+    		
+		
+	
+    	
+		
+		
+		
+		
+    		
+		
+	
+    	
+		
+		
+		
+		
+    		
+		
+	
+    	
+		
+		
+		
+		
+    		
+		
+	
+    	
+		
+		
+		
+		
+    		
+		
+	
+    	
+		
+		
+		
+		
+    		
+		
+	
+    	
+		
+		
+		
+		
+    		
+		
+	
+    	
+		
+		
+		
+		
+    		
+		
+	
+    	
+		
+		
+		
+		
+    		
+		
+	
+    	
+		
+		
+		
+		
+    		
+		
+	
+    	
+		
+		
+		
+		
+    		
+		
+	
+    	
+		
+		
+		
+		
+    		
+		
+	
+    	
+		
+		
+		
+		
+    		
+		
+	
+    	
+		
+		
+		
+		
+    		
 		
 	
     	
@@ -5516,6 +5486,132 @@ and
 		
     		
 				<li><p><a href="/blog/wave-collapse/">Wave Function Collapse</a> - 📅 Apr 28th 2022
+        		
+				
+				
+			
+		
+	
+    	
+		
+		
+		
+		
+    		
+		
+	
+    	
+		
+		
+		
+		
+    		
+		
+	
+    	
+		
+		
+		
+		
+    		
+		
+	
+    	
+		
+		
+		
+		
+    		
+		
+	
+    	
+		
+		
+		
+		
+		
+	
+    	
+		
+		
+		
+		
+    		
+				<li><p><a href="/blog/companion-databases/">Companion Databases</a> - 📅 Feb 1st 2022
+        		
+				
+				
+			
+		
+	
+    	
+		
+		
+		
+		
+    		
+		
+	
+    	
+		
+		
+		
+		
+    		
+		
+	
+    	
+		
+		
+		
+		
+    		
+		
+	
+    	
+		
+		
+		
+		
+    		
+				<li><p><a href="/blog/pine-phone/">Pine Phone</a> - 📅 Jan 22nd 2022
+        		
+				
+				
+			
+		
+	
+    	
+		
+		
+		
+		
+    		
+		
+	
+    	
+		
+		
+		
+		
+    		
+		
+	
+    	
+		
+		
+		
+		
+    		
+		
+	
+    	
+		
+		
+		
+		
+    		
+				<li><p><a href="/blog/2022/">Happy New Year</a> - 📅 Jan 1st 2022
         		
 				
 				
