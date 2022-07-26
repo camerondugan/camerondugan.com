@@ -6,4 +6,4 @@ echo "Pushing to git..."
 git add . > /dev/null
 git commit -m "updated via script :)" > /dev/null
 git push > /dev/null
-echo "Pushed with the name: uploading"
+echo "Pushed with the name: updated via script :)"
