@@ -4,7 +4,7 @@ header: Weekly Programming - Week 2
 description: Programming a game player
 permalink: /blog/weekly-programming/2/
 layout: post
-tags: contest code ai
+tags: hidden contest code ai
 ---
 
 Programming projects help programmers get better. I'm publicly announcing a project every week on Monday with the goal of helping you get better at programming along with me.

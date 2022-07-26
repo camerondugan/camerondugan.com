@@ -4,7 +4,7 @@ header: My Crypto Adventures
 description: Misadventures in crypto
 layout: post
 permalink: /blog/crypto/
-tags: crypto bitcoin etherium
+tags: hidden crypto bitcoin etherium
 ---
 
 Hello and welcome to my second ever blog post...
