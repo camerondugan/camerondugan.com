@@ -4,7 +4,7 @@ header: Weekly Programming - Week 0
 description: Programming for the sake of programming
 permalink: /blog/weekly-programming/0/
 layout: post
-tags: code difficulty contest
+tags: hidden code difficulty contest
 ---
 
 Programming projects help programmers get better. I'm going to start publicly doing some to increase specific skills I want to work on.

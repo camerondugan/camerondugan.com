@@ -4,7 +4,7 @@ header: Procrastination and Motivation
 description: A note to self
 permalink: /blog/procrastination/
 layout: post
-tags: productivity mental-health difficulty
+tags: hidden productivity mental-health difficulty
 ---
 
 Motivation is overrated.

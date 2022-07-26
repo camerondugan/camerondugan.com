@@ -7,7 +7,8 @@ permalink: /blog/
 ---
 
 {% assign posts = site.posts | where_exp: "post", "post.tags.first != 'project'" %}
-{% for post in posts limit: 50 %}
+{% for post in posts %}
+  {% unless post.tags contains 'hidden' %}
   <p style="text-align:left;">
     <b><a href="{{ post.url }}">{{ post.title }}</a></b>
     <span style="float:right;">
@@ -29,4 +30,5 @@ permalink: /blog/
   {% if post.title != posts.last.title %}
   ___
   {% endif %}
+{% endunless %}
 {% endfor %}

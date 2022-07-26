@@ -4,7 +4,7 @@ header: Why RSS isn't Mainstream
 description: What is it missing?
 layout: post
 permalink: /blog/rss/
-tags: rss thinking future
+tags: hidden rss thinking future
 ---
 
 
