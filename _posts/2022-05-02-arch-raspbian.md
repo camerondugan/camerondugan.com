@@ -8,7 +8,7 @@ tags: linux dev arch
 
 Hi,
 
-I woke up today wanting to make my [Raspberry Pi](https://https://www.raspberrypi.org/) even more useful. 
+I woke up today wanting to make my [Raspberry Pi](https://www.raspberrypi.org/) even more useful. 
 
 Currently, it's tasked with hosting [this website](https://camerondugan.com), and it used to host an email until it randomly stopped working after an update.
 

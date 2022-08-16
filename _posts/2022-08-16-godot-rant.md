@@ -2,8 +2,8 @@
 title: My Development Experience With Godot 3 in VR
 description: My Recent Development Shenanigans
 layout: post
-permalink: /blog/draft/
-tags: linux dev arch
+permalink: /blog/godot-rant/
+tags: linux godot game dev
 ---
 
 It's been a while since I've posted anything. I'm going to blame it on my recent issues with [Godot](https://godotengine.org) development for Oculus Quest.
