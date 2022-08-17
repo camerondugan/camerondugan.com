@@ -5,7 +5,7 @@
   --line-height:1.5;
   
   --bg:#171717;
-  --accent-bg:#1a1a1a;
+  --accent-bg:#1F1F1F;
   --text:#ebebeb;
   --text-light:#b8cdd9;
   --border:#363b40;
@@ -57,7 +57,7 @@ a{
   transition: .25s;
 }
 a:hover {
-  filter: drop-shadow(4px 7px 2px #434343);
+  filter: drop-shadow(3px 4px #434343);
   background: var(--accent);
   color: var(--bg);
 }
