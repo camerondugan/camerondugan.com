@@ -1,8 +1,8 @@
 /* Use this file to add any custom css you like */
 :root {
   --base-fontsize:1.3rem;
-  --header-scale:1.15;
-  --line-height:1.5;
+  --header-scale:1.2;
+  --line-height:1.75;
   
   --bg:#171717;
   --accent-bg:#1F1F1F;
@@ -15,6 +15,11 @@
   --code:#cce7ff;
   --disabled:#111;
 }
+main img,
+main video {
+  border-radius:20px;
+}
+
 /* fix mobile nav to look good  */
 @media only screen and (max-width:750px) {
   nav a,
@@ -50,7 +55,7 @@ h4 {
 a{
   text-decoration-line: unset;
   background: var(--accent-bg);
-  border-radius: 4px;
+  border-radius: 5px;
   padding: 2.5px;
   padding-top: 2px;
   padding-bottom: 0px;

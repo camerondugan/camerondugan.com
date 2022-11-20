@@ -1,30 +1,27 @@
 ---
-title: My Development Experience With Godot 3 in VR
-description: My Recent Development Shenanigans
+title: Programming A Game AI
+description: It's kinda hard, but it's possible to do alone
 layout: post
 permalink: /blog/draft/
-tags: linux dev arch
+tags: project dev ai game
 ---
 
-It's been a while since I've posted anything. I'm going to blame it on my recent issues with [Godot](https://godotengine.org) development for Oculus Quest.
+I really like programming things that can improve as it runs, but programming a self improving program can be a nightmare because the feedback loop grows bigger the more you code.
 
-Since I haven't mentioned it, I'm working on a retro-style 3D game. Everything is up to change, might not stay retro, might not stay 3d, but so far the goal was for it to work on the Oculus Quest.
+The more you need the code to self improve, the longer it seems to take. Self improving code should be saved only for problems where you can't reasonably code a complete solution. Solving games is complicated, tic tac toe being relatively easy to solve, chess being orders of magnitude harder. Each new potential move makes the searching of potential moves exponentially more difficult. 
 
-I'm currently working on converting my game from VR back into a normal flat screen game. It's still going to have the code that will allow for VR, but the game's focus is going to have to shift back to the computer experience, optional VR is going to be a maybe.
+![chess board game played by alphazero](/assets/images/games/chess/alphazero.png)
 
-## My Reasons For The Switch to Flat:
-1. VR is hard to debug
+"AI" code can help in these scenarios to help trim down the potential moves the code looks at to find great moves. The way this works is you have a neural network that looks at a single game state and have it predict the winner. Loop over all potential moves and pick the move that the neural net likes the best and repeat until the game ends. For training, this doesn't work because the AI will have tendencies for picking the same series of moves over and over. 
 
-    > I'm making the game for fun, this should be easy not hard. Android build time + time to put on headset over and over again to find silly mistakes in my code got old fast.
+The solution is to pick moves based on how unlikely they are and how good they seem. The more a path is taken, force the AI to further avoid that path during training. This should allow a wider search of the game space. 
 
-1. [Godot](https://godotengine.org) doesn't support screen space shaders in VR on Android.
+![Neural Network Example](/assets/images/code visualization/AI/neuralnet.jpg)
 
-    > I just wanted to reduce the colors the game was outputting or look at the pixels on the screen and apply an effect.
+Now, another trick game AI programers can do is to split the training and the exploring into separate processes. The code can store games played into a large list and have half of the computer spend it's resources updating that list with new games and the other half updating the neural net to better judge the outcomes of those games.
 
-1. [Godot](https://godotengine.org) doesn't seem to allow to set custom lower resolution in VR. (for a retro effect)
+The code I wrote in rust works without that final trick, it just runs one at a time, but it does keep a list of games played so how often explores vs trains it's vision is easy to change. I also use the neat algorithm, which is not ideal because it simply is a trial and error style approach instead of an advanced calculus based learning model.
 
-    > This really should have been an option through the existing godot system, I'm not going to fish around for a function that modifies this. Also, having the above bullet would have allowed me to down sample the resolution. 
+Feel free to checkout the [chess AI trainer](https://gitlab.com/cameron.dugan/neat_zero_rust) which I wrote in rust based on some of the fundamentals found in an alpha go zero cheat sheet I found on the internet somewhere.
 
-1. Setting up all of the Android SDK requirements is too tedious.
-
-    > Every time I reset my computer, or try to develop on a different one, I needed to setup the Android SDK to interface with the Oculus Quest. The SDK works, but setting it up with all of the required tools can be slow and confusing. I'm glad for now I'm saying goodbye Android SDK.
+Hope you learned something or had fun! I know I did one of those...
