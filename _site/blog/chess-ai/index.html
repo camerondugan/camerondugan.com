@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/assets/images/favicon.ico" />
     
-    <title>Companion Databases ~ CameronDugan.com</title>
-    <meta name="description" content="Hyper personalized databases for everyday people." />
+    <title>Programming A Game AI ~ CameronDugan.com</title>
+    <meta name="description" content="It's kinda hard, but it's possible to do alone" />
     <link rel="stylesheet" href="https://cdn.simplecss.org/simple-v1.css">
     <link rel="stylesheet" href="/assets/css/custom.css">
   </head>
@@ -54,8 +54,8 @@
     
 </nav>
 
-      <h1>Companion Databases</h1>
-      <i>Hyper personalized databases for everyday people.</i>
+      <h1>Programming A Game AI</h1>
+      <i>It's kinda hard, but it's possible to do alone</i>
     </header>
 
     <main>
@@ -65,50 +65,32 @@
 
 
 
-<span style="float:right;">📅 Feb 1st 2022</span>
-<span style="float:left;"><code> Transmission <b>#28</b> Connection: <b>Neuralink</b></code></span>
+<span style="float:right;">📅 Nov 21st 2022</span>
+<span style="float:left;"><code> Transmission <b>#37</b> Connection: <b>Skynet</b></code></span>
 <br>
 <hr>
 
-<h3 id="background-info">Background Info</h3>
+<p>I really like programming things that improve as it runs, but programming self improving code can be a nightmare because the feedback loop tends to be quite large.</p>
 
-<p>I’ve been watching youtube programmers for a while now, and recently I was watching a <a href="https://www.youtube.com/c/KalleHallden">Kalle Hallden</a> youtube video.</p>
+<p>Usually when programming something, you click run and within a second or two you know if you need to modify the code, but with these kinds of programs, the code can take hours or days of running before you notice something is off.</p>
 
-<p>He mentions an idea I’ve traced back to originating from Derek Sivers(although I’m sure he’s not the only one to think of this).</p>
+<p>The more you need the code to self improve, the longer it needs to run. Self improving code should be saved only for problems where you can’t reasonably code a complete solution. Solving games is complicated, tic tac toe being relatively easy to solve, chess being orders of magnitude harder and go being one of the hardest complete information games. Each new legal move makes the searching of potential moves exponentially more difficult.</p>
 
-<p>I found Derek Sivers on the <a href="https://tim.blog/podcast/">Tim Ferris Podcast</a> on episodes: 137, 439, and 370.5.</p>
+<p><img src="/assets/images/games/chess/alphazero.png" alt="chess board game played by alphazero" /></p>
 
-<p>The grand idea boils down to writing a personal database custom to your exact situation. I’ve nicknamed this: the companion database.</p>
+<p>“AI” code can help in these scenarios to help trim down the potential moves the code looks at to find great moves. The way this works is you have a neural network that looks at a single game state and have it predict the winner. Loop over all potential moves and pick the move that the neural net likes the best and repeat until the game ends. For training, this doesn’t work because the AI will have tendencies for picking the same series of moves over and over.</p>
 
-<h3 id="the-concept">The Concept</h3>
+<p>The solution is to pick moves based on how unlikely they are and how good they seem. The more a path is taken, force the AI to further avoid that path during training. This should allow a wider search of the game space.</p>
 
-<p>This database will hold all the information you would ever want to log such as: daily exercise, your children’s dumb sayings, future/current assignments/projects and their status, favorite things over time, important quotes, etc.</p>
+<p><img src="/assets/images/code visualization/AI/neuralnet.jpg" alt="Neural Network Example" /></p>
 
-<p>Lets say I want to record all of the articles I read. I would create a new data type called ‘article’ with the fields: title, date read(optional: defaults to current day), date published(optional), description(optional).</p>
+<p>Now, another trick game AI programers can do is to split the training and the exploring into separate processes. The code can store games played into a large list and have half of the computer spend it’s resources updating that list with new games and the other half updating the neural net to better judge the outcomes of those games.</p>
 
-<p>Then later, if I realize that I also want to create a detailed review of an article, I have a few options. I can either add optional review and rating fields, or I can create a new data type called ‘reviews’ that must have a reference to an existing data entry, and the fields mentioned earlier.</p>
+<p>The code I wrote in rust works without that final trick, it just runs one part at a time, but it does keep a list of games played. This makes it easy to change how often it plays vs learns from those games. I also use the neat algorithm, which is not ideal because it’s a trial and error approach instead of a more usual neural net with back propagation.</p>
 
-<p>If you wanted, you could even use it as a doomsday mechanism, where after 12 months of non-use it could presume you to be dead, send a confirmation email to your address, after ~1 or 2 weeks it will either release the whole database or just sections to the public.</p>
+<p>Feel free to checkout the <a href="https://gitlab.com/cameron.dugan/neat_zero_rust">chess AI trainer</a> which I wrote in rust based on some of the fundamentals found in an alpha go zero cheat sheet I found on the internet somewhere.</p>
 
-<p>I think that such a database would be great. Alternatives like spreadsheets are a bad fit for this and often proprietary.</p>
-
-<h3 id="the-implementation">The Implementation</h3>
-
-<p>Traditionally something like this could only be done by software enthusiasts. A low-tech solution would be to write everything down in a notebook physically or digitally. This works, but lacks any automation, enforced structure, or automatically derived data.</p>
-
-<p>The solution I propose is to write a multi-platform software gui to a plaintext-based database with support for all the basic database things. Creating data types and required/optional relationships, but all under a super easy to understand interface that boils the concepts down into it’s most simple and easily understood terminology.</p>
-
-<p>All of the information has to be stored in plain-text, because I want this to last and work without the software, allowing it to work on any device with a text editor.</p>
-
-<p>Bonus: the software could graph anything from the database such as activity over time, events with dates and their duration, stat for data-type over time, etc.</p>
-
-<p>Ideally the system would work great with folder syncing software like SyncThing or rsync.</p>
-
-<h3 id="final-thoughts">Final Thoughts</h3>
-
-<p>I know I’m probably over-hyping the system, but I think it’s relatively novel and incredibly flexible. (just realized you could keep track of things in fridge and set an expire date etc). If plain-text companion databases don’t already exist, I want to make this happen.</p>
-
-<p>If they do exist in a similar way to what I’m describing, please contact me, I’d love to know.</p>
+<p>Hope you learned something or had fun! I know I did one of those…</p>
 
 
 <br>
@@ -5502,6 +5484,32 @@
 		
 		
     		
+				<li><p><a href="/blog/godot-rant/">My Development Experience With Godot 3 in VR</a> - 📅 Aug 16th 2022
+        		
+				
+				
+			
+		
+	
+    	
+		
+		
+		
+		
+    		
+		
+	
+    	
+		
+		
+		
+		
+    		
+				<li><p><a href="/blog/wave-collapse/">Wave Function Collapse</a> - 📅 Apr 28th 2022
+        		
+				
+				
+			
 		
 	
     	
@@ -5694,22 +5702,11 @@
 		
 		
     		
-		
-	
-    	
-		
-		
-		
-		
-    		
-		
-	
-    	
-		
-		
-		
-		
-    		
+				<li><p><a href="/blog/arbidor/">Arbidor</a> - 📅 Aug 11th 2021
+        		
+				
+				
+			
 		
 	
     	
@@ -5792,11 +5789,6 @@
 		
 		
     		
-				<li><p><a href="/blog/chess-ai/">Programming A Game AI</a> - 📅 Nov 21st 2022
-        		
-				
-				
-			
 		
 	
     	
@@ -5804,12 +5796,6 @@
 		
 		
 		
-    		
-				<li><p><a href="/blog/godot-rant/">My Development Experience With Godot 3 in VR</a> - 📅 Aug 16th 2022
-        		
-				
-				
-			
 		
 	
     	
@@ -5830,12 +5816,6 @@
 		
 		
 		
-    		
-				<li><p><a href="/blog/wave-collapse/">Wave Function Collapse</a> - 📅 Apr 28th 2022
-        		
-				
-				
-			
 		
 	
     	
@@ -5844,7 +5824,39 @@
 		
 		
     		
-				<li><p><a href="/blog/opposites/">Things Lead to Their Opposites</a> - 📅 Apr 2nd 2022
+		
+	
+    	
+		
+		
+		
+		
+    		
+		
+	
+    	
+		
+		
+		
+		
+    		
+		
+	
+    	
+		
+		
+		
+		
+    		
+		
+	
+    	
+		
+		
+		
+		
+    		
+				<li><p><a href="/blog/obsidian/">I've Found It</a> - 📅 Feb 12th 2022
         		
 				
 				
