@@ -10,31 +10,37 @@
   --text-light:#b8cdd9;
   --border:#363b40;
   --border-light:#485057;
-  --accent:#f79279;
+  --accent:#79c5f7;
   --accent-light:#242424;
   --code:#cce7ff;
   --disabled:#111;
+  --init-duration: .8s;
 }
 main img,
 main video {
   border-radius:20px;
+  animation-name: fade;
+  animation-duration: var(--init-duration);
 }
 
 /* fix mobile nav to look good  */
 @media only screen and (max-width:750px) {
   nav a,
   nav a:visited {
-    padding: 0.7rem 1rem;
-    display: inline;
+    padding: 0.7rem 0.7rem;
+    display: inline-block;
+    flex-direction: column;
     color: var(--text);
     font-size: 1.1rem;
     text-decoration:none;
-    line-height: 3;
+    line-height: .5;
   }
 }
 nav {
   padding-top: 5px;
   padding-bottom: 35px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 header {
   padding-top: 0px;
@@ -53,45 +59,61 @@ header {
 }
 @keyframes fade {
   0% {
-    opacity: 0.1;
+    opacity: 0;
   }
+}
+@keyframes slide-top {
+  0% { transform: translateY(-200%);}
 }
 @keyframes slide {
   0% {
-    margin-top: 200%;
-    height: 200%;
+    margin-top: 15%
   }
 }
 h1 { 
   animation-name: slide, fade;
-  animation-duration: 1.5s, 1.5s;
+  animation-duration: var(--init-duration), var(--init-duration);
+  animation-timing-function: ease-out;
   text-align: center;
   color: var(--text-light);
 }
 h2 { 
-  animation-name: slide;
-  animation-duration: 1.5s;
+  animation-name: slide, fade;
+  animation-duration: var(--init-duration), var(--init-duration);
+  animation-timing-function: ease-out;
   text-align: center;
   color: var(--text-light);
 }
 h3 { 
-  animation-name: slide;
-  animation-duration: 1.5s;
+  animation-name: slide, fade;
+  animation-duration: var(--init-duration), var(--init-duration);
+  animation-timing-function: ease-out;
   text-align: center;
   color: var(--text-light);
 }
 h4 { 
+  animation-name: slide, fade;
+  animation-duration: var(--init-duration), var(--init-duration);
+  animation-timing-function: ease-out;
   text-align: center;
   color: var(--text-light);
 }
 a {
   text-decoration-line: unset;
-  background: var(--accent-bg);
+  /*background: var(--accent-bg);*/
   border-radius: 5px;
   padding: 2.5px;
   padding-top: 2px;
   padding-bottom: 0px;
   transition: .25s;
+}
+li {
+  animation-name: fade;
+  animation-duration: var(--init-duration);
+}
+p {
+  animation-name: fade;
+  animation-duration: var(--init-duration);
 }
 a:hover {
   filter: drop-shadow(3px 4px #434343);
@@ -99,8 +121,8 @@ a:hover {
   color: var(--bg);
 }
 nav a {
-  animation-name: fade-after;
-  animation-duration: 2s;
+  animation-name: slide-top;
+  animation-duration: var(--init-duration);
   scale:1.15;
   margin-inline: 17px;
   border: none;
