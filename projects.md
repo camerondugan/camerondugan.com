@@ -24,7 +24,7 @@ permalink: /projects/
   </p>
   {{ post.description }}
   <br>
-  {{ post.content | truncatewords: 30 | markdownify}}
+  > {{ post.content | markdownify | strip | truncatewords: 35 }}
   {% if post.title != posts.last.title %}
   ___
   {% endif %}

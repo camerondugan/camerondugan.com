@@ -6,7 +6,7 @@
   
   --bg:#171717;
   --accent-bg:#1F1F1F;
-  --text:#ebebeb;
+  --text:#d3d3d3;
   --text-light:#b8cdd9;
   --border:#363b40;
   --border-light:#485057;
@@ -40,19 +40,51 @@ header {
   padding-top: 0px;
   border-bottom:4px dashed var(--border);
 }
+@keyframes fade-after {
+  0% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  0% {
+    opacity: 0.1;
+  }
+}
+@keyframes slide {
+  0% {
+    margin-top: 200%;
+    height: 200%;
+  }
+}
 h1 { 
+  animation-name: slide, fade;
+  animation-duration: 1.5s, 1.5s;
   text-align: center;
+  color: var(--text-light);
 }
 h2 { 
+  animation-name: slide;
+  animation-duration: 1.5s;
   text-align: center;
+  color: var(--text-light);
 }
 h3 { 
+  animation-name: slide;
+  animation-duration: 1.5s;
   text-align: center;
+  color: var(--text-light);
 }
 h4 { 
   text-align: center;
+  color: var(--text-light);
 }
-a{
+a {
   text-decoration-line: unset;
   background: var(--accent-bg);
   border-radius: 5px;
@@ -67,6 +99,8 @@ a:hover {
   color: var(--bg);
 }
 nav a {
+  animation-name: fade-after;
+  animation-duration: 2s;
   scale:1.15;
   margin-inline: 17px;
   border: none;

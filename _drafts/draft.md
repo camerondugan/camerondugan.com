@@ -1,29 +1,28 @@
 ---
-title: Programming A Game AI
-description: It's kinda hard, but it's possible to do alone
+title: My 2023 Android Setup
+description: What I'm Using on my phone this upcoming year
 layout: post
 permalink: /blog/draft/
-tags: project dev ai game
+tags: android software phone
 ---
 
-I really like programming things that improve as it runs, but programming self improving code can be a nightmare because the feedback loop tends to be quite large.
+Here's a quick rundown of what I'm running on my phone.
 
-Usually when programming something, you click run and within a second or two you know if you need to modify the code, but with these kinds of programs, the code can take hours or days of running before you notice something is off.
+I get my software from these sources in this order:
+1. Fdroid
+2. Izzy Droid Fdroid Repo (provide a link)
+3. Google Play
 
-The more you need the code to self improve, the longer it needs to run. Self improving code should be saved only for problems where you can't reasonably code a complete solution. Solving games is complicated, tic tac toe being relatively easy to solve, chess being orders of magnitude harder and go being one of the hardest complete information games. Each new legal move makes the searching of potential moves exponentially more difficult. 
+## Tracker Control (TC) on f-droid
 
-![chess board game played by alphazero](/assets/images/games/chess/alphazero.png)
+Blocks most ads and trackers inside of apps in android, without this, I wouldn't feel comfortable installing sketchy software straight from the play store.
 
-"AI" code can help in these scenarios to help trim down the potential moves the code looks at to find great moves. The way this works is you have a neural network that looks at a single game state and have it predict the winner. Loop over all potential moves and pick the move that the neural net likes the best and repeat until the game ends. For training, this doesn't work because the AI will have tendencies for picking the same series of moves over and over. 
+## Syncthing
 
-The solution is to pick moves based on how unlikely they are and how good they seem. The more a path is taken, force the AI to further avoid that path during training. This should allow a wider search of the game space. 
+Syncs photos, documents, backups, et cetera back and forth between my computers and my phone. Very usefull in niche scenarios. If you don't want to use a cloud photo backup system, you can setup a folder to send only to a computer with lots of storage, then you can also setup your computer to ignore photo deletions from your phone's folder. (tutorial?)
 
-![Neural Network Example](/assets/images/code visualization/AI/neuralnet.jpg)
+## Postbox Pro
 
-Now, another trick game AI programers can do is to split the training and the exploring into separate processes. The code can store games played into a large list and have half of the computer spend it's resources updating that list with new games and the other half updating the neural net to better judge the outcomes of those games.
+Postbox Pro takes your notifications and spreads them out so you aren't bothered constantly throughout the day. You can choose which apps you see instantly, and which ones are delayed. It turns your phone into more of a mailbox than a constant river of information. I like it, the effect is subtle but helpful.
+Postbox pro can be found on the PlayStore. (link)
 
-The code I wrote in rust works without that final trick, it just runs one part at a time, but it does keep a list of games played. This makes it easy to change how often it plays vs learns from those games. I also use the neat algorithm, which is not ideal because it's a trial and error approach instead of a more usual neural net with back propagation.
-
-Feel free to checkout the [chess AI trainer](https://gitlab.com/cameron.dugan/neat_zero_rust) which I wrote in rust based on some of the fundamentals found in an alpha go zero cheat sheet I found on the internet somewhere.
-
-Hope you learned something or had fun! I know I did one of those...
