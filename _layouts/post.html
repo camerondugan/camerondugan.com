@@ -1,16 +1,11 @@
 ---
 layout: default
 ---
-{% for post in site.posts %}{% if post.title == page.title %}{% assign postNum = site.posts | size | minus: forloop.index0 %}{% endif %}{% endfor %}
-{% assign adjectives = "QR Code,Tractor Beam,Neuralink,Quantum,Mars Satellite,Retroreflector,Skynet,Initech Landline" | split: ',' %}
-{% assign adjective = adjectives | sample: 1 %}
-{% assign max = adjectives.size %}
-{% assign diff = max | minus: 0 %}
-{% assign randomNumber = postNum | plus: adjectives.length | minus: 1 | modulo: diff %}
-<span style="float:right;">📅 {% assign d = page.date | date: "%d" | plus:'0' %}{{ page.date | date: "%b" }} {% case d %}{% when 1 or 21 or 31 %}{{ d }}st{% when 2 or 22 %}{{ d }}nd{% when 3 or 23 %}{{ d }}rd{% else %}{{ d }}th{% endcase %} {{ page.date | date: "%Y" }}</span>
-<span style="float:left;"><code> Transmission <b>#{{postNum}}</b> Connection: <b>{{adjective}}</b></code></span>
-<br>
+<!--{% for post in site.posts %}{% if post.title == page.title %}{% assign postNum = site.posts | size | minus: forloop.index0 %}{% endif %}{% endfor %}
+<center><code>Post #{{postNum}}</code>  created  on  📅 {% assign d = page.date | date: "%d" | plus:'0' %}{{ page.date | date: "%b" }} {% case d %}{% when 1 or 21 or 31 %}{{ d }}st{% when 2 or 22 %}{{ d }}nd{% when 3 or 23 %}{{ d }}rd{% else %}{{ d }}th{% endcase %} {{ page.date | date: "%Y" }}</center>
+
 <hr>
+-->
 
 {{ content }}
 

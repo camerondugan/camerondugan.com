@@ -24,9 +24,9 @@ permalink: /blog/
       {{ post.date | date: "%Y" }}
     </span>
   </p>
-  {{ post.description }}
+  {{post.description}}
   <br>
-  {{ post.content | strip | truncatewords: 30 | markdownify}}
+  > {{ post.content | markdownify | strip | truncatewords: 35 }}
   {% if post.title != posts.last.title %}
   ___
   {% endif %}
