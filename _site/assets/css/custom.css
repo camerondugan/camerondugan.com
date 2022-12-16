@@ -16,6 +16,9 @@
   --disabled:#111;
   --init-duration: .8s;
 }
+
+*{font-family: Courier New};
+
 main img,
 main video {
   border-radius:20px;
@@ -38,9 +41,7 @@ main video {
 }
 nav {
   padding-top: 5px;
-  padding-bottom: 35px;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-bottom: 30px;
 }
 header {
   padding-top: 0px;
@@ -105,7 +106,8 @@ a {
   padding: 2.5px;
   padding-top: 2px;
   padding-bottom: 0px;
-  transition: .25s;
+  transition: .15s;
+  transition-timing-function: ease-out;
 }
 li {
   animation-name: fade;
@@ -134,8 +136,8 @@ nav a.nav-current {
   font-weight: bold;
 }
 nav a:hover {
-  scale: 1.235;
   color: var(--text)!important;
+  transform: translate(-3.5%,-3.5%);
   border-color: var(--accent-light);
   background: var(--accent-light);
 }
