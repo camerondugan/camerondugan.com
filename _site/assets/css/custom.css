@@ -17,7 +17,7 @@
   --init-duration: .8s;
 }
 
-*{font-family: Courier New};
+*{font-family: Courier New !important};
 
 main img,
 main video {
@@ -30,13 +30,12 @@ main video {
 @media only screen and (max-width:750px) {
   nav a,
   nav a:visited {
-    padding: 0.7rem 0.7rem;
-    display: inline-block;
-    flex-direction: column;
+    padding: 0.64rem 0.64rem;
+    width: 32%;
+    margin-inline: 12px 12px;
     color: var(--text);
-    font-size: 1.1rem;
-    text-decoration:none;
-    line-height: .5;
+    font-size: 1.2rem;
+    line-height: .4;
   }
 }
 nav {
