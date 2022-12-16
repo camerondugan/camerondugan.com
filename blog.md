@@ -26,7 +26,7 @@ permalink: /blog/
   </p>
   {{post.description}}
   <br>
-  > {{ post.content | markdownify | strip | truncatewords: 35 }}
+  > {{ post.content | markdownify | strip | truncatewords: 35}}
   {% if post.title != posts.last.title %}
   ___
   {% endif %}

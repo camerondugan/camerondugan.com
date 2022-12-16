@@ -26,12 +26,10 @@ layout: default
   </p>
   {{ post.description }}
   <br>
-  {{ post.content | truncatewords: 30 | markdownify}}
+  > {{ post.content | markdownify | strip | truncatewords: 35}}
 {% endfor %}
 
 ---
-
-<br>
 
 {% assign projects = site.posts | where_exp: "post", "post.tags contains 'project'" %}
 ### Fun Project #{{projects | size}}:
@@ -54,5 +52,5 @@ layout: default
   </p>
   {{ post.description }}
   <br>
-  {{ post.content | truncatewords: 30 | markdownify}}
+  > {{ post.content | markdownify | strip | truncatewords: 35}}
 {% endfor %}
