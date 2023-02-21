@@ -17,7 +17,7 @@
   --init-duration: .8s;
 }
 
-*{font-family: Courier New !important};
+*{font-family: system-ui !important};
 
 main img,
 main video {
