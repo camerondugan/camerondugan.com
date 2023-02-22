@@ -6,8 +6,6 @@ permalink: /blog/youarenotaclone/
 tags: gamedev codingevent dev
 ---
 
-## Background
-
 Game jams are events where you make a game in a limited amount of time with a small team or alone. Usually game jams are pretty stressful unless you really know what you are doing. There's plenty that happen all of the time. Usually they happen on the weekends, but some last weeks or even a whole month.
 
 ## My Most Recent Experience
