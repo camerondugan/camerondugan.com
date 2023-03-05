@@ -112,10 +112,15 @@ li {
   animation-name: fade;
   animation-duration: var(--init-duration);
 }
+li p {
+  text-align: left;
+}
 p {
   animation-name: fade;
   animation-duration: var(--init-duration);
+  text-align: center;
 }
+
 a:hover {
   filter: drop-shadow(3px 4px #434343);
   background: var(--accent);
