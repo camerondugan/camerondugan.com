@@ -20,7 +20,7 @@
 
 @keyframes fade {
   0% {
-    opacity: 15%;
+    opacity: 10%;
   }
 }
 @keyframes slide-top {
@@ -36,6 +36,7 @@
   font-family: system-ui !important;
   animation-name: fade;
   animation-duration: var(--init-duration);
+  animation-timing-function: ease-out;
 }
 
 main img,
@@ -43,6 +44,7 @@ main video {
   border-radius:20px;
   animation-name: fade;
   animation-duration: var(--init-duration);
+  animation-timing-function: ease-out;
 }
 
 /* fix mobile nav to look good  */
@@ -65,28 +67,10 @@ header {
   padding-top: 0px;
   border-bottom:4px dashed var(--border);
 }
-h1 { 
-  animation-name: slide, fade;
-  animation-duration: var(--init-duration), var(--init-duration);
-  animation-timing-function: ease-out;
-  text-align: center;
-  color: var(--text-light);
+footer {
+  margin-top: 0rem;
 }
-h2 { 
-  animation-name: slide, fade;
-  animation-duration: var(--init-duration), var(--init-duration);
-  animation-timing-function: ease-out;
-  text-align: center;
-  color: var(--text-light);
-}
-h3 { 
-  animation-name: slide, fade;
-  animation-duration: var(--init-duration), var(--init-duration);
-  animation-timing-function: ease-out;
-  text-align: center;
-  color: var(--text-light);
-}
-h4 { 
+h1, h2, h3, h4, h5, h6 { 
   animation-name: slide, fade;
   animation-duration: var(--init-duration), var(--init-duration);
   animation-timing-function: ease-out;
@@ -106,6 +90,7 @@ a {
 li {
   animation-name: fade;
   animation-duration: var(--init-duration);
+  animation-timing-function: ease-out;
 }
 li p {
   text-align: left;
@@ -113,6 +98,7 @@ li p {
 p {
   animation-name: fade;
   animation-duration: var(--init-duration);
+  animation-timing-function: ease-out;
   text-align: center;
 }
 
@@ -125,6 +111,7 @@ a:hover {
 nav a {
   animation-name: slide-top;
   animation-duration: var(--init-duration);
+  animation-timing-function: ease-out;
   scale:1.15;
   margin-inline: 17px;
   border: none;
@@ -133,6 +120,7 @@ nav a {
 nav a.nav-current {
   animation-name: slide-top;
   animation-duration: var(--init-duration);
+  animation-timing-function: ease-out;
   background: var(--border);
   border-color: var(--border);
   font-weight: bold;
@@ -140,6 +128,7 @@ nav a.nav-current {
 nav a:hover {
   animation-name: slide-top;
   animation-duration: var(--init-duration);
+  animation-timing-function: ease-out;
   color: var(--text)!important;
   transform: translate(-3.5%,-3.5%);
   border-color: var(--accent-light);
@@ -148,6 +137,7 @@ nav a:hover {
 nav a.nav-current:hover {
   animation-name: slide-top;
   animation-duration: var(--init-duration);
+  animation-timing-function: ease-out;
   color: var(--text);
   border-color: var(--border-light);
   background: var(--border-light);

@@ -6,9 +6,16 @@ description: Thoughts and Projects in Tech!
 permalink: /blog/
 ---
 
-{% assign posts = site.posts | where_exp: "post", "post.tags.first != 'project'" %}
+{% assign all_posts = site.posts | where_exp: "post", "post.tags.first != 'project'" %}
+{% assign posts = "" | split,"" %}
+
+{% for post in all_posts %}
+  {% unless post.tags contains "hidden" %}
+    {% assign posts = posts | push:post %}
+  {% endunless %}
+{% endfor %}
+
 {% for post in posts %}
-  {% unless post.tags contains 'hidden' %}
   <p style="text-align:left;">
     <b><a href="{{ post.url }}">{{ post.title }}</a></b>
     <span style="float:right;">
@@ -30,5 +37,4 @@ permalink: /blog/
   {% if post.title != posts.last.title %}
   ___
   {% endif %}
-{% endunless %}
 {% endfor %}
