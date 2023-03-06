@@ -17,7 +17,26 @@
   --init-duration: .8s;
 }
 
-*{font-family: system-ui !important};
+
+@keyframes fade {
+  0% {
+    opacity: 15%;
+  }
+}
+@keyframes slide-top {
+  0% { transform: translateY(-400%);}
+}
+@keyframes slide {
+  0% {
+    margin-top: 15%
+  }
+}
+
+* {
+  font-family: system-ui !important;
+  animation-name: fade;
+  animation-duration: var(--init-duration);
+}
 
 main img,
 main video {
@@ -45,30 +64,6 @@ nav {
 header {
   padding-top: 0px;
   border-bottom:4px dashed var(--border);
-}
-@keyframes fade-after {
-  0% {
-    opacity: 0;
-  }
-  75% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes fade {
-  0% {
-    opacity: 0;
-  }
-}
-@keyframes slide-top {
-  0% { transform: translateY(-200%);}
-}
-@keyframes slide {
-  0% {
-    margin-top: 15%
-  }
 }
 h1 { 
   animation-name: slide, fade;
@@ -126,6 +121,7 @@ a:hover {
   background: var(--accent);
   color: var(--bg);
 }
+
 nav a {
   animation-name: slide-top;
   animation-duration: var(--init-duration);
@@ -135,17 +131,23 @@ nav a {
   background:var(--bg);
 }
 nav a.nav-current {
+  animation-name: slide-top;
+  animation-duration: var(--init-duration);
   background: var(--border);
   border-color: var(--border);
   font-weight: bold;
 }
 nav a:hover {
+  animation-name: slide-top;
+  animation-duration: var(--init-duration);
   color: var(--text)!important;
   transform: translate(-3.5%,-3.5%);
   border-color: var(--accent-light);
   background: var(--accent-light);
 }
 nav a.nav-current:hover {
+  animation-name: slide-top;
+  animation-duration: var(--init-duration);
   color: var(--text);
   border-color: var(--border-light);
   background: var(--border-light);
