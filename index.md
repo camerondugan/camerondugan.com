@@ -27,8 +27,9 @@ layout: default
   </p>
   > {{ post.content | markdownify | strip | truncatewords: 35}}
 {% endfor %}
-
 ---
+
+<br>
 
 {% assign projects = site.posts | where_exp: "post", "post.tags contains 'project'" %}
 ### Fun Project #{{projects | size}}:
