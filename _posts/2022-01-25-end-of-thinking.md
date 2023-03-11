@@ -1,6 +1,6 @@
 ---
 title: The End of Thinking
-description: An attempt at a short narrative
+description: An Attempt at a Short Narrative
 layout: post
 permalink: /blog/end-of-thinking/
 tags: writing sci-fi thinking

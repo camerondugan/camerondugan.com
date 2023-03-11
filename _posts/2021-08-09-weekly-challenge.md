@@ -1,7 +1,6 @@
 ---
 title: Weekly Programming - Week 0
-header: Weekly Programming - Week 0
-description: Programming for the sake of programming
+description: Programming for the Sake of Programming
 permalink: /blog/weekly-programming/0/
 layout: post
 tags: hidden code difficulty contest

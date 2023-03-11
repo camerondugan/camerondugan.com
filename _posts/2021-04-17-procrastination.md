@@ -1,7 +1,6 @@
 ---
 title: Procrastination and Motivation
-header: Procrastination and Motivation
-description: A note to self
+description: A Note to Self
 permalink: /blog/procrastination/
 layout: post
 tags: hidden productivity mental-health difficulty

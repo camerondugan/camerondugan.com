@@ -1,6 +1,6 @@
 ---
 title: Game Jams
-description: What I did during my last game jam
+description: What I Did During My Last Game Jam
 layout: post
 permalink: /blog/youarenotaclone/
 tags: gamedev codingevent dev

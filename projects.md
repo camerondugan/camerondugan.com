@@ -6,9 +6,11 @@ description: Idea -> Plan -> Reality
 permalink: /projects/
 ---
 {% assign posts = site.posts | where_exp: "post", "post.tags contains 'project'" %}
+
 {% for post in posts limit: 50 %}
+  <b><a href="{{ post.url }}">{{ post.title }}</a></b>
   <p style="text-align:left;">
-    <b><a href="{{ post.url }}">{{ post.title }}</a></b>
+    {{ post.description }}
     <span style="float:right;">
       📅 
       {% assign d = post.date | date: "%d" | plus:'0' %}
@@ -22,8 +24,6 @@ permalink: /projects/
       {{ post.date | date: "%Y" }}
     </span>
   </p>
-  {{ post.description }}
-  <br>
   > {{ post.content | markdownify | strip | truncatewords: 35 }}
   {% if post.title != posts.last.title %}
   ___

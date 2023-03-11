@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/assets/images/favicon.ico" />
     
-    <title>Taking The Slow Road ~ CameronDugan.com</title>
-    <meta name="description" content="Min/Maxing Decisions" />
+    <title>Serverless Applications ~ CameronDugan.com</title>
+    <meta name="description" content="Using Cloudflare for Applications" />
     <link rel="stylesheet" href="https://cdn.simplecss.org/simple-v1.css">
     <link rel="stylesheet" href="/assets/css/custom.css">
   </head>
@@ -54,28 +54,34 @@
     
 </nav>
 
-      <h1>Taking The Slow Road</h1>
-      <i>Min/Maxing Decisions</i>
+      <h1>Serverless Applications</h1>
+      <i>Using Cloudflare for Applications</i>
     </header>
 
     <main>
       <!--
-<center><code>Post #40</code>  created  on  📅 Mar 5th 2023</center>
+<center><code>Post #41</code>  created  on  📅 Mar 11th 2023</center>
 
 <hr>
 -->
 
-<p>This post, like most post is just a reminder to my future self.</p>
+<p>I’ve been looking into CloudFlare’s other options, currently I’m using it for my DNS and this website’s hosting, but I’ve been thinking about doing more.</p>
 
-<p>Life isn’t a race. Sometimes it’s hard to remember, but knowing when to sprint and, when to jog and, when to walk is super important. If life was a race, it would be a marathon, the best racers know how to pace themselves, when to sprint, when to jog, and when to walk.</p>
+<p>I’ve realized that it’s entirely possible to cheaply host something they call durable objects and program them to be used in replacement of a vps.</p>
 
-<h2 id="pacing-yourself">Pacing Yourself</h2>
+<h2 id="potential-upsides">Potential Upsides</h2>
 
-<p>Not everything you do has to be done to the max. If you disagree, then you need to think for a little longer. People who run at 100% 24/7 burn out. The people that go the furthest can pace themselves for long term success. It doesn’t matter so much that you always win, it just matters that you win more overall in the long run.</p>
+<p>My plan involves using durable objects to host data for an online multiplayer game. I don’t know how far I will get, but at least I can use this to super cheaply host and update high-scores. My understanding right now is that durable objects are variants of cloudflare workers that guarantees only one is running and changing data. Traditional workers exist in multiple places and would cause problems when trying to keep everything in sync between two players.</p>
 
-<p>It’s all about lining up dominos for the future instead of worrying about how many dominos you can knock down today.</p>
+<h2 id="potential-downsides">Potential Downsides</h2>
 
-<p>Have a great week!</p>
+<p>The costs can stack up, so I need to be smart about how many durable objects I make and how many times I update the data in storage.</p>
+
+<p>The next thing I’ll be doing is attempting a high-score system for my succulent game, as well as addressing some bugs in that game.</p>
+
+<p>With success there I’ll probably attempt a much bigger project involving this cheap online storage hosting method.</p>
+
+<p>I hope this was interesting, have a great week!</p>
 
 
 <br>
@@ -5707,7 +5713,15 @@
 		
 		
     		
-				<li><p><a href="/blog/serverless-applications/">Serverless Applications</a> - 📅 Mar 11th 2023
+		
+	
+    	
+		
+		
+		
+		
+    		
+				<li><p><a href="/blog/taking-the-slow-road/">Taking The Slow Road</a> - 📅 Mar 5th 2023
         		
 				
 				
@@ -6026,14 +6040,6 @@
     		
 		
 	
-    	
-		
-		
-		
-		
-    		
-		
-	
 
 	
     	
@@ -6041,6 +6047,7 @@
 		
 		
 		
+    		
 		
 	
     	
@@ -6048,7 +6055,6 @@
 		
 		
 		
-    		
 		
 	
     	
@@ -6370,6 +6376,7 @@
 		
 		
 		
+    		
 		
 	
     	
@@ -6377,7 +6384,6 @@
 		
 		
 		
-    		
 		
 	
     	

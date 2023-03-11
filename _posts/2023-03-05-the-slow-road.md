@@ -1,6 +1,6 @@
 ---
 title: Taking The Slow Road
-description: Min/Maxing decisions
+description: Min/Maxing Decisions
 layout: post
 permalink: /blog/taking-the-slow-road/
 tags: life plans dev

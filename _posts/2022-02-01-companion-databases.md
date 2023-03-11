@@ -1,6 +1,6 @@
 ---
 title: Companion Databases
-description: Hyper personalized databases for everyday people.
+description: Hyper Personalized Databases for Everyday People.
 layout: post
 permalink: /blog/companion-databases/
 tags: dev idea thinking
