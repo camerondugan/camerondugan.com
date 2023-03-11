@@ -1,6 +1,6 @@
 ---
 title: My Website Is Improving!
-description: Working with liquid HTML
+description: Working with Liquid HTML
 layout: post
 permalink: /blog/website-improvements/
 tags: code website progress

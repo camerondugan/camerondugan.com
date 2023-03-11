@@ -1,7 +1,6 @@
 ---
 title: Happy New Year
-header: Happy New Year
-description: Software I use and will use more
+description: Software I Use and Will Use More
 layout: post
 permalink: /blog/2022/
 tags: recommendations android linux

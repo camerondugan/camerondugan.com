@@ -1,7 +1,6 @@
 ---
 title: Why RSS isn't Mainstream
-header: Why RSS isn't Mainstream
-description: What is it missing?
+description: What is it Missing?
 layout: post
 permalink: /blog/rss/
 tags: hidden rss thinking future

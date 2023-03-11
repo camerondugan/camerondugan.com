@@ -1,6 +1,6 @@
 ---
 title: Automatic Lightswitch
-description: Servo + Arduino + 3d printer = magic
+description: Servo + Arduino + 3d Printer = Magic
 layout: post
 permalink: /projects/lightswitch/
 tags: project 3d-printing arduino 

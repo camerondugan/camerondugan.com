@@ -1,7 +1,6 @@
 ---
 title: Complexity
-header: Complexity
-description: How complexity influences people.
+description: How Complexity Influences People.
 permalink: /blog/complexity/
 layout: post
 tags: hidden thinking hardware code

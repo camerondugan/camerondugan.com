@@ -1,7 +1,6 @@
 ---
 title: Linux Scripting
-header: Linux Scripting
-description: Removing repetitive tasks
+description: Removing Repetitive Tasks
 permalink: /blog/bash/
 layout: post
 tags: hidden code linux commandline

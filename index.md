@@ -9,8 +9,9 @@ layout: default
 ### Blog Post #{{posts | size}}:
 ---
 {% for post in posts limit: 1 %}
+  <b><a href="{{ post.url }}">{{ post.title }}</a></b>
   <p style="text-align:left;">
-    <b><a href="{{ post.url }}">{{ post.title }}</a></b>
+    {{ post.description }}
     <span style="float:right;">
       📅 
       {% assign d = post.date | date: "%d" | plus:'0' %}
@@ -24,8 +25,6 @@ layout: default
       {{ post.date | date: "%Y" }}
     </span>
   </p>
-  {{ post.description }}
-  <br>
   > {{ post.content | markdownify | strip | truncatewords: 35}}
 {% endfor %}
 
@@ -35,8 +34,9 @@ layout: default
 ### Fun Project #{{projects | size}}:
 ---
 {% for post in projects limit: 1 %}
+  <b><a href="{{ post.url }}">{{ post.title }}</a></b>
   <p style="text-align:left;">
-    <b><a href="{{ post.url }}">{{ post.title }}</a></b>
+    {{ post.description }}
     <span style="float:right;">
       📅 
       {% assign d = post.date | date: "%d" | plus:'0' %}
@@ -50,7 +50,5 @@ layout: default
       {{ post.date | date: "%Y" }}
     </span>
   </p>
-  {{ post.description }}
-  <br>
   > {{ post.content | markdownify | strip | truncatewords: 35}}
 {% endfor %}

@@ -1,7 +1,6 @@
 ---
 title: My Crypto Adventures
-header: My Crypto Adventures
-description: Misadventures in crypto
+description: Misadventures in Crypto
 layout: post
 permalink: /blog/crypto/
 tags: hidden crypto bitcoin etherium

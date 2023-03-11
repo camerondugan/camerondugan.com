@@ -1,6 +1,6 @@
 ---
 title: Things Lead to Their Opposites
-description: A generalization that's generally true
+description: A Generalization That's Generally True
 layout: post
 permalink: /blog/opposites/
 tags: thinking experience

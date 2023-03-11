@@ -16,8 +16,9 @@ permalink: /blog/
 {% endfor %}
 
 {% for post in posts %}
+  <b><a href="{{ post.url }}">{{ post.title }}</a></b>
   <p style="text-align:left;">
-    <b><a href="{{ post.url }}">{{ post.title }}</a></b>
+    {{post.description}}
     <span style="float:right;">
       📅 
       {% assign d = post.date | date: "%d" | plus:'0' %}
@@ -31,8 +32,6 @@ permalink: /blog/
       {{ post.date | date: "%Y" }}
     </span>
   </p>
-  {{post.description}}
-  <br>
   > {{ post.content | markdownify | strip | truncatewords: 35}}
   {% if post.title != posts.last.title %}
   ___

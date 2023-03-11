@@ -1,7 +1,6 @@
 ---
 title: The Overwhelm
-header: The Overwhelm
-description: Conquering the unknown
+description: Conquering the Unknown
 permalink: /blog/overwhelm/
 layout: post
 tags: hidden mental-health productivity thinking
