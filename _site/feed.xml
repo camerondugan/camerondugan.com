@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://www.camerondugan.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.camerondugan.com/" rel="alternate" type="text/html" hreflang="en" /><updated>2023-03-12T00:35:53-05:00</updated><id>https://www.camerondugan.com/feed.xml</id><subtitle>This is my Jekyll website that uses Simple.css</subtitle><author><name>Cameron Dugan</name></author><entry><title type="html">Bottles Error Fix</title><link href="https://www.camerondugan.com/blog/serverless-applications/" rel="alternate" type="text/html" title="Bottles Error Fix" /><published>2023-03-12T00:00:00-05:00</published><updated>2023-03-12T00:00:00-05:00</updated><id>https://www.camerondugan.com/blog/bottles-stuck-fix</id><content type="html" xml:base="https://www.camerondugan.com/blog/serverless-applications/"><![CDATA[<p>I’m posting this because I couldn’t find any solutions online.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://www.camerondugan.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.camerondugan.com/" rel="alternate" type="text/html" hreflang="en" /><updated>2023-03-12T00:45:12-05:00</updated><id>https://www.camerondugan.com/feed.xml</id><subtitle>This is my Jekyll website that uses Simple.css</subtitle><author><name>Cameron Dugan</name></author><entry><title type="html">Bottles Error Fix</title><link href="https://www.camerondugan.com/blog/bottles-error-fix/" rel="alternate" type="text/html" title="Bottles Error Fix" /><published>2023-03-12T00:00:00-05:00</published><updated>2023-03-12T00:00:00-05:00</updated><id>https://www.camerondugan.com/blog/bottles-stuck-fix</id><content type="html" xml:base="https://www.camerondugan.com/blog/bottles-error-fix/"><![CDATA[<p>I’m posting this because I couldn’t find any solutions online.</p>
 
 <h2 id="the-issue">The Issue</h2>
 
@@ -12,7 +12,7 @@
 
 <p>The fix was to run Bottles in the command line via <code class="language-plaintext highlighter-rouge">bottles</code>, and to wait for it to give the error.</p>
 
-<p>Open the file that has the error and add a # in front of the line creating the problem. Bottles suddenly works perfectly fine afterwords.</p>
+<p>Open the file that has the error and add a # in front of the line creating the problem. Bottles suddenly works perfectly fine afterwards.</p>
 
 <p>Also, if you have the same issue but this doesn’t work, in my case this was just a graphical/gtk issue and could have been avoided by using the <code class="language-plaintext highlighter-rouge">bottles-cli</code> commands to run applications and interact with your bottles.</p>
 
