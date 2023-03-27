@@ -17,7 +17,6 @@
   --init-duration: .8s;
 }
 
-
 @keyframes fade {
   0% {
     opacity: 10%;
@@ -32,7 +31,7 @@
   }
 }
 
-* {
+* :not(bg){
   font-family: system-ui !important;
   animation-name: fade;
   animation-duration: var(--init-duration);
