@@ -1,4 +1,31 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://www.camerondugan.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.camerondugan.com/" rel="alternate" type="text/html" hreflang="en" /><updated>2023-03-29T12:52:55-04:00</updated><id>https://www.camerondugan.com/feed.xml</id><subtitle>This is my Jekyll website that uses Simple.css</subtitle><author><name>Cameron Dugan</name></author><entry><title type="html">Bottles Error Fix</title><link href="https://www.camerondugan.com/blog/bottles-error-fix/" rel="alternate" type="text/html" title="Bottles Error Fix" /><published>2023-03-12T00:00:00-05:00</published><updated>2023-03-12T00:00:00-05:00</updated><id>https://www.camerondugan.com/blog/bottles-stuck-fix</id><content type="html" xml:base="https://www.camerondugan.com/blog/bottles-error-fix/"><![CDATA[<p>I’m posting this because I couldn’t find any solutions online.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://www.camerondugan.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.camerondugan.com/" rel="alternate" type="text/html" hreflang="en" /><updated>2023-05-24T19:52:02-04:00</updated><id>https://www.camerondugan.com/feed.xml</id><subtitle>This is my Jekyll website that uses Simple.css</subtitle><author><name>Cameron Dugan</name></author><entry><title type="html">My Journey into Configuring a Blazingly Fast Code Editor</title><link href="https://www.camerondugan.com/blog/neovim-config/" rel="alternate" type="text/html" title="My Journey into Configuring a Blazingly Fast Code Editor" /><published>2023-05-24T00:00:00-04:00</published><updated>2023-05-24T00:00:00-04:00</updated><id>https://www.camerondugan.com/blog/neovim-setup</id><content type="html" xml:base="https://www.camerondugan.com/blog/neovim-config/"><![CDATA[<h2 id="introduction">Introduction:</h2>
+<p>As a software developer, having a fast and efficient code editor is crucial for productivity. After watching a Primagen video on his Neovim config, I was inspired to delve into configuring this code editor to achieve optimal performance. In this blog post, I share my experience and insights gained throughout this process.</p>
+
+<h2 id="understanding-neovim">Understanding Neovim:</h2>
+<p>Neovim is a modernized version of the popular Vim editor, designed to enhance extensibility and usability. It offers a plethora of features and customization options, making it a powerful choice for developers seeking speed, flexibility, and an efficient workflow.</p>
+
+<h2 id="installation">Installation:</h2>
+<p>Being a user of Garuda Linux, an Arch Linux distribution, I installed neovim through my package manager. Neovim is compatible with various platforms, ensuring accessibility for developers across different environments.</p>
+
+<h2 id="choosing-a-plugin-manager">Choosing a Plugin Manager:</h2>
+<p>For managing plugins, I opted for Packer, a plugin manager that simplifies the process of adding, updating, and removing plugins from my Neovim setup. Its simplicity and ease of use were the key factors in my decision.</p>
+
+<h2 id="customizing-the-configuration">Customizing the Configuration:</h2>
+<p>One of the defining features of Neovim is its highly customizable configuration. I delved into the realm of Neovim’s configuration file, located at ~/.config/nvim/init.vim (on Unix-based systems). Here, I defined my preferred settings and key mappings to tailor Neovim to my workflow. Specifically, I utilized the Harpoon and lsp-zero plugins and configured my tab and enter keys to provide convenient suggestions.</p>
+
+<h2 id="essential-plugins">Essential Plugins:</h2>
+<p>During my Neovim configuration, I found the tree-sitter and packer plugins to be essential. The tree-sitter plugin enhanced syntax highlighting and improved code understanding, while the packer plugin ensured that my setup remained up-to-date and usable.</p>
+
+<h2 id="optimizing-performance">Optimizing Performance:</h2>
+<p>Surprisingly, I encountered no performance issues during the configuration process. Neovim proved to be incredibly fast, allowing me to seamlessly navigate and edit code without any hindrances.</p>
+
+<h2 id="utilizing-language-servers">Utilizing Language Servers:</h2>
+<p>To enhance my coding workflow, I installed the lsp-zero plugin and followed the documentation provided on GitHub. This allowed me to integrate language servers with Neovim, enabling features such as intelligent code completion, linting, and other advanced language-specific capabilities.</p>
+
+<h2 id="conclusion">Conclusion:</h2>
+<p>My journey into configuring Neovim as a blazingly fast code editor, inspired by a Primagen video, was both exciting and rewarding. By customizing the configuration, leveraging essential plugins, and integrating language servers, I created a highly customized coding environment tailored to my needs. Neovim’s flexibility, along with plugins like Harpoon, lsp-zero, tree-sitter, and packer, contributed to a remarkable coding experience. Whether you discovered Neovim through a video or another source, I encourage you to embark on your own journey, explore the vast customization options, and witness the incredible difference Neovim can make in your coding workflow. There is great power in knowing what happens in the background of your IDE, and switching to neovim will definitely help show you.</p>
+
+<p>Have a great day!</p>]]></content><author><name>Cameron Dugan</name></author><category term="ide" /><category term="code" /><category term="vim" /><summary type="html"><![CDATA[Neovim]]></summary></entry><entry><title type="html">Bottles Error Fix</title><link href="https://www.camerondugan.com/blog/bottles-error-fix/" rel="alternate" type="text/html" title="Bottles Error Fix" /><published>2023-03-12T00:00:00-05:00</published><updated>2023-03-12T00:00:00-05:00</updated><id>https://www.camerondugan.com/blog/bottles-stuck-fix</id><content type="html" xml:base="https://www.camerondugan.com/blog/bottles-error-fix/"><![CDATA[<p>I’m posting this because I couldn’t find any solutions online.</p>
 
 <h2 id="the-issue">The Issue</h2>
 
