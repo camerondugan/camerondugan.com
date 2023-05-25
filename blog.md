@@ -16,9 +16,9 @@ permalink: /blog/
 {% endfor %}
 
 {% for post in posts %}
-  <b><a href="{{ post.url }}">{{ post.title }}</a></b>
+  <h2><b><a href="{{ post.url }}">{{ post.title }}</a></b></h2>
   <p style="text-align:left;">
-    {{post.description}}
+    <code>{{post.description}}</code>
     <span style="float:right;">
       📅 
       {% assign d = post.date | date: "%d" | plus:'0' %}
