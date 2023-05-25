@@ -8,9 +8,9 @@ permalink: /projects/
 {% assign posts = site.posts | where_exp: "post", "post.tags contains 'project'" %}
 
 {% for post in posts limit: 50 %}
-  <b><a href="{{ post.url }}">{{ post.title }}</a></b>
+  <h2><b><a href="{{ post.url }}">{{ post.title }}</a></b></h2>
   <p style="text-align:left;">
-    {{ post.description }}
+    <code>{{post.description}}</code>
     <span style="float:right;">
       📅 
       {% assign d = post.date | date: "%d" | plus:'0' %}

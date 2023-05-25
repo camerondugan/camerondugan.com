@@ -1,17 +1,25 @@
 ---
-title: Home
+title: Recent Posts
 header: "~"
 description: Cameron Dugan's Website
 layout: default
 ---
 
-{% assign posts = site.posts | where_exp: "post", "post.tags.first != 'project'" %}
-### Blog Post #{{posts | size}}:
+{% assign all_posts = site.posts | where_exp: "post", "post.tags.first != 'project'" %}
+{% assign posts = "" | split,"" %}
+
+{% for post in all_posts %}
+  {% unless post.tags contains "hidden" %}
+    {% assign posts = posts | push:post %}
+  {% endunless %}
+{% endfor %}
+
+# Blog Post #{{posts | size}}:
 ---
 {% for post in posts limit: 1 %}
-  <b><a href="{{ post.url }}">{{ post.title }}</a></b>
+  <h2><b><a href="{{ post.url }}">{{ post.title }}</a></b></h2>
   <p style="text-align:left;">
-    {{ post.description }}
+    <code>{{post.description}}</code>
     <span style="float:right;">
       📅 
       {% assign d = post.date | date: "%d" | plus:'0' %}
@@ -32,12 +40,12 @@ layout: default
 <br>
 
 {% assign projects = site.posts | where_exp: "post", "post.tags contains 'project'" %}
-### Fun Project #{{projects | size}}:
+# Fun Project #{{projects | size}}:
 ---
 {% for post in projects limit: 1 %}
-  <b><a href="{{ post.url }}">{{ post.title }}</a></b>
+  <h2><b><a href="{{ post.url }}">{{ post.title }}</a></b></h2>
   <p style="text-align:left;">
-    {{ post.description }}
+    <code>{{post.description}}</code>
     <span style="float:right;">
       📅 
       {% assign d = post.date | date: "%d" | plus:'0' %}
@@ -53,3 +61,4 @@ layout: default
   </p>
   > {{ post.content | markdownify | strip | truncatewords: 35}}
 {% endfor %}
+---
