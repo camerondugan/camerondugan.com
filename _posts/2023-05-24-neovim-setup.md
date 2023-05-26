@@ -1,5 +1,5 @@
 ---
-title: My Journey into Configuring a Blazingly Fast Code Editor
+title: Configuring a Blazingly Fast Code Editor
 description: Neovim
 layout: post
 permalink: /blog/neovim-config/
