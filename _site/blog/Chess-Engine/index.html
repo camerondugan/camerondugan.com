@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/assets/images/favicon.ico" />
     
-    <title>My 2023 Android Setup ~ CameronDugan.com</title>
-    <meta name="description" content="What I'm Using on My Phone This Upcoming Year" />
+    <title>A Tiny Chess Engine ~ CameronDugan.com</title>
+    <meta name="description" content="A Delightfully Strong Nemises" />
     <link rel="stylesheet" href="https://cdn.simplecss.org/simple-v1.css">
     <link rel="stylesheet" href="/assets/css/custom.css">
   </head>
@@ -54,41 +54,40 @@
     
 </nav>
 
-      <h1>My 2023 Android Setup</h1>
-      <i>What I'm Using on My Phone This Upcoming Year</i>
+      <h1>A Tiny Chess Engine</h1>
+      <i>A Delightfully Strong Nemises</i>
     </header>
 
     <main>
       <!--
-<center><code>Post #38</code>  created  on  📅 Dec 15th 2022</center>
+<center><code>Post #46</code>  created  on  📅 Jul 29th 2023</center>
 
 <hr>
 -->
 
-<p>Here’s a quick rundown of what I’m going to be running on my phone.</p>
+<p>I’m planning on participating in <a href="https://www.youtube.com/@SebastianLague">SebLague’s</a> <a href="https://github.com/SebLague/Chess-Challenge">Chess-Challenge (C#)</a></p>
 
-<p>I get my software from these sources preferably in this order:</p>
-<ol>
-  <li>Fdroid</li>
-  <li>Izzy Droid Fdroid <a href="https://apt.izzysoft.de/fdroid/repo?fingerprint=3BF0D6ABFEAE2F401707B6D966BE743BF0EEE49C2561B9BA39073711F628937A" target="_blank">Repo</a></li>
-  <li>Google Play</li>
-</ol>
+<p>I’ve been writing a chess engine for this challenge for the past few days, and I’m pretty happy with what I’ve been able to do.</p>
 
-<h2 id="tracker-control-tc-on-f-droid">Tracker Control (TC) on F-Droid</h2>
+<p><img src="/assets/gifs/chess-engine.gif" alt="Video Proof" /></p>
 
-<p>Blocks most ads and trackers inside of apps in android, without this, I wouldn’t feel comfortable installing random software straight from the PlayStore. <a href="https://f-droid.org/en/packages/net.kollnig.missioncontrol.fdroid/" target="_blank">Tracker Control on F-Droid</a>.</p>
+<p>What I’m doing:</p>
 
-<h2 id="syncthing">Syncthing</h2>
+<p>I’ve written a recursive min-max algorithm including alpha-beta pruning and board value caching.</p>
 
-<p>Syncs photos, documents, backups, et cetera back and forth between my computers and my phone. Very usefull in niche scenarios. If you don’t want to use a cloud photo backup system, you can setup a folder to “send only” to a computer with lots of storage, then you can also setup your computer to ignore photo deletions from your phone’s folder. <a href="https://docs.syncthing.net/users/foldertypes.html" target="_blank">Docs found here</a>.</p>
+<p>I search all possible moves, ignoring moves that opponents/I will never take. Anytime I calculate a board value, I store that value for future use.</p>
 
-<h2 id="postbox-focus">PostBox Focus</h2>
+<p>I’m using Sebastian Lague’s Board C# object to grab bitboards of the current position for each type of piece and color. I use this information to quickly evaluate the board state and get a “value” which we can look for with our min-max search.</p>
 
-<p>Postbox Pro takes your notifications and spreads them out so you aren’t bothered constantly throughout the day. You can choose which apps you see instantly, and which ones are delayed. It turns your phone into more of a mailbox than a constant river of information. I like it, the effect is subtle but helpful.
-Postbox pro can be found on the PlayStore <a href="https://play.google.com/store/apps/details?id=app.serendipitylab.postboxpro" target="_blank">here</a>.</p>
+<p>I also have some code that mitigates losses from time-outs. Ideally, we wouldn’t run out of time, but if we start to run low, I start to make my chess bot make very quick judgements only about 2 layers deep.</p>
 
-<h2 id="conclusion">Conclusion</h2>
-<p>I have no monetary incentive to share these specific applications. I’m sharing them because I think that they can be helpful to anyone. If you found any of this helpful, feel free to reach out to me on Mastodon or by email, would love to hear from you. If there’s software that you think I should have talked about, feel free to send me a message. Have a great day!</p>
+<p>There was a bug that I had with the caching where 3-fold repititions became super common because I was using cached values of board states. When I returned: to a previous position in the search, it would show the old non-draw state instead of the new one, causing my algorithm to think that it could move there without a draw, which would cause a sad sudden drop in advantage, costing some games.</p>
+
+<p>I should probably mention that there are very fast ways for counting 256 bit longs, which I am using. It’s from a stack overflow post I’ve lost track of, can’t seem to find it, but it mentioned hamming weights and fast ways to calculate them. <a href="https://en.wikipedia.org/wiki/Hamming_weight">More Info About Hamming Weights</a>. This greatly reduces the number of steps in some of the most performance critical sections of my code.</p>
+
+<p>If you want to take a look at my code: <a href="https://gitlab.com/cameron.dugan/chess-challenge/-/blob/main/Chess-Challenge/src/My%20Bot/MyBot.cs?ref_type=heads">MyBot.cs</a></p>
+
+<p>Have a great rest of your day, thanks for being curious.</p>
 
 
 <br>
@@ -6408,6 +6407,11 @@ Postbox pro can be found on the PlayStore <a href="https://play.google.com/store
 		
 		
     		
+				<li><p><a href="/blog/vr-game/">Developing a PC + VR game with Godot</a> - 📅 Jun 1st 2023
+        		
+				
+				
+			
 		
 	
     	
@@ -6472,6 +6476,11 @@ Postbox pro can be found on the PlayStore <a href="https://play.google.com/store
 		
 		
     		
+				<li><p><a href="/blog/chess-ai/">Programming A Chess AI</a> - 📅 Nov 21st 2022
+        		
+				
+				
+			
 		
 	
     	
@@ -6777,7 +6786,6 @@ Postbox pro can be found on the PlayStore <a href="https://play.google.com/store
 		
 		
 		
-    		
 		
 	
     	
@@ -6841,7 +6849,6 @@ Postbox pro can be found on the PlayStore <a href="https://play.google.com/store
 		
 		
 		
-    		
 		
 	
     	
@@ -7147,7 +7154,6 @@ Postbox pro can be found on the PlayStore <a href="https://play.google.com/store
 		
 		
 		
-    		
 		
 	
     	
@@ -7177,183 +7183,7 @@ Postbox pro can be found on the PlayStore <a href="https://play.google.com/store
 		
 		
     		
-		
-	
-    	
-		
-		
-		
-		
-    		
-		
-	
-    	
-		
-		
-		
-		
-    		
-		
-	
-    	
-		
-		
-		
-		
-    		
-		
-	
-    	
-		
-		
-		
-		
-    		
-		
-	
-    	
-		
-		
-		
-		
-    		
-		
-	
-    	
-		
-		
-		
-		
-    		
-		
-	
-    	
-		
-		
-		
-		
-    		
-		
-	
-    	
-		
-		
-		
-		
-    		
-		
-	
-    	
-		
-		
-		
-		
-    		
-		
-	
-    	
-		
-		
-		
-		
-    		
-		
-	
-    	
-		
-		
-		
-		
-    		
-		
-	
-    	
-		
-		
-		
-		
-    		
-		
-	
-    	
-		
-		
-		
-		
-    		
-		
-	
-    	
-		
-		
-		
-		
-    		
-		
-	
-    	
-		
-		
-		
-		
-    		
-		
-	
-    	
-		
-		
-		
-		
-    		
-		
-	
-    	
-		
-		
-		
-		
-    		
-		
-	
-    	
-		
-		
-		
-		
-    		
-		
-	
-    	
-		
-		
-		
-		
-    		
-		
-	
-    	
-		
-		
-		
-		
-    		
-		
-	
-    	
-		
-		
-		
-		
-    		
-		
-	
-    	
-		
-		
-		
-		
-    		
-				<li><p><a href="/blog/2022/">Happy New Year</a> - 📅 Jan 1st 2022
+				<li><p><a href="/blog/bottles-error-fix/">Bottles Error Fix</a> - 📅 Mar 12th 2023
         		
 				
 				
@@ -7366,192 +7196,16 @@ Postbox pro can be found on the PlayStore <a href="https://play.google.com/store
 		
 		
     		
+				<li><p><a href="/blog/serverless-applications/">Serverless Applications</a> - 📅 Mar 11th 2023
+        		
+				
+				
+			
 		
 	
     	
-		
-		
-		
-		
-    		
-		
-	
-    	
-		
-		
-		
-		
-    		
-		
-	
-    	
-		
-		
-		
-		
-    		
-		
-	
-    	
-		
-		
-		
-		
-    		
-		
-	
-    	
-		
-		
-		
-		
-    		
-		
-	
-    	
-		
-		
-		
-		
-    		
-		
-	
-    	
-		
-		
-		
-		
-    		
-		
-	
-    	
-		
-		
-		
-		
-    		
-		
-	
-    	
-		
-		
-		
-		
-    		
-		
-	
-    	
-		
-		
-		
-		
-    		
-		
-	
-    	
-		
-		
-		
-		
-    		
-		
-	
-    	
-		
-		
-		
-		
-    		
-		
-	
-    	
-		
-		
-		
-		
-    		
-		
-	
-    	
-		
-		
-		
-		
-    		
-		
-	
-    	
-		
-		
-		
-		
-    		
-		
-	
-    	
-		
-		
-		
-		
-    		
-		
-	
-    	
-		
-		
-		
-		
-    		
-		
-	
-    	
-		
-		
-		
-		
-    		
-		
-	
+            		
 
-	
-    	
-		
-		
-		
-		
-    		
-				<li><p><a href="/blog/Chess-Engine/">A Tiny Chess Engine</a> - 📅 Jul 29th 2023
-        		
-				
-				
-			
-		
-	
-    	
-		
-		
-		
-		
-    		
-				<li><p><a href="/blog/vr-game/">Developing a PC + VR game with Godot</a> - 📅 Jun 1st 2023
-        		
-				
-				
-			
-		
-	
-    	
-		
-		
-		
-		
-    		
-				<li><p><a href="/blog/neovim-config/">Configuring a Blazingly Fast Code Editor</a> - 📅 May 24th 2023
-        		
-				
-				
-			
-		
 	
     	
             		

@@ -1,4 +1,50 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://www.camerondugan.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.camerondugan.com/" rel="alternate" type="text/html" hreflang="en" /><updated>2023-05-25T20:08:00-04:00</updated><id>https://www.camerondugan.com/feed.xml</id><subtitle>This is my Jekyll website that uses Simple.css</subtitle><author><name>Cameron Dugan</name></author><entry><title type="html">Configuring a Blazingly Fast Code Editor</title><link href="https://www.camerondugan.com/blog/neovim-config/" rel="alternate" type="text/html" title="Configuring a Blazingly Fast Code Editor" /><published>2023-05-24T00:00:00-04:00</published><updated>2023-05-24T00:00:00-04:00</updated><id>https://www.camerondugan.com/blog/neovim-setup</id><content type="html" xml:base="https://www.camerondugan.com/blog/neovim-config/"><![CDATA[<h2 id="introduction">Introduction:</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://www.camerondugan.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.camerondugan.com/" rel="alternate" type="text/html" hreflang="en" /><updated>2023-07-29T16:36:31-04:00</updated><id>https://www.camerondugan.com/feed.xml</id><subtitle>This is my Jekyll website that uses Simple.css</subtitle><author><name>Cameron Dugan</name></author><entry><title type="html">A Tiny Chess Engine</title><link href="https://www.camerondugan.com/blog/Chess-Engine/" rel="alternate" type="text/html" title="A Tiny Chess Engine" /><published>2023-07-29T00:00:00-04:00</published><updated>2023-07-29T00:00:00-04:00</updated><id>https://www.camerondugan.com/blog/tiny-chess-engine</id><content type="html" xml:base="https://www.camerondugan.com/blog/Chess-Engine/"><![CDATA[<p>I’m planning on participating in <a href="https://www.youtube.com/@SebastianLague">SebLague’s</a> <a href="https://github.com/SebLague/Chess-Challenge">Chess-Challenge (C#)</a></p>
+
+<p>I’ve been writing a chess engine for this challenge for the past few days, and I’m pretty happy with what I’ve been able to do.</p>
+
+<p><img src="/assets/gifs/chess-engine.gif" alt="Video Proof" /></p>
+
+<p>What I’m doing:</p>
+
+<p>I’ve written a recursive min-max algorithm including alpha-beta pruning and board value caching.</p>
+
+<p>I search all possible moves, ignoring moves that opponents/I will never take. Anytime I calculate a board value, I store that value for future use.</p>
+
+<p>I’m using Sebastian Lague’s Board C# object to grab bitboards of the current position for each type of piece and color. I use this information to quickly evaluate the board state and get a “value” which we can look for with our min-max search.</p>
+
+<p>I also have some code that mitigates losses from time-outs. Ideally, we wouldn’t run out of time, but if we start to run low, I start to make my chess bot make very quick judgements only about 2 layers deep.</p>
+
+<p>There was a bug that I had with the caching where 3-fold repititions became super common because I was using cached values of board states. When I returned: to a previous position in the search, it would show the old non-draw state instead of the new one, causing my algorithm to think that it could move there without a draw, which would cause a sad sudden drop in advantage, costing some games.</p>
+
+<p>I should probably mention that there are very fast ways for counting 256 bit longs, which I am using. It’s from a stack overflow post I’ve lost track of, can’t seem to find it, but it mentioned hamming weights and fast ways to calculate them. <a href="https://en.wikipedia.org/wiki/Hamming_weight">More Info About Hamming Weights</a>. This greatly reduces the number of steps in some of the most performance critical sections of my code.</p>
+
+<p>If you want to take a look at my code: <a href="https://gitlab.com/cameron.dugan/chess-challenge/-/blob/main/Chess-Challenge/src/My%20Bot/MyBot.cs?ref_type=heads">MyBot.cs</a></p>
+
+<p>Have a great rest of your day, thanks for being curious.</p>]]></content><author><name>Cameron Dugan</name></author><category term="project" /><category term="chess" /><category term="coding" /><category term="dev" /><summary type="html"><![CDATA[A Delightfully Strong Nemises]]></summary></entry><entry><title type="html">Developing a PC + VR game with Godot</title><link href="https://www.camerondugan.com/blog/vr-game/" rel="alternate" type="text/html" title="Developing a PC + VR game with Godot" /><published>2023-06-01T00:00:00-04:00</published><updated>2023-06-01T00:00:00-04:00</updated><id>https://www.camerondugan.com/blog/vr-game</id><content type="html" xml:base="https://www.camerondugan.com/blog/vr-game/"><![CDATA[<h2 id="godot-empowering-vr-development">Godot: Empowering VR Development</h2>
+
+<p>Godot, an open source game engine, became my companion throughout this journey. With its powerful features and intuitive workflow, Godot provided the ideal platform for creating an immersive VR game. Its flexible architecture allowed me to customize the game mechanics, visuals, and audio to match my vision, resulting in a truly unique VR experience.</p>
+
+<p><img src="/assets/images/cool-graphics/headset-glow.png" alt="headset" /></p>
+
+<h2 id="crafting-immersive-gameplay">Crafting Immersive Gameplay</h2>
+
+<p>Designing captivating gameplay in a VR environment requires meticulous attention to detail. I focused on creating an immersive experience that would transport players into a thrilling virtual world. By leveraging Godot’s robust scripting capabilities, I meticulously crafted interactions, mechanics, and challenges that would engage players on a deeper level, making every moment in the game memorable.</p>
+
+<h2 id="optimizing-performance-for-vr">Optimizing Performance for VR</h2>
+
+<p>Optimizing performance is crucial for a smooth and enjoyable VR experience. Through careful optimization techniques, I ensured optimal frame rates and minimal latency, allowing players to fully immerse themselves in the virtual world. From efficient resource management to rendering optimizations, every aspect of the game was fine-tuned to deliver a seamless and immersive VR experience.</p>
+
+<p><img src="/assets/images/cool-graphics/laptop.jpg" alt="my-laptop" /></p>
+
+<h2 id="integrating-oculus-api">Integrating Oculus API</h2>
+
+<p>To leverage the full potential of Oculus VR hardware, I utilized a dedicated Godot plugin that provided seamless integration with the Oculus API. This integration allowed me to tap into the unique features and capabilities of Oculus devices, enhancing the overall VR experience. With the plugin, I could access essential functions like head tracking, hand gestures, and controller input, ensuring a more immersive and interactive gameplay experience.</p>
+
+<p><img src="/assets/images/devlog/vr_0.png" alt="cool image" /></p>
+
+<p>In conclusion, this post explored the exciting journey of developing an immersive VR game using open source technologies and the powerful Godot game engine. By embracing the potential of open source and harnessing the capabilities of Godot, I brought my vision to life, creating a VR experience. This project exemplifies the endless possibilities and creative freedom that open source game development offers in the world of virtual reality.</p>
+
+<p><a href="https://gitlab.com/cameron.dugan/vr">My Code</a></p>]]></content><author><name>Cameron Dugan</name></author><category term="project" /><category term="game" /><category term="coding" /><category term="dev" /><summary type="html"><![CDATA[A long Journey]]></summary></entry><entry><title type="html">Configuring a Blazingly Fast Code Editor</title><link href="https://www.camerondugan.com/blog/neovim-config/" rel="alternate" type="text/html" title="Configuring a Blazingly Fast Code Editor" /><published>2023-05-24T00:00:00-04:00</published><updated>2023-05-24T00:00:00-04:00</updated><id>https://www.camerondugan.com/blog/neovim-setup</id><content type="html" xml:base="https://www.camerondugan.com/blog/neovim-config/"><![CDATA[<h2 id="introduction">Introduction:</h2>
 <p>As a software developer, having a fast and efficient code editor is crucial for productivity. After watching a Primagen video on his Neovim config, I was inspired to delve into configuring this code editor to achieve optimal performance. In this blog post, I share my experience and insights gained throughout this process.</p>
 
 <h2 id="understanding-neovim">Understanding Neovim:</h2>
@@ -689,28 +735,28 @@ alias longscript='bash ~/Scripts/LongScript.sh'
     </ul>
   </li>
   <li>To my knowledge, you cannot use widgets to communicate with other widgets, I can’t say:
-    <div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">childWidget</span><span class="o">()</span>
-  <span class="n">build</span><span class="o">()</span> 
-      <span class="k">return</span> <span class="n">widget</span><span class="o">(</span>
-          <span class="nl">onTap:</span> <span class="o">()</span> <span class="o">{</span>
-              <span class="n">parentWidget</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">item</span><span class="o">);</span>
-              <span class="n">setState</span><span class="o">(){};</span>
+    <div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">childWidget</span><span class="p">()</span>
+  <span class="n">build</span><span class="p">()</span> 
+      <span class="k">return</span> <span class="n">widget</span><span class="p">(</span>
+          <span class="nl">onTap:</span> <span class="p">()</span> <span class="p">{</span>
+              <span class="n">parentWidget</span><span class="o">.</span><span class="na">add</span><span class="p">(</span><span class="n">item</span><span class="p">);</span>
+              <span class="n">setState</span><span class="p">(){};</span>
 </code></pre></div>    </div>
     <p>but I can say:</p>
     <div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">//this is psuedo code</span>
-<span class="n">parentWidget</span><span class="o">(){</span>
-  <span class="n">mylist</span> <span class="o">=</span> <span class="o">[];</span> 
+<span class="n">parentWidget</span><span class="p">(){</span>
+  <span class="n">mylist</span> <span class="o">=</span> <span class="p">[];</span> 
 
-  <span class="n">Widget</span> <span class="n">childWidget</span><span class="o">(</span><span class="n">list</span><span class="o">){</span>
-      <span class="k">return</span> <span class="n">widget</span><span class="o">(</span>
-          <span class="nl">onTap:</span> <span class="o">()</span> <span class="o">{</span>
-              <span class="n">mylist</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="s">"hello"</span><span class="o">)</span>
-              <span class="n">setState</span><span class="o">(){};</span>
-          <span class="o">}</span>
-  <span class="o">}</span>
+  <span class="n">Widget</span> <span class="n">childWidget</span><span class="p">(</span><span class="n">list</span><span class="p">){</span>
+      <span class="k">return</span> <span class="n">widget</span><span class="p">(</span>
+          <span class="nl">onTap:</span> <span class="p">()</span> <span class="p">{</span>
+              <span class="n">mylist</span><span class="o">.</span><span class="na">add</span><span class="p">(</span><span class="s">"hello"</span><span class="p">)</span>
+              <span class="n">setState</span><span class="p">(){};</span>
+          <span class="p">}</span>
+  <span class="p">}</span>
 
-  <span class="n">build</span><span class="o">()</span> <span class="o">=&gt;</span> <span class="n">childWidget</span><span class="o">(</span><span class="n">mylist</span><span class="o">);</span>
-<span class="o">}</span>
+  <span class="n">build</span><span class="p">()</span> <span class="o">=</span><span class="p">&gt;</span> <span class="n">childWidget</span><span class="p">(</span><span class="n">mylist</span><span class="p">);</span>
+<span class="p">}</span>
 </code></pre></div>    </div>
   </li>
   <li>When using the scaffold widget to make the app, you want to use an indexed stack if you want to also use an animated navigation bar, to let the animation play out, instead of getting cut off when switching contexts.</li>
