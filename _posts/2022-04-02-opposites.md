@@ -3,7 +3,7 @@ title: Things Lead to Their Opposites
 description: A Generalization That's Generally True
 layout: post
 permalink: /blog/opposites/
-tags: thinking experience
+tags: hidden thinking experience
 ---
 
 It's hard to remember sometimes that things lead to their opposites. That in order to be hungry, you must have been full. In order for you to be happy, you must have some kind of sadness to compare the experience to.

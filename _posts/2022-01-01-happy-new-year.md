@@ -3,7 +3,7 @@ title: Happy New Year
 description: Software I Use and Will Use More
 layout: post
 permalink: /blog/2022/
-tags: recommendations android linux
+tags: hidden recommendations android linux
 ---
 
 Hello, just wanting to wish everyone a happy new year! 

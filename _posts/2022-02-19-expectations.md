@@ -3,7 +3,7 @@ title: The Cost of Expectations
 description: Why Gifted Individuals Tend to Burnout
 layout: post
 permalink: /blog/expectations/
-tags: thinking experience youtube
+tags: hidden thinking experience youtube
 ---
 
 I tend to spend some of my time browsing YouTube looking for memes and cool computer science stuff. Recently, I got recommended a video called "[Why Gifted Kids Are Actually Special Needs](https://www.youtube.com/watch?v=QUjYy4Ksy1E)" which seems to explain a good amount of my highschool experience. The video explains a lot about high expectations and how they can lead to unnecessary pressure which can only make things worse. With that in mind, here's how my experience went.

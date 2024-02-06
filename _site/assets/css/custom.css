@@ -1,19 +1,20 @@
 /* Use this file to add any custom css you like */
 :root {
-  --base-fontsize:1.3rem;
-  --header-scale:1.15;
-  --line-height:1.7;
-  --bg: #282c34;
-  --accent-bg:#2d323d;
-  --text:#b2b8c5;
-  --text-light:#5695be;
-  --border:#1c2229;
-  --border-light:#23272e;
-  --accent:#9ebe6c;
-  --accent-light:#aa70c9;
-  --code:#c8854c;
-  --disabled:#f4776d;
-  --init-duration: .8s;
+  --base-fontsize: 20.8px;
+  --header-scale: 1.15;
+  --line-height: 1.7;
+  --bg: #1e1e2e;
+  --accent-bg: #313244;
+  --text: #cdd6f4;
+  --text-light: #89b4f4;
+  --border: #181825;
+  --border-light: #313244;
+  --accent: #a6e3a1;
+  --accent-light: #cba6f7;
+  --code: #fab387;
+  --disabled: #f4776d;
+  --drop-shadow: #1e1e2e;
+  --init-duration: 0.5s;
 }
 
 @keyframes fade {
@@ -22,15 +23,17 @@
   }
 }
 @keyframes slide-top {
-  0% { transform: translateY(-400%);}
+  0% {
+    transform: translateY(-400px);
+  }
 }
 @keyframes slide {
   0% {
-    margin-top: 15%
+    margin-top: 100px;
   }
 }
 
-* :not(bg){
+* :not(bg) {
   font-family: monospace !important;
   font: ui-monospace;
   animation-name: fade;
@@ -40,22 +43,26 @@
 
 main img,
 main video {
-  border-radius:20px;
+  border-radius: 20px;
+  width: 880px;
   animation-name: fade;
   animation-duration: var(--init-duration);
   animation-timing-function: ease-out;
 }
 
 /* fix mobile nav to look good  */
-@media only screen and (max-width:750px) {
+@media only screen and (max-width: 750px) {
   nav a,
   nav a:visited {
-    padding: 0.64rem 0.64rem;
-    width: 32%;
-    margin-inline: 12px 12px;
+    padding: 1rem 0.64rem;
+    margin: 1rem 0.64rem;
+    width: 33%;
     color: var(--text);
     font-size: 1.2rem;
-    line-height: .4;
+    line-height: 0.4;
+  }
+  nav a:hover {
+    transform: translate(0px, 0px) !important; /*disable translation*/
   }
 }
 nav {
@@ -64,15 +71,20 @@ nav {
 }
 header {
   padding-top: 0px;
-  border-bottom:1px solid var(--border);
+  border-bottom: 1px solid var(--border);
 }
 body {
-  max-width: 55rem;
+  max-width: 880px;
 }
 footer {
-  margin-top: 0rem;
+  margin-top: 0px;
 }
-h1, h2, h3, h4, h5, h6 { 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   animation-name: slide, fade;
   animation-duration: var(--init-duration), var(--init-duration);
   animation-timing-function: ease-out;
@@ -87,7 +99,7 @@ a {
   padding: 2.5px;
   padding-top: 2px;
   padding-bottom: 0px;
-  transition: .15s;
+  transition: 0.15s;
   transition-timing-function: ease-out;
 }
 li {
@@ -106,7 +118,7 @@ p {
 }
 
 a:hover {
-  filter: drop-shadow(3px 4px #434343);
+  filter: drop-shadow(3px 4px var(--drop-shadow));
   background: var(--accent);
   color: var(--bg);
 }
@@ -115,10 +127,10 @@ nav a {
   animation-name: slide-top;
   animation-duration: var(--init-duration);
   animation-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);
-  scale:1.15;
+  scale: 1.15;
   margin-inline: 17px;
   border: none;
-  background:var(--bg);
+  background: var(--bg);
 }
 nav a.nav-current {
   animation-name: slide-top;
@@ -127,14 +139,14 @@ nav a.nav-current {
   background: var(--border);
   border-color: var(--border);
   font-weight: bold;
-  color: var(--accent-light)!important;
+  color: var(--accent-light) !important;
 }
 nav a:hover {
   animation-name: slide-top;
   animation-duration: var(--init-duration);
   animation-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);
-  transform: translate(-3.5%,-3.5%);
+  transform: translate(-3px, -3px);
   border-color: var(--accent-light);
   background: var(--accent-light);
-  color: var(--bg)!important;
+  color: var(--bg) !important;
 }

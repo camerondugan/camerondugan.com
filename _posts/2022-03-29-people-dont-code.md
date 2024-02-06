@@ -3,7 +3,7 @@ title: Why People Don't Code
 description: Thoughts and Updates
 layout: post
 permalink: /blog/whypeopledontcode/
-tags: thinking experience code
+tags: hidden thinking experience code
 ---
 
 Hello again, been busy working on an AI for a class I'm taking, strange issues with keras and data cardinality are stopping progress currently.

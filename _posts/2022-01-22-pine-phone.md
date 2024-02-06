@@ -3,7 +3,7 @@ title: Pine Phone
 description: A Linux Phone.
 layout: post
 permalink: /blog/pine-phone/
-tags: hardware linux opensource
+tags: hidden hardware linux opensource
 ---
 
 Last night I had a hard time sleeping.

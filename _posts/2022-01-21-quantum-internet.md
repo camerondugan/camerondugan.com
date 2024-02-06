@@ -3,7 +3,7 @@ title: Quantum Internet
 description: The Internet is Never Finished.
 layout: post
 permalink: /blog/quantum-internet/
-tags: quantum future thinking
+tags: hidden quantum future thinking
 ---
 
 The internet has reached a stage that I feel comfortable in calling pretty darn fast. The only problem is that we need to physically wire our devices together in order for them to become useful. Quantum Internet is a theoretical invention where, because of Quantum entaglement, we can enstablish secure, remote connections with other devices without a physical connection to an ISP. Instead, communication would happen at the quantum level, perfectly instant at any distance. 

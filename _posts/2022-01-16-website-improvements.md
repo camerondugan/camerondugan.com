@@ -3,7 +3,7 @@ title: My Website Is Improving!
 description: Working with Liquid HTML
 layout: post
 permalink: /blog/website-improvements/
-tags: code website progress
+tags: hidden code website progress
 ---
 
 You might have noticed that posts now has a few extra little widgets and layout enhancements, and that's because you're right!

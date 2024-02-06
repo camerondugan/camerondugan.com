@@ -3,7 +3,7 @@ title: Being An Arch User
 description: An Unexpected Consequence
 layout: post
 permalink: /blog/arch-rasbian/
-tags: linux dev arch
+tags: hidden linux dev arch
 ---
 
 Hi,
