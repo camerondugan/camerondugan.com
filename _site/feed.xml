@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://www.camerondugan.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.camerondugan.com/" rel="alternate" type="text/html" hreflang="en" /><updated>2024-03-03T19:14:31-05:00</updated><id>https://www.camerondugan.com/feed.xml</id><subtitle>This is my Jekyll website that uses Simple.css</subtitle><author><name>Cameron Dugan</name></author><entry><title type="html">Simple-Nvim-Config</title><link href="https://www.camerondugan.com/blog/neovim-update1/" rel="alternate" type="text/html" title="Simple-Nvim-Config" /><published>2024-03-03T00:00:00-05:00</published><updated>2024-03-03T00:00:00-05:00</updated><id>https://www.camerondugan.com/blog/neovim</id><content type="html" xml:base="https://www.camerondugan.com/blog/neovim-update1/"><![CDATA[<p>I’ve recently gone on a software spiritual journey to cut down my config from
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://www.camerondugan.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.camerondugan.com/" rel="alternate" type="text/html" hreflang="en" /><updated>2024-03-12T09:20:52-04:00</updated><id>https://www.camerondugan.com/feed.xml</id><subtitle>This is my Jekyll website that uses Simple.css</subtitle><author><name>Cameron Dugan</name></author><entry><title type="html">Simple-Nvim-Config</title><link href="https://www.camerondugan.com/blog/neovim-update1/" rel="alternate" type="text/html" title="Simple-Nvim-Config" /><published>2024-03-03T00:00:00-05:00</published><updated>2024-03-03T00:00:00-05:00</updated><id>https://www.camerondugan.com/blog/neovim</id><content type="html" xml:base="https://www.camerondugan.com/blog/neovim-update1/"><![CDATA[<p>I’ve recently gone on a software spiritual journey to cut down my config from
 my <a href="https://astronvim.com">https://astronvim.com</a> “beginner” config to something more simple and
 something I can almost completely understand.</p>
 
@@ -169,7 +169,7 @@ that I have in the near future. I’m sure that I’ll have some!</p>]]></conten
 
 <h1 id="me-problems">Me Problems</h1>
 
-<p>Then there’s me. I’ve given up using Windows in daily use, and I’ve settled into the linux distrobution of my choice. You would think that surely the defaults didn’t matter too much, because on linux you can change anything and everything. Here’s the thing: even though I could, doesn’t mean I want to spend all of my free time changing all of the unwanted behaviors into wanted ones. I’m still a customer at the end of the day. And I still want software that just works the way I want it to out of the box. Each bad default setting that I have to change, is something that I have to do for every phone and computer. Also anytime I download new software.</p>
+<p>Then there’s me. I’ve given up using Windows in daily use, and I’ve settled into the linux distribution of my choice. You would think that surely the defaults didn’t matter too much, because on linux you can change anything and everything. Here’s the thing: even though I could, doesn’t mean I want to spend all of my free time changing all of the unwanted behaviors into wanted ones. I’m still a customer at the end of the day. And I still want software that just works the way I want it to out of the box. Each bad default setting that I have to change, is something that I have to do for every phone and computer. Also anytime I download new software.</p>
 
 <p>It gets frustrating having to constantly change defaults to what I like. I’ve practically given up. There’s a reason why Google pays Apple and other web browser developing companies a absurd amount of money to stay the default. If they aren’t the default, a good amount of people probably wouldn’t care to switch back.</p>
 
@@ -233,13 +233,13 @@ that I have in the near future. I’m sure that I’ll have some!</p>]]></conten
 
 <p>We used Godot and for the puzzling mechanics we coded up some area2D sensors as buttons, some RigidBody2D spheres as our friend cube, and a KinematicBody2D as our slime main character.</p>
 
-<p>Our first real problem was that our cube failed to stay within the walls of the game, which is particually bad for a puzzle platformer where you would need the cube to activate things later. Our player was capable of pushing the cube as though the walls were not there, which isn’t good. We found a setting in the move-and-slide function to turn off infinite inertia, which solved the problem, but made it so that the player couldn’t push the cube.</p>
+<p>Our first real problem was that our cube failed to stay within the walls of the game, which is particularly bad for a puzzle platformer where you would need the cube to activate things later. Our player was capable of pushing the cube as though the walls were not there, which isn’t good. We found a setting in the move-and-slide function to turn off infinite inertia, which solved the problem, but made it so that the player couldn’t push the cube.</p>
 
 <p>One of my teammates found a tutorial online on how to make the player push the cube by coding the forces to be applied by hand.</p>
 
 <h2 id="play-testing">Play testing</h2>
 
-<p>Play testing is super important, you have no idea if you are heading in the right direction with the changes you are making unless you play the game frequently. Because we were playtesting along the way, we noticed that our cube wasn’t fun to interact with and would frequently get stuck to walls. I wasn’t particually looking for a solution for this, but I was playing around with the physics material for the cube. I added bounciness to the cube, and suddenly you could push the cube out of a corner by making it bounce out, very cool, plus it was more fun to interact with so… double win there.</p>
+<p>Play testing is super important, you have no idea if you are heading in the right direction with the changes you are making unless you play the game frequently. Because we were playtesting along the way, we noticed that our cube wasn’t fun to interact with and would frequently get stuck to walls. I wasn’t particularly looking for a solution for this, but I was playing around with the physics material for the cube. I added bounciness to the cube, and suddenly you could push the cube out of a corner by making it bounce out, very cool, plus it was more fun to interact with so… double win there.</p>
 
 <p>Originally our cube was square shaped, which was great, but this would make our cube get caught on corners and push the player in weird ways. We switched it out to be a sphere and added a square image on top and added some code to remove the image’s ability to rotate with the ball cube. This created an illusion that the cube was still a cube, without having the extra clunkiness.</p>
 
@@ -818,7 +818,7 @@ alias longscript='bash ~/Scripts/LongScript.sh'
   </li>
   <li>Using <code class="language-plaintext highlighter-rouge">flutter clean</code> is your friend
     <ul>
-      <li>Builds occassionally don’t work for no real reason. If this is the case, you can always run the clean command to potentially fix issues.</li>
+      <li>Builds occasionally don’t work for no real reason. If this is the case, you can always run the clean command to potentially fix issues.</li>
       <li>If this doesn’t work, you can build it to a different platform/os then back to the original platform.</li>
     </ul>
   </li>
@@ -831,7 +831,7 @@ alias longscript='bash ~/Scripts/LongScript.sh'
               <span class="n">setState</span><span class="p">(){};</span>
 </code></pre></div>    </div>
     <p>but I can say:</p>
-    <div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">//this is psuedo code</span>
+    <div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">//this is pseudo code</span>
 <span class="n">parentWidget</span><span class="p">(){</span>
   <span class="n">mylist</span> <span class="o">=</span> <span class="p">[];</span> 
 
