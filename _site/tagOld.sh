@@ -4,7 +4,7 @@ thisYear="$(date +%Y)"
 lastYear="$((thisYear - 1))"
 files="$(find ./_posts -maxdepth 1 -type f ! -name "$lastYear*" -and ! -name "$thisYear*")"
 #files="$files $(find ./_posts/ -name $lastYear* -type f)"
-for file in $files; do
+for file in "${files[@]}"; do
 	if grep -q 'tags: project' "$file"; then
 		echo "Old project detected: $file"
 	elif grep -q 'tags: hidden' "$file"; then

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 arg1="$*" # all text after command
-if [ -z "$arg1" ]; then
+if [ "$arg1" = "" ]; then
 	echo "Please use \"./upload.sh description of changes\""
 	exit 1
 fi
@@ -11,15 +11,15 @@ fi
 # bash tagOld.sh || exit
 
 echo "Building..."
-bundle exec jekyll build >/dev/null || exit
+bundle exec jekyll build || exit
 
 echo "Optimizing Assets..."
-jpegoptim assets/images/**/*.jpg -q >/dev/null
-optipng assets/images/**/*.png -quiet >/dev/null
+jpegoptim assets/images/**/*.jpg -q
+optipng assets/images/**/*.png -quiet
 
 echo "Pushing to git..."
-git add . >/dev/null
-git commit -m "$arg1" >/dev/null
+git add .
+git commit -m "$arg1"
 git push
 git push github
 echo "Pushed with the name: $arg1"

@@ -1,15 +1,18 @@
+---
+url: "https://www.CameronDugan.com"
+
+# SEO Stuff
+author: Cameron Dugan
+description: This is my personal static website/portfolio/blog
+lang: en
+locale: en_US
+# baseurl: ""
+
 plugins:
   - jekyll-feed
   - jekyll-sitemap
 
-# SEO Stuff
-author: Cameron Dugan
-description: This is my Jekyll website that uses Simple.css
-lang: en
-locale: en_US
-url: "https://www.CameronDugan.com"
-#baseurl: ""
-
 # RSS feeds
 feed:
   posts_limit: 10000
+

@@ -1,73 +1,73 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://www.camerondugan.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.camerondugan.com/" rel="alternate" type="text/html" hreflang="en" /><updated>2024-03-12T09:20:52-04:00</updated><id>https://www.camerondugan.com/feed.xml</id><subtitle>This is my Jekyll website that uses Simple.css</subtitle><author><name>Cameron Dugan</name></author><entry><title type="html">Simple-Nvim-Config</title><link href="https://www.camerondugan.com/blog/neovim-update1/" rel="alternate" type="text/html" title="Simple-Nvim-Config" /><published>2024-03-03T00:00:00-05:00</published><updated>2024-03-03T00:00:00-05:00</updated><id>https://www.camerondugan.com/blog/neovim</id><content type="html" xml:base="https://www.camerondugan.com/blog/neovim-update1/"><![CDATA[<p>I’ve recently gone on a software spiritual journey to cut down my config from
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://www.camerondugan.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.camerondugan.com/" rel="alternate" type="text/html" hreflang="en" /><updated>2024-04-10T08:34:44-04:00</updated><id>https://www.camerondugan.com/feed.xml</id><subtitle>This is my personal static website/portfolio/blog</subtitle><author><name>Cameron Dugan</name></author><entry><title type="html">Simple-Nvim-Config</title><link href="https://www.camerondugan.com/blog/neovim-update1/" rel="alternate" type="text/html" title="Simple-Nvim-Config" /><published>2024-03-03T00:00:00-05:00</published><updated>2024-03-03T00:00:00-05:00</updated><id>https://www.camerondugan.com/blog/neovim</id><content type="html" xml:base="https://www.camerondugan.com/blog/neovim-update1/"><![CDATA[<p>I’ve gone on a software spiritual journey to cut down my config from
 my <a href="https://astronvim.com">https://astronvim.com</a> “beginner” config to something more simple and
-something I can almost completely understand.</p>
+something I can almost understand.</p>
 
 <p>If you are itching to see the final result, you can find it here:
 <a href="https://github.com/camerondugan/simple-nvim-config">https://github.com/camerondugan/simple-nvim-config</a></p>
 
-<h1 id="creating-this-config">Creating this config</h1>
+<h2 id="creating-this-config">Creating this config</h2>
 
 <p>Best way to get started and understand:</p>
 
 <p><a href="https://github.com/nvim-lua/kickstart.nvim">https://github.com/nvim-lua/kickstart.nvim</a></p>
 
-<p>I forked the repo and got started! <a href="https://github.com/tjdevries">TJ</a> did an
-amazing job on this repo, making it exactly what I needed to get off the distro
+<p>I forked the repo and got started. <a href="https://github.com/tjdevries">TJ</a> did a
+great job on this repo, making it what I needed to get off the distro
 train and onto the Personalized Development Environment(P.D.E.) spaceship. I’m
 editing this article in Neovim from the comfort of my own terminal. And I have
 to say, that this is the best feeling vim I’ve ever touched because I control
 it all.</p>
 
-<h1 id="what-i-changed-in-kickstart">What I changed in kickstart:</h1>
+<h2 id="what-i-changed-in-kickstart">What I changed in KickStart:</h2>
 
 <p>From here on out, what I’m going to talk about might not be relevant anymore if
 you are reading this after some time has passed.</p>
 
 <p>My favorite feature I’ve added was Zoxide support. If you haven’t heard of
-zoxide… What are you waiting for??? Go check it out:
+Zoxide… What are you waiting for? Go check it out:
 <a href="https://github.com/ajeetdsouza/zoxide">https://github.com/ajeetdsouza/zoxide</a>. I use it for everything where I used
-cd. Installing the zoxide extension allowed me to use the z command with :Z in
+cd. Installing the Zoxide extension allowed me to use the z command with :Z in
 Neovim.</p>
 
-<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span> <span class="s1">'nanotee/zoxide.vim'</span><span class="p">,</span> <span class="n">lazy</span> <span class="o">=</span> <span class="kc">false</span> <span class="p">},</span> 
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span> <span class="s1">'nanotee/zoxide.vim'</span><span class="p">,</span> <span class="n">lazy</span> <span class="o">=</span> <span class="kc">false</span> <span class="p">},</span>
 </code></pre></div></div>
 
-<h1 id="telescope">Telescope</h1>
+<h2 id="telescope">Telescope</h2>
 
 <p>I realized that I didn’t explain what telescope does in the next paragraph, so I’m
-adding this here after the fact. Telescope is a Neovim plugin that lets you select 
+adding this here after the fact. Telescope is a Neovim plugin that lets you select
 from a list of options with a preview window. You can call telescope from a command
 or from shortcuts. This makes it easier to have shortcuts pull up a menu and do an
 action with the selection.</p>
 
-<p>I’ve added a telescope zoxide extension for quickly changing directories and
-seeing potential options. The original zoxide plugin I used didn’t show me
-available folders when I pressed autocomplete for :Z dirname. This also allowed
-me to run a file-edit telescope command after the zoxide directory telescope.
-Now all I do when I startup nvim from my homedir is: ‘spacebar sd’ then I type
+<p>I’ve added a telescope Zoxide extension for changing directories and
+seeing potential options. The original Zoxide plugin I used didn’t show me
+available folders when I pressed auto complete for :Z Dir name. This also allowed
+me to run a file-edit telescope command after the Zoxide directory telescope.
+Now all I do when I startup nvim from my home Dir is: ‘spacebar sd’ then I type
 something that somewhat resembles the directory I want, then ‘enter’. After,
-the same menu pops up again, but this time for files in that directory!</p>
+the same menu pops up again, but this time for files in that directory.</p>
 
 <p>Because the setup for the code mentioned is inherently a little spread out,
 here’s a URL that should show you what I’m doing with zoxide even if I change
 where or how it’s used:
 <a href="https://github.com/search?q=repo%3Acamerondugan%2Fsimple-nvim-config%20zoxide&amp;type=code">https://github.com/search?q=repo%3Acamerondugan%2Fsimple-nvim-config%20zoxide&amp;type=code</a>.</p>
 
-<h1 id="snippets">Snippets</h1>
+<h2 id="snippets">Snippets</h2>
 
-<p>I’m kind of in love with autocomplete snippets now. I found the part of
+<p>I’m kind of in love with auto complete snippets now. I found the part of
 kickstart that covers setting up snippets with ‘hrsh7th/nvim-cmp’. After
-setting up extra snippets that are super useful, for example: I can now just
+setting up extra snippets that are super useful, for example: I can now
 type ‘time’ then Ctrl+y for accept and the snippet replaces it with 18:58. To
 get this working, I had to uncomment one line from kickstart and also add a
 line that made it load in.</p>
 
-<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	  <span class="c1">-- FROM KICKSTART:</span>
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code>      <span class="c1">-- FROM KICKSTART:</span>
       <span class="c1">-- If you want to add a bunch of pre-configured snippets,</span>
       <span class="c1">--    you can use this plugin to help you. It even has snippets</span>
-      <span class="c1">--    for various frameworks/libraries/etc. but you will have to</span>
+      <span class="c1">--    for frameworks/libraries/etc. But you will have to</span>
       <span class="c1">--    set up the ones that are useful for you.</span>
-	  <span class="c1">-- I UNCOMMENTED THIS VVV:</span>
+      <span class="c1">-- I UNCOMMENTED THIS VVV:</span>
       <span class="p">{</span> <span class="s1">'rafamadriz/friendly-snippets'</span> <span class="p">},</span>
 
     <span class="p">},</span>
@@ -81,12 +81,12 @@ line that made it load in.</p>
 
 </code></pre></div></div>
 
-<p>I’m certain I’ve done this the wrong way, but I like to think that I’m not 
+<p>I’m certain I’ve done this the wrong way, but I like to think that I’m not
 that far off, as the solution was small, and I now have snippets for all
-the languages that I use, including Markdown! (Which is what I use to write this)</p>
+the languages that I use, including Markdown. (Which is what I use to write this)</p>
 
-<p>Hope that you maybe learned something? Not sure, I’ll try to cover more issues/fixes
-that I have in the near future. I’m sure that I’ll have some!</p>]]></content><author><name>Cameron Dugan</name></author><category term="coding" /><category term="dev" /><category term="vim" /><summary type="html"><![CDATA[More updates on my neovim journey]]></summary></entry><entry><title type="html">A Tiny Chess Engine</title><link href="https://www.camerondugan.com/blog/Chess-Engine/" rel="alternate" type="text/html" title="A Tiny Chess Engine" /><published>2023-07-29T00:00:00-04:00</published><updated>2023-07-29T00:00:00-04:00</updated><id>https://www.camerondugan.com/blog/tiny-chess-engine</id><content type="html" xml:base="https://www.camerondugan.com/blog/Chess-Engine/"><![CDATA[<p>I’m planning on participating in <a href="https://www.youtube.com/@SebastianLague">SebLague’s</a> <a href="https://github.com/SebLague/Chess-Challenge">Chess-Challenge (C#)</a></p>
+<p>Hope that you learned something? Not sure, I’ll try to cover more issues/fixes
+that I have. I’m sure that I’ll have some.</p>]]></content><author><name>Cameron Dugan</name></author><category term="coding" /><category term="dev" /><category term="vim" /><summary type="html"><![CDATA[More updates on my neovim journey]]></summary></entry><entry><title type="html">A Tiny Chess Engine</title><link href="https://www.camerondugan.com/blog/Chess-Engine/" rel="alternate" type="text/html" title="A Tiny Chess Engine" /><published>2023-07-29T00:00:00-04:00</published><updated>2023-07-29T00:00:00-04:00</updated><id>https://www.camerondugan.com/blog/tiny-chess-engine</id><content type="html" xml:base="https://www.camerondugan.com/blog/Chess-Engine/"><![CDATA[<p>I’m planning on participating in <a href="https://www.youtube.com/@SebastianLague">SebLague’s</a> <a href="https://github.com/SebLague/Chess-Challenge">Chess-Challenge (C#)</a></p>
 
 <p>I’ve been writing a chess engine for this challenge for the past few days, and I’m pretty happy with what I’ve been able to do.</p>
 
