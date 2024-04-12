@@ -21,14 +21,16 @@
   0% {
     opacity: 10%;
   }
+  100% {
+    opacity: 100%;
+  }
 }
 @keyframes slide {
   0% {
     margin-top: 100px;
   }
 }
-
-* :not(bg) {
+* :not(bg, a) {
   font-family: monospace !important;
   font: ui-monospace;
   animation-name: fade;
@@ -79,9 +81,6 @@ h3,
 h4,
 h5,
 h6 {
-  animation-name: slide, fade;
-  animation-duration: var(--init-duration), var(--init-duration);
-  animation-timing-function: ease-out;
   text-align: center;
   color: var(--text-light);
   line-height: 3rem;
@@ -96,18 +95,10 @@ a {
   transition: 0.15s;
   transition-timing-function: ease-out;
 }
-li {
-  animation-name: fade;
-  animation-duration: var(--init-duration);
-  animation-timing-function: ease-out;
-}
 li p {
   text-align: left;
 }
 p {
-  animation-name: fade;
-  animation-duration: var(--init-duration);
-  animation-timing-function: ease-out;
   text-align: center;
 }
 
