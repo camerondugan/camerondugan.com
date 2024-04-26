@@ -7,6 +7,8 @@ layout: default
 <hr>
 -->
 
+{% include reading_time.html %}
+
 {{ content }}
 
 <br>
@@ -14,10 +16,10 @@ layout: default
 
 <h2>🪧 Enjoy Reading This?</h2>
 <p>Here are some more you might like to read next:</p>
-    
+
 <ul>
 {% assign maxRelated = 5 %}
-{% assign maxCommonTags = 20 %} 
+{% assign maxCommonTags = 20 %}
 {% assign seenPostsString = "" %}
 {% assign maxRelatedCounter = 0 %}
 {% for thisCommonTag in (0..maxCommonTags) %}

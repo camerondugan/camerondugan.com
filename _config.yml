@@ -1,12 +1,12 @@
 ---
 url: "https://www.CameronDugan.com"
 
-# SEO Stuff
 author: Cameron Dugan
-description: This is my personal static website/portfolio/blog
+description: This a work portfolio and a blog about computers.
 lang: en
 locale: en_US
-# baseurl: ""
+
+markdown: kramdown
 
 plugins:
   - jekyll-feed
@@ -15,4 +15,3 @@ plugins:
 # RSS feeds
 feed:
   posts_limit: 10000
-

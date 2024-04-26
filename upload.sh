@@ -10,7 +10,7 @@ fi
 # echo "Hiding Old Posts..."
 # bash tagOld.sh || exit
 
-echo "Building..."
+echo "Full Build..."
 bundle exec jekyll build || exit
 
 echo "Optimizing Assets..."

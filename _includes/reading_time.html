@@ -1,0 +1,8 @@
+<p style='text-align:center;margin-top:0px;'><i>
+{% capture words %}
+{{ content | strip_html | number_of_words | minus: 180 }}
+{% endcapture %}
+{% unless words contains '-' %}
+~{{ words | plus: 150 | divided_by: 150 | append: ' minutes to read' }}
+{% endunless %}
+</i></p>

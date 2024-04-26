@@ -1,4 +1,27 @@
 /* Use this file to add any custom css you like */
+
+/* Use Jetbrains Mono*/
+@font-face {
+  font-family: jetbrains;
+  font-style: normal;
+  src: url("/assets/fonts/JetBrainsMono-Regular.woff2") format("woff2")
+}
+@font-face {
+  font-family: jetbrains;
+  font-style: bold;
+  src: url("/assets/fonts/JetBrainsMono-Bold.woff2") format("woff2")
+}
+@font-face {
+  font-family: jetbrains;
+  font-style: italic;
+  src: url("/assets/fonts/JetBrainsMono-Italic.woff2") format("woff2")
+}
+@font-face {
+  font-family: jetbrains;
+  font-style: bold italic;
+  src: url("/assets/fonts/JetBrainsMono-BoldItalic.woff2") format("woff2")
+}
+
 :root {
   --base-fontsize: 20.8px;
   --header-scale: 1.15;
@@ -7,65 +30,69 @@
   --accent-bg: #313244;
   --text: #cdd6f4;
   --text-light: #89b4f4;
-  --border: #181825;
+  --border: var(--text); /*#181825*/
   --border-light: #313244;
   --accent: #a6e3a1;
   --accent-light: #cba6f7;
   --code: #fab387;
   --disabled: #f4776d;
   --drop-shadow: #1e1e2e;
-  --init-duration: 0.4s;
 }
 
-* {
-  font-family: monospace;
-  font: ui-monospace;
+* { /* set font and family on everything */
+  font-family: jetbrains, times;
+  caret-color: transparent;
 }
-
+header {
+  padding:5px;
+}
+blockquote {
+  background: var(--accent-bg);
+  border-radius: 20px;
+  border-left: 0px;
+}
+/* Media rounded corners and target width */
 main img,
 main video {
   border-radius: 20px;
   width: 880px;
 }
 
+/* reduces size of nav */
 nav {
   padding-bottom: 0px;
 }
-nav a {
+/* nav buttons */
+nav a, nav details {
+  border: none;
   font-size: 120%;
   font-weight: italic;
   margin-inline: .9%;
   background: var(--bg);
+  max-width: 50%;
 }
-nav a.nav-current {
-  font-weight: bold;
-  color: var(--accent-light) !important;
-}
+/* diff on hover */
 nav a:hover {
   transform: translate(-3px, -3px);
   border-color: var(--accent-light);
   background: var(--accent-light);
   color: var(--bg) !important;
 }
-
-header {
-  border-bottom: 1px solid var(--border);
+/* diff of current-nav */
+nav a.nav-current {
+  font-weight: bold;
+  color: var(--accent-light) !important;
 }
-body {
-  max-width: 880px;
+nav a.nav-current:hover {
+  color: var(--bg) !important;
 }
 footer {
   margin-top: 0px;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1,h2,h3,h4,h5,h6{
   text-align: center;
   color: var(--text-light);
-  line-height: 3rem;
+  margin: 10px;
 }
 a {
   text-decoration-line: unset;
@@ -85,7 +112,46 @@ p {
 }
 
 a:hover {
-  filter: drop-shadow(3px 4px var(--drop-shadow));
+  filter: drop-shadow(1px 5px 5px var(--drop-shadow));
   background: var(--accent);
   color: var(--bg);
+}
+
+/* Mobile Settings*/
+@media screen and (max-width: 600px) {
+  h1,h2,h3,h4,h5,h6 {
+    line-height: 3rem;
+    font-size: 30px;
+  }
+  h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    font-size: 23px;
+    margin: 4px;
+  }
+  p {
+    font-size: 20px;
+  }
+  header {
+    padding:5px;
+  }
+  header i {
+    font-size: 14px;
+  }
+  nav {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  nav a {
+    background: none;
+    margin-inline: 0px;
+    padding-inline: 5px;
+  }
+  nav a:hover {
+    transform: none;
+    border-color: none;
+    background: none;
+    color: var(--text-light) !important;
+  }
+  nav a.nav-current:hover {
+    color: var(--accent-light) !important;
+  }
 }

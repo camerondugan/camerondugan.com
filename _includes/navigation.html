@@ -1,11 +1,20 @@
-<nav>
-    {% for item in site.data.navigation %}
-        {% assign link = item.link | downcase | replace: "/", "" %}
-        {% assign url = page.url | downcase | replace: "/", "" %}
-        {% if link == url %}
-            <a class="nav-current" href="{{ item.link }}">{{ item.name }}</a>
-        {% else %}
-            <a href="{{ item.link }}">{{ item.name }}</a>
-        {% endif %}
-    {% endfor %}
-</nav>
+<center>
+    <nav>
+        <details>
+            <summary>
+                NAV!
+            </summary>
+            <div>
+            {% for item in site.data.navigation %}
+                {% assign link = item.link | downcase | replace: "/", "" %}
+                {% assign url = page.url | downcase | replace: "/", "" %}
+                {% if link == url %}
+                    <a class="nav-current" href="{{ item.link }}">{{ item.name }}</a>
+                {% else %}
+                    <a href="{{ item.link }}">{{ item.name }}</a>
+                {% endif %}
+            {% endfor %}
+            </div>
+        </details>
+    </nav>
+</center>
