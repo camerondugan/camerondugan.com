@@ -8,6 +8,9 @@ locale: en_US
 
 markdown: kramdown
 
+kramdown:
+  syntax_highlighter: coderay
+
 plugins:
   - jekyll-feed
   - jekyll-sitemap

@@ -39,6 +39,9 @@
 header {
   padding:5px;
 }
+.CodeRay {
+  text-align: left;
+}
 blockquote {
   background: var(--accent-bg);
   border-radius: 20px;
@@ -50,6 +53,14 @@ main img,
 main video {
   border-radius: 20px;
   width: 880px;
+}
+.CodeRay .comment { color: green; }
+.CodeRay .keyword { color: blue; }
+.CodeRay .string { color: red; }
+
+pre {
+  background: var(--accent-bg);
+  text-align: left;
 }
 
 body main {

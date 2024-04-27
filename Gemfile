@@ -6,6 +6,7 @@ git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 
 # gem "rails"
 gem "jekyll"
+gem 'kramdown-syntax-coderay'
 
 # Plugins
 group :jekyll_plugins do
