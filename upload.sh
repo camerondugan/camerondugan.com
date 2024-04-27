@@ -10,9 +10,9 @@ fi
 # echo "Hiding Old Posts..."
 # bash tagOld.sh || exit
 
-echo "Full Build..."
-export JEKYLL_ENV="production"
-bundle exec jekyll build || exit
+# echo "Full Build..."
+# export JEKYLL_ENV="production"
+# bundle exec jekyll build || exit
 
 echo "Optimizing Assets..."
 jpegoptim assets/images/**/*.jpg -q
