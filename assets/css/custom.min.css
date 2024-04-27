@@ -43,7 +43,6 @@ blockquote {
   background: var(--accent-bg);
   border-radius: 20px;
   border-left: 0px;
-  margin-left: 0px;
 }
 /* Media rounded corners and target width */
 main img,
@@ -58,8 +57,8 @@ body main {
 }
 
 /* reduces size of nav */
-nav.desktop-only {
-  padding-top: 0px;
+nav {
+  padding-bottom: 0px;
 }
 /* nav buttons and menus */
 nav a, nav details {
@@ -68,9 +67,7 @@ nav a, nav details {
   font-weight: italic;
   margin-inline: .9%;
   background: var(--bg);
-}
-details summary {
-  cursor: pointer;
+  max-width: 70%;
 }
 /* diff on hover */
 nav a:hover {
@@ -120,18 +117,8 @@ a:hover {
   color: var(--bg);
 }
 
-.mobile-only {
-  display: none;
-}
-
 /* Mobile Settings*/
-@media screen and (max-width: 800px) {
-  .desktop-only {
-    display: none;
-  }
-  .mobile-only {
-    display: inline-block;
-  }
+@media screen and (max-width: 600px) {
   h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     margin: 4px;
   }
@@ -152,9 +139,8 @@ a:hover {
     margin-inline: 0px;
     padding-inline: 5px;
   }
-  details summary, details div {
-    display: block; /* hides marker */
-    width: min(75vw, 400px);
+  nav details {
+    max-width: 95%;
   }
   nav a:hover {
     transform: none;

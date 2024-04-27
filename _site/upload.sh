@@ -11,6 +11,7 @@ fi
 # bash tagOld.sh || exit
 
 echo "Full Build..."
+export JEKYLL_ENV="production"
 bundle exec jekyll build || exit
 
 echo "Optimizing Assets..."

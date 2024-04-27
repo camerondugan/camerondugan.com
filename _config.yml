@@ -11,7 +11,14 @@ markdown: kramdown
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-minifier
 
 # RSS feeds
 feed:
   posts_limit: 10000
+
+# minifier
+jekyll-minifier:
+  uglifier_args:
+    harmony: true

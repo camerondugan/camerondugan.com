@@ -1,19 +1,30 @@
 <center>
-    <nav>
+    <nav class="desktop-only">
+        {% for item in site.data.navigation %}
+        {% assign link = item.link | downcase | replace: "/", "" %}
+        {% assign url = page.url | downcase | replace: "/", "" %}
+        {% if link == url %}
+        <a class="nav-current" href="{{ item.link }}">{{ item.name }}</a>
+        {% else %}
+        <a href="{{ item.link }}">{{ item.name }}</a>
+        {% endif %}
+        {% endfor %}
+    </nav>
+    <nav class="mobile-only">
         <details>
             <summary>
                 NAV!
             </summary>
             <div>
-            {% for item in site.data.navigation %}
+                {% for item in site.data.navigation %}
                 {% assign link = item.link | downcase | replace: "/", "" %}
                 {% assign url = page.url | downcase | replace: "/", "" %}
                 {% if link == url %}
-                    <a class="nav-current" href="{{ item.link }}">{{ item.name }}</a>
+                <a class="nav-current" href="{{ item.link }}">{{ item.name }}</a>
                 {% else %}
-                    <a href="{{ item.link }}">{{ item.name }}</a>
+                <a href="{{ item.link }}">{{ item.name }}</a>
                 {% endif %}
-            {% endfor %}
+                {% endfor %}
             </div>
         </details>
     </nav>
