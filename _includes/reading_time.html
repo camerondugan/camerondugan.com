@@ -1,6 +1,4 @@
-{% capture words %}
-{{ content | strip_html | number_of_words | minus: 180 }}
+{% capture time %}
+{{ content | reading_time | pluralize: "minute" }}
 {% endcapture %}
-{% unless words contains '-' %}
-~{{ words | plus: 238 | divided_by: 238 | append: ' minute read' }}
-{% endunless %}
+~{{ time | strip }} to read

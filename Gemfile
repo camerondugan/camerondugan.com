@@ -14,6 +14,9 @@ group :jekyll_plugins do
   gem 'jekyll-feed'
   gem 'jekyll-seo-tag'
   gem 'jekyll-minifier'
+  gem 'jekyll-loading-lazy'
+  gem 'liquid_reading_time'
+  gem 'liquid_pluralize'
 end
 
 gem "webrick", "~> 1.7"

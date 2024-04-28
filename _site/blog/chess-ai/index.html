@@ -1,39 +1,42 @@
-<!doctype html>
-<!-- Preload elements for faster loading -->
+<!DOCTYPE html>
+<!-- Preload elements for faster loading --><html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="preload" as="style" href="/assets/css/simple-v1.min.css">
 <link rel="preload" as="style" href="/assets/css/custom.css">
-<html lang="en-US">
+
 
 <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Programming A Chess AI</title>
-<meta name="generator" content="Jekyll v4.3.3" />
-<meta property="og:title" content="Programming A Chess AI" />
-<meta name="author" content="Cameron Dugan" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="A Fun Self Challenge" />
-<meta property="og:description" content="A Fun Self Challenge" />
-<link rel="canonical" href="http://localhost:4000/blog/chess-ai/" />
-<meta property="og:url" content="http://localhost:4000/blog/chess-ai/" />
-<meta property="og:type" content="article" />
-<meta property="article:published_time" content="2022-11-21T00:00:00-05:00" />
-<meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Programming A Chess AI" />
+<meta name="generator" content="Jekyll v4.3.3">
+<meta property="og:title" content="Programming A Chess AI">
+<meta name="author" content="Cameron Dugan">
+<meta property="og:locale" content="en_US">
+<meta name="description" content="A Fun Self Challenge">
+<meta property="og:description" content="A Fun Self Challenge">
+<link rel="canonical" href="http://localhost:4000/blog/chess-ai/">
+<meta property="og:url" content="http://localhost:4000/blog/chess-ai/">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2022-11-21T00:00:00-05:00">
+<meta name="twitter:card" content="summary">
+<meta property="twitter:title" content="Programming A Chess AI">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Cameron Dugan"},"dateModified":"2022-11-21T00:00:00-05:00","datePublished":"2022-11-21T00:00:00-05:00","description":"A Fun Self Challenge","headline":"Programming A Chess AI","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/chess-ai/"},"url":"http://localhost:4000/blog/chess-ai/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
-<head>
+
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" href="/assets/images/favicon.ico" />
+	<link rel="icon" href="/assets/images/favicon.ico">
 	
 	<title>Programming A Chess AI~CameronDugan.com</title>
-	<meta name="description" content="A Fun Self Challenge" />
+	<meta name="description" content="A Fun Self Challenge">
 	<link rel="stylesheet" href="/assets/css/simple-v1.min.css">
 	<link rel="stylesheet" href="/assets/css/custom.css">
-</head>
 
+
+</head>
 <body>
 
 	<header>
@@ -132,10 +135,9 @@
 	<main>
 		<!-- post_date needs post set -->
 
-<center><small><i>
-
-~2 minute read
-
+<center>
+<small><i>
+~2 minutes to read
  from 
 Nov
 21st
@@ -149,13 +151,13 @@ Nov
 
 <p>The more you need the code to self improve, the longer it needs to run. Self improving code should be saved only for problems where you can’t reasonably code a complete solution. Solving games is complicated, tic tac toe being relatively easy to solve, chess being orders of magnitude harder and go being one of the hardest complete information games. Each new legal move makes the searching of potential moves exponentially more difficult.</p>
 
-<p><img src="/assets/images/games/chess/alphazero.png" alt="chess board game played by alphazero" /></p>
+<p><img src="/assets/images/games/chess/alphazero.png" alt="chess board game played by alphazero" loading="lazy"></p>
 
 <p>“AI” code can help in these scenarios to help trim down the potential moves the code looks at to find great moves. The way this works is you have a neural network that looks at a single game state and have it predict the winner. Loop over all potential moves and pick the move that the neural net likes the best and repeat until the game ends. For training, this doesn’t work because the AI will have tendencies for picking the same series of moves over and over.</p>
 
 <p>The solution is to pick moves based on how unlikely they are and how good they seem. The more a path is taken, force the AI to further avoid that path during training. This should allow a wider search of the game space.</p>
 
-<p><img src="/assets/images/code visualization/AI/neuralnet.jpg" alt="Neural Network Example" /></p>
+<p><img src="/assets/images/code%20visualization/AI/neuralnet.jpg" alt="Neural Network Example" loading="lazy"></p>
 
 <p>Now, another trick game AI programers can do is to split the training and the exploring into separate processes. The code can store games played into a large list and have half of the computer spend it’s resources updating that list with new games and the other half updating the neural net to better judge the outcomes of those games.</p>
 
@@ -6776,7 +6778,8 @@ Nov
 		
 		
     		
-				<li><p><a href="/blog/vr-game/">Developing a PC + VR game with Godot</a> - 📅 Jun 1st 2023
+				</p></li>
+<li><p><a href="/blog/vr-game/">Developing a PC + VR game with Godot</a> - 📅 Jun 1st 2023
         		
 				
 				
@@ -7237,7 +7240,8 @@ Nov
 		
 		
     		
-				<li><p><a href="/blog/godot-rant/">My Development Experience With Godot 3 in VR</a> - 📅 Aug 16th 2022
+				</p></li>
+<li><p><a href="/blog/godot-rant/">My Development Experience With Godot 3 in VR</a> - 📅 Aug 16th 2022
         		
 				
 				
@@ -7258,7 +7262,8 @@ Nov
 		
 		
     		
-				<li><p><a href="/blog/wave-collapse/">Wave Function Collapse</a> - 📅 Apr 28th 2022
+				</p></li>
+<li><p><a href="/blog/wave-collapse/">Wave Function Collapse</a> - 📅 Apr 28th 2022
         		
 				
 				
@@ -7455,7 +7460,8 @@ Nov
 		
 		
     		
-				<li><p><a href="/blog/arbidor/">Arbidor</a> - 📅 Aug 11th 2021
+				</p></li>
+<li><p><a href="/blog/arbidor/">Arbidor</a> - 📅 Aug 11th 2021
         		
 				
 				
@@ -7473,6 +7479,7 @@ Nov
     	
             		
 
+</p></li>
 </ul>
 <br>
 <hr>
@@ -7483,14 +7490,14 @@ Nov
 
 <p>Since you can't leave a comment, feel free to ✉️ <a href="/contact">contact me</a> instead.</p>
 
-	</main>
+	</center></main>
 
 	<footer>
-		<p>Created by <a href="https://fosstodon.org/@TheCam">Cameron Dugan</a> using <a
-				href="https://jekyllrb.com">Jekyll</a> and <a href="https://simplecss.org">Simple.css</a>.</p>
+		<p>Created by <a href="https://fosstodon.org/@TheCam">Cameron Dugan</a> using <a href="https://jekyllrb.com">Jekyll</a> and <a href="https://simplecss.org">Simple.css</a>.</p>
 		<p>Get notified by <a href="http://camerondugan.com/feed.xml">RSS</a></p>
 	</footer>
 
-</body>
 
+
+</body>
 </html>
