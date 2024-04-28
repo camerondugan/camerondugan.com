@@ -3,10 +3,10 @@ title: Happy New Year
 description: Software I Use and Will Use More
 layout: post
 permalink: /blog/2022/
-tags: hidden recommendations android linux
+tags: recommendations android linux
 ---
 
-Hello, just wanting to wish everyone a happy new year! 
+Hello, just wanting to wish everyone a happy new year!
 To start of the new year, I want to review the software I'm using this year, and mention the software I'm looking forward to using:
 
 ### Software I Liked From 2021:
@@ -21,7 +21,7 @@ To start of the new year, I want to review the software I'm using this year, and
 : A FOSS replacement for the Google Pixel line of wallpapers. Even if you own a pixel phone, you can have access to the other lines of pixel wallpapers. Also there's a ton of customization.
 
 **NetGuard on Android**
-: App by app firewall to prevent lazily programmed and insecure apps you want to install from accessing the internet. You can also choose to block internet access in the background. Also can give apps just access to wifi/cellular. A truelly great application, prevents a lot of offline games from loading ads.
+: App by app firewall to prevent lazily programmed and insecure apps you want to install from accessing the internet. You can also choose to block internet access in the background. Also can give apps just access to wifi/cellular. A truly great application, prevents a lot of offline games from loading ads.
 
 **VS Code / Code on Linux**
 : An open source version of Visual Studio Code with countless extensions. It is a text editor that works with every programming language, vim mode, and no need for modifying a config file to change settings. Works like a charm. Also has a built in terminal emulator.
@@ -35,3 +35,4 @@ To start of the new year, I want to review the software I'm using this year, and
 : I've known the Tor Browser has existed for a while now, but only recently I found out that bridges exist, and can easily be requested from the tor settings tab. Bridges can and often do speed up tor by quite a bit. I always assumed that Tor was just super slow. I will be using Tor a whole lot more with what I'm experiencing as about 4-10x the speed without bridges.
 
 Thanks for reading, let's have a great 2022!
+

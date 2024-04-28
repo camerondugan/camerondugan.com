@@ -3,7 +3,7 @@ title: Weekly Programming - Week 0
 description: Programming for the Sake of Programming
 permalink: /blog/weekly-programming/0/
 layout: post
-tags: hidden code difficulty contest
+tags: code difficulty contest
 ---
 
 Programming projects help programmers get better. I'm going to start publicly doing some to increase specific skills I want to work on.

@@ -3,7 +3,7 @@ title: My Development Experience With Godot 3 in VR
 description: My Recent Development Shenanigans
 layout: post
 permalink: /blog/godot-rant/
-tags: hidden linux godot game dev
+tags: linux godot game dev
 ---
 
 It's been a while since I've posted anything. I'm going to blame it on my recent issues with [Godot](https://godotengine.org) development for Oculus Quest.
@@ -23,7 +23,7 @@ I'm currently working on converting my game from VR back into a normal flat scre
 
 1. [Godot](https://godotengine.org) doesn't seem to allow to set custom lower resolution in VR. (for a retro effect)
 
-    > This really should have been an option through the existing godot system, I'm not going to fish around for a function that modifies this. Also, having the above bullet would have allowed me to down sample the resolution. 
+    > This really should have been an option through the existing godot system, I'm not going to fish around for a function that modifies this. Also, having the above bullet would have allowed me to down sample the resolution.
 
 1. Setting up all of the Android SDK requirements is too tedious.
 

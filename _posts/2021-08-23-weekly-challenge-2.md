@@ -3,7 +3,7 @@ title: Weekly Programming - Week 2
 description: Programming a Game Player
 permalink: /blog/weekly-programming/2/
 layout: post
-tags: hidden contest code ai
+tags: contest code ai
 ---
 
 Programming projects help programmers get better. I'm publicly announcing a project every week on Monday with the goal of helping you get better at programming along with me.
@@ -37,5 +37,6 @@ For example: my personal score is 4 at the time of writing.
 Take your time, I'm excited to see what we can do!
 
 If you liked this also check out: [Last Week's Challenge](../../WeeklyProgramming/1/)
-and 
+and
 [My Result From Last Week](../../Dream-Bot/)
+
