@@ -42,7 +42,7 @@ header {
 .CodeRay {
   text-align: left;
 }
-.invisible {
+.invisible, main form button {
   color: unset;
   background: transparent;
   border: none !important;
