@@ -2,14 +2,17 @@
 layout: default
 ---
 
+<!-- {% assign tooOld = "now" | date: "%s" | add_date_days: -365 | date: "%s" | integer %} -->
+<!-- {% assign this_date = post.date | date: "%s" | integer %} -->
 
 <!-- post_date needs post set -->
 {% assign post = page %}
 <center><small><i>{% include reading_time.html %} | {% include post_date.html %}</i></small></center>
-
+<!-- This: {{this_date}} -->
+<!-- Old: {{ tooOld }} -->
+<!-- {% if this_date <= tooOld %} HEHEHEHEHEH {% endif %} {{ content }} <br> -->
 {{ content }}
 
-<br>
 <hr>
 
 <h2>🪧 Enjoy Reading This?</h2>
