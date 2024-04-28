@@ -16,3 +16,4 @@ _site/
 .bundle/
 # keep codeblock colorscheme
 vendor/
+_site
