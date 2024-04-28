@@ -3,4 +3,8 @@
     <code>{{post.description}}</code>
     {% include post_date.html %}
 </p>
-> {{ post.content | markdownify | strip | truncatewords: 10}}
+<form>
+    <button class=invisible formaction="{{post.url}}">
+        <blockquote>{{ post.excerpt }}</blockquote>
+    </button>
+</form>

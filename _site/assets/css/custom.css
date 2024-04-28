@@ -42,11 +42,23 @@ header {
 .CodeRay {
   text-align: left;
 }
+.invisible {
+  color: unset;
+  background: transparent;
+  border: none !important;
+  width: 100%; /* sets button to max */
+  padding: 0px;
+  margin: 0px;
+}
 blockquote {
   background: var(--accent-bg);
   border-radius: 20px;
   border-left: 0px;
   margin-left: 0px;
+  margin-top: 0px;
+}
+hr {
+  margin-top: 0px;
 }
 /* Media rounded corners and target width */
 main img,
