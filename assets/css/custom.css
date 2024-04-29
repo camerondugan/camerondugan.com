@@ -3,17 +3,20 @@
 /* Use Jetbrains Mono*/
 @font-face {
   font-family: jetbrains;
-  src: url("/assets/fonts/JetBrainsMono-Regular.woff2") format("woff2")
+  src: url("/assets/fonts/JetBrainsMono-Regular.woff2") format("woff2");
+  font-display: swap;
 }
 @font-face {
   font-family: jetbrains;
   font-weight: bold;
-  src: url("/assets/fonts/JetBrainsMono-Bold.woff2") format("woff2")
+  src: url("/assets/fonts/JetBrainsMono-Bold.woff2") format("woff2");
+  font-display: swap;
 }
 @font-face {
   font-family: jetbrains;
   font-style: italic;
-  src: url("/assets/fonts/JetBrainsMono-Italic.woff2") format("woff2")
+  src: url("/assets/fonts/JetBrainsMono-Italic.woff2") format("woff2");
+  font-display: swap;
 }
 
 :root {
@@ -118,7 +121,7 @@ h1,h2,h3,h4,h5,h6{
   line-height: 135%;
 }
 a {
-  text-decoration-line: unset;
+  text-decoration-line: underline;
   /*background: var(--accent-bg);*/
   border-radius: 5px;
   padding: 2.5px;
