@@ -26,5 +26,4 @@ feed:
 jekyll-minifier:
   uglifier_args:
     harmony: true
-  exclude: '*.p8'
-  compress_json: false
+  exclude: 'arbidor.js'
