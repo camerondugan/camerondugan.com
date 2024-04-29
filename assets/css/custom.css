@@ -36,7 +36,7 @@
 }
 
 * { /* set font and family on everything */
-  font-family: jetbrains, times;
+  font-family: jetbrains, system-ui;
   caret-color: transparent;
 }
 header {
