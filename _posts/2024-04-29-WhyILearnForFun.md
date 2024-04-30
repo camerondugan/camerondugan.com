@@ -29,7 +29,7 @@ enjoy it. I didn't always, and not at first, but what I've done is find ways to
 thoroughly enjoy doing what I do. The fun isn't in the work itself, it's how
 you feel about yourself afterwards that's important.
 
-Rational I've goes like this. Who's going to win: The person who works when
+Rational I've heard goes like this. Who's going to win: The person who works when
 they have to, or the guy who does it for fun? It's not a hard rule, but
 generally the latter wins.
 
