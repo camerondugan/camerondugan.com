@@ -154,6 +154,12 @@ task :build do
   execute("jekyll build")
 end
 
+# rake test (same as build)
+desc "Build the site"
+task :build do
+  execute("jekyll build")
+end
+
 # rake watch
 # rake watch[number]
 # rake watch["drafts"]
@@ -216,11 +222,11 @@ task :transfer do
   elsif command == "robocopy"
     Rake::Task[:build].invoke
     execute("robocopy #{source} #{destination} #{settings}")
-    puts "Your site was transfered."
+    puts "Your site was transferred."
   elsif command == "rsync"
     Rake::Task[:build].invoke
     execute("rsync #{settings} #{source} #{destination}")
-    puts "Your site was transfered."
+    puts "Your site was transferred."
   else
     raise "#{command} isn't a valid file transfer command."
   end
