@@ -155,8 +155,8 @@ task :build do
 end
 
 # rake test (same as build)
-desc "Build the site"
-task :build do
+desc "Test build the site"
+task :test do
   execute("jekyll build")
 end
 
