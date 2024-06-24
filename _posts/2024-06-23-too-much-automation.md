@@ -6,8 +6,6 @@ permalink: /blog/neovim-update1/
 tags: coding dev vim
 ---
 
-## Background
-
 I don't like using LLM's like chatGPT or copilot to complete my code for me. I
 want to remember the code, and letting something else type for me doesn't help
 me with that. My goal is to be able to write code without looking up any
