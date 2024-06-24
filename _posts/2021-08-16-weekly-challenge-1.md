@@ -3,12 +3,12 @@ title: Weekly Programming - Week 1
 description: Programming Art Generators
 permalink: /blog/weekly-programming/1/
 layout: post
-tags: hidden contest code generation images
+tags: contest code generation images
 ---
 
 Programming projects help programmers get better. I'm going to start publicly doing some to increase specific skills I want to work on.
 
-This week's theme is going to be *Image Generation*. You can create a program that takes in a series of images, and outputs an image based on those previous works. You could also create a program that fills in missing/transparent sections of an image. 
+This week's theme is going to be *Image Generation*. You can create a program that takes in a series of images, and outputs an image based on those previous works. You could also create a program that fills in missing/transparent sections of an image.
 
 Hopefully these ideas help you create wacky results.
 

@@ -1,0 +1,4 @@
+{% capture time %}
+{{ content | reading_time | pluralize: "minute" }}
+{% endcapture %}
+read in ~{{ time | strip }}

@@ -3,7 +3,7 @@ title: Procrastination and Motivation
 description: A Note to Self
 permalink: /blog/procrastination/
 layout: post
-tags: hidden productivity mental-health difficulty
+tags: productivity mental-health difficulty
 ---
 
 Motivation is overrated.
@@ -12,7 +12,7 @@ Something that I need to remember is that reflection has it's limitations. It's 
 
 Speaking of procrastination, this blog post is a way for me to take my mind off of the stuff I have to do in the next two days. I've got a lot. I tend to have problems with tasks when I don't like doing it to the extent where I avoid thinking about it. The only way I've found a way to do these kinds of things is to try to make it something I automatically do without thinking. Usually by tacking it on the end of something I already do every day.
 
-The two issues with this. If I don't do that thing that triggers the automatic action, the task won't get done. The second issue is that I don't know that I didn't do it. 
+The two issues with this. If I don't do that thing that triggers the automatic action, the task won't get done. The second issue is that I don't know that I didn't do it.
 My goal here is to think by writing and get to a solution that works. A secondary goal is to get better at writing, so I eventually don't hesitate to make a post.
 
 To mitigate the issue of not wanting to think about hard tasks I could try to streamline my calendar/task system, but I'm notorious for using that as a way to procrastinate. Maybe it's a motivational issue?

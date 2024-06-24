@@ -1,32 +1,40 @@
 <!doctype html>
-<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+<!-- Preload elements for faster loading -->
+<link rel="preload" as="style" href="/assets/css/simple-v1.min.css">
+<link rel="preload" as="style" href="/assets/css/custom.css">
 <html lang="en-US">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/assets/images/favicon.ico" />
-    {% assign title = page.title | append: " ~ CameronDugan.com" %}
-    <title>{{ title }}</title>
-    <meta name="description" content="{{ page.description }}" />
-    <link rel="stylesheet" href="https://cdn.simplecss.org/simple-v1.css">
-    <link rel="stylesheet" href="/assets/css/custom.css">
-  </head>
-  <body>
 
-    <header>
-      {% include navigation.html %}
-      <h1>{{ page.title }}</h1>
-      <i>{{ page.description }}</i>
-    </header>
+{% seo %}
 
-    <main>
-      {{ content }}
-    </main>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="/assets/images/favicon.ico" />
+	{% assign title = page.title | append: "~CameronDugan.com" %}
+	<title>{{ title }}</title>
+	<meta name="description" content="{{ page.description }}" />
+	<link rel="stylesheet" type="text/css" href="/assets/css/simple-v1.min.css">
+	<link rel="stylesheet" type="text/css" href="/assets/css/custom.css">
+</head>
 
-    <footer>
-	    <p>Created by <a href="https://fosstodon.org/@TheCam">Cameron Dugan</a> using <a href="https://jekyllrb.com">Jekyll</a> and <a href="https://simplecss.org">Simple.css</a>.</p>
-      <p>Get notified by <a href="http://camerondugan.com/feed.xml">RSS</a></p>
-    </footer>
+<body>
 
-  </body>
+	<header>
+		<h1>{{ page.title }}</h1>
+		<i>{{ page.description }}</i>
+		{% include navigation.html %}
+	</header>
+
+	<main>
+		{{ content }}
+	</main>
+
+	<footer>
+		<p>Created by <a href="https://fosstodon.org/@TheCam">Cameron Dugan</a> using <a
+				href="https://jekyllrb.com">Jekyll</a> and <a href="https://simplecss.org">Simple.css</a>.</p>
+		<p>Get notified by <a href="http://camerondugan.com/feed.xml">RSS</a></p>
+	</footer>
+
+</body>
+
 </html>

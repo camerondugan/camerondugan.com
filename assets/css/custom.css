@@ -1,99 +1,127 @@
 /* Use this file to add any custom css you like */
+
+/* Use Jetbrains Mono*/
+@font-face {
+  font-family: jetbrains;
+  src: url("/assets/fonts/JetBrainsMono-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: jetbrains;
+  font-weight: bold;
+  src: url("/assets/fonts/JetBrainsMono-Bold.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: jetbrains;
+  font-style: italic;
+  src: url("/assets/fonts/JetBrainsMono-Italic.woff2") format("woff2");
+  font-display: swap;
+}
+
 :root {
   --base-fontsize: 20.8px;
   --header-scale: 1.15;
-  --line-height: 1.7;
   --bg: #1e1e2e;
   --accent-bg: #313244;
   --text: #cdd6f4;
   --text-light: #89b4f4;
-  --border: #181825;
+  --border: var(--text); /*#181825*/
   --border-light: #313244;
   --accent: #a6e3a1;
   --accent-light: #cba6f7;
   --code: #fab387;
   --disabled: #f4776d;
   --drop-shadow: #1e1e2e;
-  --init-duration: 0.5s;
 }
 
-@keyframes fade {
-  0% {
-    opacity: 10%;
-  }
+* { /* set font and family on everything */
+  font-family: jetbrains, system-ui;
+  caret-color: transparent;
 }
-@keyframes slide-top {
-  0% {
-    transform: translateY(-400px);
-  }
+header {
+  padding:5px;
 }
-@keyframes slide {
-  0% {
-    margin-top: 100px;
-  }
+.CodeRay {
+  text-align: left;
 }
-
-* :not(bg) {
-  font-family: monospace !important;
-  font: ui-monospace;
-  animation-name: fade;
-  animation-duration: var(--init-duration);
-  animation-timing-function: ease-out;
+.invisible, main form button {
+  color: unset;
+  background: transparent;
+  border: none !important;
+  width: 100%; /* sets button to max */
+  padding: 0px;
+  margin: 0px;
 }
-
+blockquote {
+  background: var(--accent-bg);
+  border-radius: 20px;
+  border-left: 0px;
+  margin-left: 0px;
+  margin-top: 0px;
+}
+hr {
+  width: 90%;
+  margin-top: 0px;
+}
+/* Media rounded corners and target width */
 main img,
 main video {
   border-radius: 20px;
   width: 880px;
-  animation-name: fade;
-  animation-duration: var(--init-duration);
-  animation-timing-function: ease-out;
 }
 
-/* fix mobile nav to look good  */
-@media only screen and (max-width: 750px) {
-  nav a,
-  nav a:visited {
-    padding: 1rem 0.64rem;
-    margin: 1rem 0.64rem;
-    width: 33%;
-    color: var(--text);
-    font-size: 1.2rem;
-    line-height: 0.4;
-  }
-  nav a:hover {
-    transform: translate(0px, 0px) !important; /*disable translation*/
-  }
+pre {
+  text-align: left;
 }
-nav {
-  padding-top: 5px;
-  padding-bottom: 30px;
+
+body main {
+  margin: 0px;
+  padding: 0px;
 }
-header {
+
+/* reduces size of nav */
+nav.desktop-only {
   padding-top: 0px;
-  border-bottom: 1px solid var(--border);
 }
-body {
-  max-width: 880px;
+/* nav buttons and menus */
+nav a, nav details {
+  border: none;
+  font-size: 120%;
+  font-weight: italic;
+  margin-inline: .9%;
+  background: var(--bg);
+}
+details summary {
+  cursor: pointer;
+}
+/* diff on hover */
+nav a:hover {
+  transform: translate(-3px, -3px);
+  border-color: var(--accent-light);
+  background: var(--accent-light);
+  color: var(--bg) !important;
+}
+/* diff of current-nav */
+nav a.nav-current {
+  font-weight: bold;
+  color: var(--accent-light) !important;
+}
+nav a.nav-current:hover {
+  color: var(--bg) !important;
 }
 footer {
   margin-top: 0px;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  animation-name: slide, fade;
-  animation-duration: var(--init-duration), var(--init-duration);
-  animation-timing-function: ease-out;
+h1,h2,h3,h4,h5,h6{
+  padding-top: 10px;
   text-align: center;
   color: var(--text-light);
-  line-height: 3rem;
+  margin: 10px;
+  line-height: 135%;
 }
 a {
-  text-decoration-line: unset;
+  text-decoration-line: underline;
   /*background: var(--accent-bg);*/
   border-radius: 5px;
   padding: 2.5px;
@@ -102,51 +130,62 @@ a {
   transition: 0.15s;
   transition-timing-function: ease-out;
 }
-li {
-  animation-name: fade;
-  animation-duration: var(--init-duration);
-  animation-timing-function: ease-out;
-}
 li p {
   text-align: left;
 }
 p {
-  animation-name: fade;
-  animation-duration: var(--init-duration);
-  animation-timing-function: ease-out;
   text-align: center;
 }
 
 a:hover {
-  filter: drop-shadow(3px 4px var(--drop-shadow));
+  filter: drop-shadow(1px 5px 5px var(--drop-shadow));
   background: var(--accent);
   color: var(--bg);
 }
 
-nav a {
-  animation-name: slide-top;
-  animation-duration: var(--init-duration);
-  animation-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);
-  scale: 1.15;
-  margin-inline: 17px;
-  border: none;
-  background: var(--bg);
+.mobile-only {
+  display: none;
 }
-nav a.nav-current {
-  animation-name: slide-top;
-  animation-duration: var(--init-duration);
-  animation-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);
-  background: var(--border);
-  border-color: var(--border);
-  font-weight: bold;
-  color: var(--accent-light) !important;
-}
-nav a:hover {
-  animation-name: slide-top;
-  animation-duration: var(--init-duration);
-  animation-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);
-  transform: translate(-3px, -3px);
-  border-color: var(--accent-light);
-  background: var(--accent-light);
-  color: var(--bg) !important;
+
+/* Mobile Settings*/
+@media screen and (max-width: 800px) {
+  .desktop-only {
+    display: none;
+  }
+  .mobile-only {
+    display: inline-block;
+  }
+  h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    margin: 4px;
+  }
+  p {
+  }
+  header {
+    padding:5px;
+  }
+  header i {
+    font-size: 14px;
+  }
+  nav {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  nav a {
+    background: none;
+    margin-inline: 0px;
+    padding-inline: 5px;
+  }
+  details summary, details div {
+    display: block; /* hides marker */
+    width: min(75vw, 400px);
+  }
+  nav a:hover {
+    transform: none;
+    border-color: none;
+    background: none;
+    color: var(--text-light) !important;
+  }
+  nav a.nav-current:hover {
+    color: var(--accent-light) !important;
+  }
 }

@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
 
 # Rebuild Website
-bundle exec jekyll build --trace
+# export JEKYLL_ENV="production"
+# bundle exec jekyll build
+bundle exec jekyll build --trace --incremental

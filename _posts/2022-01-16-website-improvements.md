@@ -3,7 +3,7 @@ title: My Website Is Improving!
 description: Working with Liquid HTML
 layout: post
 permalink: /blog/website-improvements/
-tags: hidden code website progress
+tags: code website progress
 ---
 
 You might have noticed that posts now has a few extra little widgets and layout enhancements, and that's because you're right!
@@ -23,10 +23,10 @@ I've been working on improving the styling and layout for a little bit now, and 
 ```html
 <h2>🪧 Enjoy Reading This?</h2>
 <p>Here are some more you might like to read next:</p>
-    
+
 <<<<<<< HEAD
 {% assign maxRelated = 5 %}
-{% assign maxCommonTags = 20 %} 
+{% assign maxCommonTags = 20 %}
 {% assign seenPostsString = "" %}
 {% assign maxRelatedCounter = 0 %}
 {% for thisCommonTag in (0..maxCommonTags) %}
@@ -59,12 +59,12 @@ I've been working on improving the styling and layout for a little bit now, and 
 {% assign maxRelated = 3 %}
 {% assign minCommonTags = 1 %}
 {% assign maxRelatedCounter = 0 %}
-    
+
 <ul>
 	{% for post in site.posts %}
     	{% assign sameTagCount = 0 %}
         {% assign commonTags = '' %}
-    
+
 		{% for tag in post.tags %}
         	{% if post.url != page.url %}
             	{% if page.tags contains tag %}
@@ -72,7 +72,7 @@ I've been working on improving the styling and layout for a little bit now, and 
             	{% endif %}
             {% endif %}
 		{% endfor %}
-    
+
         {% if sameTagCount >= minCommonTags %}
     		<li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
 
@@ -83,13 +83,14 @@ I've been working on improving the styling and layout for a little bit now, and 
 		{% endif %}
 	{% endfor %}
 	{% assign newestCount = maxRelated | minus: maxRelatedCounter %}
-	{% for post in site.posts limit: newestCount %} 
+	{% for post in site.posts limit: newestCount %}
     		<li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
 	{% endfor %}
 >>>>>>> c0f276a (added switch project)
-		
+
 </ul>
 ```
 {% endraw %}
 
 I knew how to do none of this a month ago, but now I can edit my website to statically generate a ton of stuff.
+

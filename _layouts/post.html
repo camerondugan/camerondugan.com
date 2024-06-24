@@ -1,56 +1,76 @@
 ---
 layout: default
 ---
-<!--{% for post in site.posts %}{% if post.title == page.title %}{% assign postNum = site.posts | size | minus: forloop.index0 %}{% endif %}{% endfor %}
-<center><code>Post #{{postNum}}</code>  created  on  📅 {% assign d = page.date | date: "%d" | plus:'0' %}{{ page.date | date: "%b" }} {% case d %}{% when 1 or 21 or 31 %}{{ d }}st{% when 2 or 22 %}{{ d }}nd{% when 3 or 23 %}{{ d }}rd{% else %}{{ d }}th{% endcase %} {{ page.date | date: "%Y" }}</center>
 
-<hr>
--->
+<!-- {% assign tooOld = "now" | date: "%s" | add_date_days: -365 | date: "%s" | integer %} -->
+<!-- {% assign this_date = post.date | date: "%s" | integer %} -->
 
+<!-- post_date needs post set -->
+{% assign post = page %}
+<center><small><i>{% include reading_time.html %} | {% include post_date.html %}</i></small></center>
+<!-- This: {{this_date}} -->
+<!-- Old: {{ tooOld }} -->
+<!-- {% if this_date <= tooOld %} HEHEHEHEHEH {% endif %} {{ content }} <br> -->
 {{ content }}
 
-<br>
 <hr>
 
 <h2>🪧 Enjoy Reading This?</h2>
 <p>Here are some more you might like to read next:</p>
-    
-<ul>
-{% assign maxRelated = 5 %}
-{% assign maxCommonTags = 20 %} 
+
+{% assign maxRelated = 3 %}
+{% assign maxCommonTags = 20 %}
 {% assign seenPostsString = "" %}
 {% assign maxRelatedCounter = 0 %}
 {% for thisCommonTag in (0..maxCommonTags) %}
-	{% for post in site.posts %}
-    	{% if maxRelatedCounter >= maxRelated %}
-            		{% break %}
-        {% endif %}
-		{% assign sameTagCount = 0 %}
-		{% for tag in post.tags %}
-			{% if post.url != page.url %}
-            	{% if page.tags contains tag %}
-            		{% assign sameTagCount = sameTagCount | plus: 1 %}
-            	{% endif %}
-        	{% endif %}
-		{% endfor %}
-		{% assign thisCommonTagLimit = maxCommonTags | minus: thisCommonTag %}
-		{% if seenPosts contains post.url %}
-		{% else %}
-    		{% if sameTagCount >= thisCommonTagLimit and post.url != page.url %}
-				<li><p><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> - 📅 {% assign d = post.date | date: "%d" | plus:'0' %}{{ post.date | date: "%b" }} {% case d %}{% when 1 or 21 or 31 %}{{ d }}st{% when 2 or 22 %}{{ d }}nd{% when 3 or 23 %}{{ d }}rd{% else %}{{ d }}th{% endcase %} {{ post.date | date: "%Y" }}
-        		{% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
-				{% assign seenPostsString = seenPostsString | append: ',' | append: post.url %}
-				{% assign seenPosts = seenPostsString | removeFirst: ',' |  split: ',' %}
-			{% endif %}
-		{% endif %}
-	{% endfor %}
+{% for post in site.posts %}
+{% if maxRelatedCounter >= maxRelated %}
+{% break %}
+{% endif %}
+{% assign sameTagCount = 0 %}
+{% for tag in post.tags %}
+{% if post.url != page.url %}
+{% if page.tags contains tag %}
+{% assign sameTagCount = sameTagCount | plus: 1 %}
+{% endif %}
+{% endif %}
 {% endfor %}
-</ul>
+{% assign thisCommonTagLimit = maxCommonTags | minus: thisCommonTag %}
+{% if seenPosts contains post.url %}
+{% else %}
+{% if sameTagCount >= thisCommonTagLimit and post.url != page.url %}
+{% include post_card.html %}
+{% assign t = maxRelated | minus: 1 %}
+{% if maxRelatedCounter != t %}
+<hr style="width:80%;">
+{% endif %}
+<!-- <li> -->
+
+<!-- <p> -->
+<!-- 	<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> -->
+<!-- </p> -->
+<!-- <p> -->
+<!-- 	{% include post_date.html %} | -->
+<!-- 	Tags: -->
+<!-- 	{% for post_tag in post.tags %} -->
+<!-- 	{{ post_tag | Capitalize }} -->
+<!-- 	{% endfor %} -->
+<!-- </p> -->
+
+{% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
+{% assign seenPostsString = seenPostsString | append: ',' | append: post.url %}
+{% assign seenPosts = seenPostsString | removeFirst: ',' | split: ',' %}
+<!-- </li> -->
+{% endif %}
+{% endif %}
+{% endfor %}
+{% endfor %}
 <br>
 <hr>
 
 <h2>💬 Looking for comments?</h2>
 
-<p>I don't have comments on this site as they can be time consuming to manage. I'd rather concentrate on programming cool and new things.</p>
+<p>I don't have comments on this site as they can be time consuming to manage. I'd rather concentrate on programming
+	cool and new things.</p>
 
 <p>Since you can't leave a comment, feel free to ✉️ <a href="/contact">contact me</a> instead.</p>

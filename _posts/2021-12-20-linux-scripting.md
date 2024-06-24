@@ -3,7 +3,7 @@ title: Linux Scripting
 description: Removing Repetitive Tasks
 permalink: /blog/bash/
 layout: post
-tags: hidden code linux commandline
+tags: code linux commandline
 ---
 
 Needed something to post, so here's some tips to make life on the command line a breeze.
@@ -33,8 +33,8 @@ alias longscript='bash ~/Scripts/LongScript.sh'
 
 Anything you type into the terminal can be turned into a bash script by typing each command line by line into a text file and saving it as a .sh file. All you need to do to run the file is run `bash scriptName.sh`
 
-Aliases are great, but automatically running scripts don't have to be typed on a terminal at all. This can be done with cron, a simple service that can run scripts at specific times, at reboot or login, and every x number of hours/days/minutes. 
+Aliases are great, but automatically running scripts don't have to be typed on a terminal at all. This can be done with cron, a simple service that can run scripts at specific times, at reboot or login, and every x number of hours/days/minutes.
 
-Install a package from your package manager called cronie or cron. If you can't find one of those, look up what your distrobution uses, and install that. Next is to make cron run at startup through systemd. The command is `systemctl enable --now cronie` (or crond).
+Install a package from your package manager called cronie or cron. If you can't find one of those, look up what your distribution uses, and install that. Next is to make cron run at startup through systemd. The command is `systemctl enable --now cronie` (or crond).
 
-Now that crond is setup, running `crontab -e` will open a text editor that will allow you to add scripts that run automatically. 
+Now that crond is setup, running `crontab -e` will open a text editor that will allow you to add scripts that run automatically.
