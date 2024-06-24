@@ -2,8 +2,8 @@
 title: Using AI for learning to code better
 description: More updates on my neovim journey
 layout: post
-permalink: /blog/neovim-update1/
-tags: coding dev vim
+permalink: /blog/ai-learning-code-better/
+tags: coding learning llm
 ---
 
 I don't like using LLM's like chatGPT or copilot to complete my code for me. I
