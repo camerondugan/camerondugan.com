@@ -21,6 +21,6 @@ optipng assets/images/**/*.png -quiet
 echo "Pushing to git..."
 git add .
 git commit -m "$arg1"
-git push
+git push gitlab
 git push github
 echo "Pushed with the name: $arg1"
