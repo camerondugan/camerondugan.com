@@ -2,7 +2,7 @@
 title: A Tiny Chess Engine
 description: A Delightfully Strong Nemises
 layout: post
-permalink: /blog/Chess-Engine/
+category: blog
 tags: project chess coding dev
 ---
 
@@ -20,9 +20,9 @@ I search all possible moves, ignoring moves that opponents/I will never take. An
 
 I'm using Sebastian Lague's Board C# object to grab bitboards of the current position for each type of piece and color. I use this information to quickly evaluate the board state and get a "value" which we can look for with our min-max search.
 
-I also have some code that mitigates losses from time-outs. Ideally, we wouldn't run out of time, but if we start to run low, I start to make my chess bot make very quick judgements only about 2 layers deep. 
+I also have some code that mitigates losses from time-outs. Ideally, we wouldn't run out of time, but if we start to run low, I start to make my chess bot make very quick judgements only about 2 layers deep.
 
-There was a bug that I had with the caching where 3-fold repititions became super common because I was using cached values of board states. When I returned: to a previous position in the search, it would show the old non-draw state instead of the new one, causing my algorithm to think that it could move there without a draw, which would cause a sad sudden drop in advantage, costing some games.
+There was a bug that I had with the caching where 3-fold repetitions became super common because I was using cached values of board states. When I returned: to a previous position in the search, it would show the old non-draw state instead of the new one, causing my algorithm to think that it could move there without a draw, which would cause a sad sudden drop in advantage, costing some games.
 
 I should probably mention that there are very fast ways for counting 256 bit longs, which I am using. It's from a stack overflow post I've lost track of, can't seem to find it, but it mentioned hamming weights and fast ways to calculate them. [More Info About Hamming Weights](https://en.wikipedia.org/wiki/Hamming_weight). This greatly reduces the number of steps in some of the most performance critical sections of my code.
 

@@ -1,7 +1,7 @@
 ---
 title: Procrastination and Motivation
 description: A Note to Self
-permalink: /blog/procrastination/
+category: blog
 layout: post
 tags: productivity mental-health difficulty
 ---

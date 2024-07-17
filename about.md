@@ -2,7 +2,7 @@
 title: About
 header: About
 description: More About this Website
-permalink: /about/
+permalink: /about
 layout: default
 ---
 

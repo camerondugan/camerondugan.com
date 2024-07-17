@@ -2,7 +2,7 @@
 title: Using AI for learning to code better
 description: More updates on my neovim journey
 layout: post
-permalink: /blog/ai-learning-code-better/
+category: blog
 tags: coding learning llm
 ---
 

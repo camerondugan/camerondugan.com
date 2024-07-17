@@ -2,7 +2,7 @@
 title: Pine Phone
 description: A Linux Phone.
 layout: post
-permalink: /blog/pine-phone/
+category: blog
 tags: hardware linux opensource
 ---
 

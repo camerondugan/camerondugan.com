@@ -2,7 +2,7 @@
 title: My Website Is Improving!
 description: Working with Liquid HTML
 layout: post
-permalink: /blog/website-improvements/
+category: blog
 tags: code website progress
 ---
 

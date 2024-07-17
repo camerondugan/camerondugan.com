@@ -2,7 +2,7 @@
 title: Quantum Internet
 description: The Internet is Never Finished.
 layout: post
-permalink: /blog/quantum-internet/
+category: blog
 tags: quantum future thinking
 ---
 

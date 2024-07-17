@@ -2,7 +2,7 @@
 title: Baking Configs
 description: I can't stop changing my configs (help me)
 layout: post
-permalink: /blog/config-habit/
+category: blog
 tags: coding dev config habit
 ---
 

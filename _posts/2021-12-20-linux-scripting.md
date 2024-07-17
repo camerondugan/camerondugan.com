@@ -1,7 +1,7 @@
 ---
 title: Linux Scripting
 description: Removing Repetitive Tasks
-permalink: /blog/bash/
+category: blog
 layout: post
 tags: code linux commandline
 ---

@@ -2,7 +2,7 @@
 title: Serverless Applications
 description: Using Cloudflare for Applications
 layout: post
-permalink: /blog/serverless-applications/
+category: blog
 tags: life plans dev
 ---
 
@@ -23,3 +23,4 @@ The next thing I'll be doing is attempting a high-score system for my succulent 
 With success there I'll probably attempt a much bigger project involving this cheap online storage hosting method.
 
 I hope this was interesting, have a great week!
+

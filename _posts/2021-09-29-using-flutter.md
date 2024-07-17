@@ -2,7 +2,7 @@
 title: Using Flutter
 header: Succulent Flutter App
 description: Making a Cross Platform App with Flutter
-permalink: /blog/using-flutter/
+category: blog
 layout: post
 tags: project website code
 ---
@@ -16,20 +16,20 @@ tags: project website code
 - Using ```flutter clean``` is your friend
     - Builds occasionally don't work for no real reason. If this is the case, you can always run the clean command to potentially fix issues.
     - If this doesn't work, you can build it to a different platform/os then back to the original platform.
-- To my knowledge, you cannot use widgets to communicate with other widgets, I can't say: 
+- To my knowledge, you cannot use widgets to communicate with other widgets, I can't say:
 ```dart
 childWidget()
-    build() 
+    build()
         return widget(
             onTap: () {
                 parentWidget.add(item);
                 setState(){};
 ```
-but I can say: 
+but I can say:
 ```dart
 //this is pseudo code
 parentWidget(){
-    mylist = []; 
+    mylist = [];
 
     Widget childWidget(list){
         return widget(

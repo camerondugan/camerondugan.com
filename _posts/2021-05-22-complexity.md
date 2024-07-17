@@ -1,7 +1,7 @@
 ---
 title: Complexity
 description: How Complexity Influences People.
-permalink: /blog/complexity/
+category: blog
 layout: post
 tags: thinking hardware code
 ---

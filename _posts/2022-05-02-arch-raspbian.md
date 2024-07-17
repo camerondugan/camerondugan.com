@@ -2,7 +2,7 @@
 title: Being An Arch User
 description: An Unexpected Consequence
 layout: post
-permalink: /blog/arch-rasbian/
+category: blog
 tags: linux dev arch
 ---
 

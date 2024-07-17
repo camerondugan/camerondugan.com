@@ -1,7 +1,7 @@
 ---
 title: Weekly Programming - Week 2
 description: Programming a Game Player
-permalink: /blog/weekly-programming/2/
+category: blog
 layout: post
 tags: contest code ai
 ---

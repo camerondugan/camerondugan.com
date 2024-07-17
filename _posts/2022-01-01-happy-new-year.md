@@ -2,7 +2,7 @@
 title: Happy New Year
 description: Software I Use and Will Use More
 layout: post
-permalink: /blog/2022/
+category: blog
 tags: recommendations android linux
 ---
 

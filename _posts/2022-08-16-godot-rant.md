@@ -2,7 +2,7 @@
 title: My Development Experience With Godot 3 in VR
 description: My Recent Development Shenanigans
 layout: post
-permalink: /blog/godot-rant/
+category: blog
 tags: linux godot game dev
 ---
 

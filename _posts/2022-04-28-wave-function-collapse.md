@@ -2,7 +2,7 @@
 title: Wave Function Collapse
 description: Programming Something That Already Exists Without Knowing it Exists
 layout: post
-permalink: /blog/wave-collapse/
+category: blog
 tags: code 3d godot game dev
 ---
 

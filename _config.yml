@@ -5,6 +5,7 @@ author: Cameron Dugan
 description: This a work portfolio and a blog about computers.
 lang: en
 locale: en_US
+permalink: /:categories/:slug
 
 # markdown: kramdown
 #

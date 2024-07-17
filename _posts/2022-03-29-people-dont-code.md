@@ -2,7 +2,7 @@
 title: Why People Don't Code
 description: Thoughts and Updates
 layout: post
-permalink: /blog/whypeopledontcode/
+category: blog
 tags: thinking experience code
 ---
 

@@ -2,7 +2,7 @@
 title: The End of Thinking
 description: An Attempt at a Short Narrative
 layout: post
-permalink: /blog/end-of-thinking/
+category: blog
 tags: writing sci-fi thinking
 ---
 

@@ -2,7 +2,7 @@
 title: My Crypto Adventures
 description: Misadventures in Crypto
 layout: post
-permalink: /blog/crypto/
+category: blog
 tags: crypto bitcoin etherium
 ---
 

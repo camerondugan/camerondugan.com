@@ -1,7 +1,7 @@
 ---
 title: Hidden Costs
 description: Examples and Generalizations of How Systems Disguise Their Motives.
-permalink: /blog/hidden-costs/
+category: blog
 layout: post
 tags: rant code thinking
 ---

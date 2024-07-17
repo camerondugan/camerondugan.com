@@ -2,7 +2,7 @@
 title: Configuring a Blazingly Fast Code Editor
 description: Neovim
 layout: post
-permalink: /blog/neovim-config/
+category: blog
 tags: ide code vim
 ---
 
@@ -31,6 +31,6 @@ Surprisingly, I encountered no performance issues during the configuration proce
 To enhance my coding workflow, I installed the lsp-zero plugin and followed the documentation provided on GitHub. This allowed me to integrate language servers with Neovim, enabling features such as intelligent code completion, linting, and other advanced language-specific capabilities.
 
 ## Conclusion:
-My journey into configuring Neovim as a blazingly fast code editor, inspired by a Primagen video, was both exciting and rewarding. By customizing the configuration, leveraging essential plugins, and integrating language servers, I created a highly customized coding environment tailored to my needs. Neovim's flexibility, along with plugins like Harpoon, lsp-zero, tree-sitter, and packer, contributed to a remarkable coding experience. Whether you discovered Neovim through a video or another source, I encourage you to embark on your own journey, explore the vast customization options, and witness the incredible difference Neovim can make in your coding workflow. There is great power in knowing what happens in the background of your IDE, and switching to neovim will definitely help show you. 
+My journey into configuring Neovim as a blazingly fast code editor, inspired by a Primagen video, was both exciting and rewarding. By customizing the configuration, leveraging essential plugins, and integrating language servers, I created a highly customized coding environment tailored to my needs. Neovim's flexibility, along with plugins like Harpoon, lsp-zero, tree-sitter, and packer, contributed to a remarkable coding experience. Whether you discovered Neovim through a video or another source, I encourage you to embark on your own journey, explore the vast customization options, and witness the incredible difference Neovim can make in your coding workflow. There is great power in knowing what happens in the background of your IDE, and switching to neovim will definitely help show you.
 
-Have a great day! 
+Have a great day!

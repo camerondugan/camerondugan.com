@@ -1,7 +1,7 @@
 ---
 title: Weekly Programming - Week 1
 description: Programming Art Generators
-permalink: /blog/weekly-programming/1/
+category: blog
 layout: post
 tags: contest code generation images
 ---

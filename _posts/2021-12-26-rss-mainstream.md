@@ -2,7 +2,7 @@
 title: Why RSS isn't Mainstream
 description: What is it Missing?
 layout: post
-permalink: /blog/rss/
+category: blog
 tags: rss thinking future
 ---
 

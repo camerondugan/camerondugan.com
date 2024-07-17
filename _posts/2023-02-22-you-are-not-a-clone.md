@@ -2,7 +2,7 @@
 title: Game Jams
 description: What I Did During My Last Game Jam
 layout: post
-permalink: /blog/youarenotaclone/
+category: blog
 tags: gamedev codingevent dev
 ---
 
@@ -10,11 +10,11 @@ Game jams are events where you make a game in a limited amount of time with a sm
 
 ## My Most Recent Experience
 
-Last weekend I did a game jam with 3 random people in person, and it was a much better experience than the times I went solo. Much more creative brainstorming happened. We were forced to use the theme **Companion**, and we decided on using clones and a ~~companion cube~~ friend cube to fit the theme in a puzzle platformer. 
+Last weekend I did a game jam with 3 random people in person, and it was a much better experience than the times I went solo. Much more creative brainstorming happened. We were forced to use the theme **Companion**, and we decided on using clones and a ~~companion cube~~ friend cube to fit the theme in a puzzle platformer.
 
 ## Implementation
 
-We used Godot and for the puzzling mechanics we coded up some area2D sensors as buttons, some RigidBody2D spheres as our friend cube, and a KinematicBody2D as our slime main character. 
+We used Godot and for the puzzling mechanics we coded up some area2D sensors as buttons, some RigidBody2D spheres as our friend cube, and a KinematicBody2D as our slime main character.
 
 Our first real problem was that our cube failed to stay within the walls of the game, which is particularly bad for a puzzle platformer where you would need the cube to activate things later. Our player was capable of pushing the cube as though the walls were not there, which isn't good. We found a setting in the move-and-slide function to turn off infinite inertia, which solved the problem, but made it so that the player couldn't push the cube.
 

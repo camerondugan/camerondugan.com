@@ -2,7 +2,7 @@
 title: Taking The Slow Road
 description: Min/Maxing Decisions
 layout: post
-permalink: /blog/taking-the-slow-road/
+category: blog
 tags: life plans dev
 ---
 
@@ -13,8 +13,9 @@ Life isn't a race. Sometimes it's hard to remember, but knowing when to sprint a
 
 ## Pacing Yourself
 
-Not everything you do has to be done to the max. If you disagree, then you need to think for a little longer. People who run at 100% 24/7 burn out. The people that go the furthest can pace themselves for long term success. It doesn't matter so much that you always win, it just matters that you win more overall in the long run. 
+Not everything you do has to be done to the max. If you disagree, then you need to think for a little longer. People who run at 100% 24/7 burn out. The people that go the furthest can pace themselves for long term success. It doesn't matter so much that you always win, it just matters that you win more overall in the long run.
 
 It's all about lining up dominos for the future instead of worrying about how many dominos you can knock down today.
 
 Have a great week!
+

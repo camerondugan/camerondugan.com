@@ -3,7 +3,7 @@ layout: default
 title: Projects
 header: Projects
 description: Idea -> Plan -> Reality
-permalink: /projects/
+permalink: /projects
 ---
 {% assign posts = site.posts | where_exp: "post", "post.tags contains 'project'" %}
 

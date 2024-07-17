@@ -2,7 +2,7 @@
 title: Things Lead to Their Opposites
 description: A Generalization That's Generally True
 layout: post
-permalink: /blog/opposites/
+category: blog
 tags: thinking experience
 ---
 

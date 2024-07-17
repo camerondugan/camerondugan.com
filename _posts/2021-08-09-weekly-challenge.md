@@ -1,7 +1,7 @@
 ---
 title: Weekly Programming - Week 0
 description: Programming for the Sake of Programming
-permalink: /blog/weekly-programming/0/
+category: blog
 layout: post
 tags: code difficulty contest
 ---

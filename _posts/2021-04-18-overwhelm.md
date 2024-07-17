@@ -1,7 +1,7 @@
 ---
 title: The Overwhelm
 description: Conquering the Unknown
-permalink: /blog/overwhelm/
+category: blog
 layout: post
 tags: mental-health productivity thinking
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: "The Point Of Formatters"
 date: "2024-05-01 20:27:47"
-categories: "The Point Of Formatters"
+category: blog
 tags: code dev response
 ---
 I heard from somewhere that formatters are going to slow down the top
