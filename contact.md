@@ -2,7 +2,7 @@
 title: Contact
 header: Contact
 description: The Place to Get in Touch
-permalink: /contact/
+permalink: /contact
 layout: default
 ---
 
