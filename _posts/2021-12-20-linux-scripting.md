@@ -10,7 +10,7 @@ Needed something to post, so here's some tips to make life on the command line a
 
 If you use linux, odds are you are either using bash or zsh. In your home folder, bash has a file called .bashrc and zsh has a file called .zshrc. Adding aliases to these files is a great way to make simple shortcuts for long and complicated commands. Here are some examples:
 
-```
+{% highlight bash %}
 #Git
 alias add='git add'
 alias commit='git commit'
@@ -19,17 +19,17 @@ alias pull='git pull'
 alias status='git status'
 alias log='git log'
 alias clone='git clone'
-```
+{% endhighlight %}
 
 Aliases can replace anything you would type into your terminal:
 
-```
+{% highlight bash %}
 #Backups
 alias bak='timeshift --check >> ~/Logs/timeshift.log'
 alias restore='timeshift --restore'
 #Scripts
 alias longscript='bash ~/Scripts/LongScript.sh'
-```
+{% endhighlight %}
 
 Anything you type into the terminal can be turned into a bash script by typing each command line by line into a text file and saving it as a .sh file. All you need to do to run the file is run `bash scriptName.sh`
 

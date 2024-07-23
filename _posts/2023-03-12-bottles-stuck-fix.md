@@ -18,11 +18,11 @@ Bottles froze at Bottles is starting and right after it downloaded 3 small packa
 
 ## The Fix
 
-The fix was to run Bottles in the command line via ```bottles```, and to wait for it to give the error.
+The fix was to run Bottles in the command line via `bottles`, and to wait for it to give the error.
 
 Open the file that has the error and add a # in front of the line creating the problem. Bottles suddenly works perfectly fine afterwards.
 
-Also, if you have the same issue but this doesn't work, in my case this was just a graphical/gtk issue and could have been avoided by using the ```bottles-cli``` commands to run applications and interact with your bottles.
+Also, if you have the same issue but this doesn't work, in my case this was just a graphical/gtk issue and could have been avoided by using the `bottles-cli` commands to run applications and interact with your bottles.
 
 I hope this helped!
 

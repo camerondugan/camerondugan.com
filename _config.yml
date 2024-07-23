@@ -7,10 +7,13 @@ lang: en
 locale: en_US
 permalink: /:categories/:slug
 
-# markdown: kramdown
+markdown: kramdown
 #
-# kramdown:
-#   syntax_highlighter: coderay
+kramdown:
+  input: GFM
+  syntax_highlighter: rogue
+
+# highlighter: rogue
 
 plugins:
   - jekyll-feed

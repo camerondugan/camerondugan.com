@@ -12,15 +12,15 @@ I like NixOS deeply. It's like Arch, in that you get to put everything together,
 
 What makes me so proud to be a NixOS user is that I know that my computer will essentially never give me a [BSOD](https://en.wikipedia.org/wiki/Blue_screen_of_death). Here's how that works: To make changes to my computer I need to modify my configuration.nix file. Then run a command:
 
-```bash
+{% highlight bash %}
 sudo nixos-rebuild boot
-```
+{% endhighlight %}
 
 Which will switch everything over to the new changes next time I reboot. Now this is where an Arch user might be worried: "What if my computer doesn't work when I turn it on? What if I can't get to a TTY?". No need to fear: NixOS makes snapshots of your previous configurations. This means that you can always roll back your changes to the last working version.
 
-```bash
+{% highlight bash %}
 sudo nixos-rebuild switch
-```
+{% endhighlight %}
 
 Here's another even better feature. I basically never have to reboot my computer. And, I don't need to be a Linux wizard to do it. Every service my computer is using gets updated, while software I'm currently running stays the same until I launch it again. I can keep running in a half-updated state, meaning I can still get my stuff done while getting all of those juicy new software features. For example: If you have a Systemd service running that handles your printing, it will get updated. If you are using Firefox, it stays on the older version until you close and re-open it.
 
@@ -30,9 +30,9 @@ Are you are thinking about switching but aren't sure if your software will come 
 
 All you need for a service to run on NixOS is:
 
-```nix
+{% highlight nix %}
 service.{your service name here}.enable = true;
-```
+{% endhighlight %}
 
 NixOS or something close to it will give make using software reliable again.
 

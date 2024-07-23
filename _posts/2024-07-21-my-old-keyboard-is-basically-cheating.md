@@ -20,8 +20,7 @@ this code when I play competitive games, but here's a
 snippet of code you could add to any [QMK compatible
 keyboard](https://browse.qmk.fm/#/).
 
-```c
-
+{% highlight c %}
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   static bool aHeld = false;
   static bool dHeld = false;
@@ -50,7 +49,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
       return true; // Process all other keycodes normally
   }
 }
-```
+{% endhighlight %}
 
 Essentially it tells the computer you are holding the last pressed A or D key.
 It is impossible to send the computer both because it releases the other one.

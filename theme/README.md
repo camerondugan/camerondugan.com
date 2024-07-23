@@ -11,15 +11,15 @@ TODO: Delete this and the text above, and describe your gem
 
 Add this line to your Jekyll site's `Gemfile`:
 
-```ruby
+{% highlight ruby %}
 gem "theme"
-```
+{% endhighlight %}
 
 And add this line to your Jekyll site's `_config.yml`:
 
-```yaml
+{% highlight yaml %}
 theme: theme
-```
+{% endhighlight %}
 
 And then execute:
 

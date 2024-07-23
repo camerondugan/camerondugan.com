@@ -19,12 +19,12 @@ I've been working on improving the styling and layout for a little bit now, and 
 * Posts have links to other related posts! Adapted from [mishacreatix.com](https://www.mishacreatrix.com/jekyll-related-posts).
 
     * The following liquid html gets posts from the blog, and returns only unique links to blog posts sorted first by common tags, then by date
+
+{% highlight liquid %}
 {% raw %}
-```html
 <h2>🪧 Enjoy Reading This?</h2>
 <p>Here are some more you might like to read next:</p>
 
-<<<<<<< HEAD
 {% assign maxRelated = 5 %}
 {% assign maxCommonTags = 20 %}
 {% assign seenPostsString = "" %}
@@ -55,42 +55,9 @@ I've been working on improving the styling and layout for a little bit now, and 
 		{% endif %}
 	{% endfor %}
 {% endfor %}
-=======
-{% assign maxRelated = 3 %}
-{% assign minCommonTags = 1 %}
-{% assign maxRelatedCounter = 0 %}
-
-<ul>
-	{% for post in site.posts %}
-    	{% assign sameTagCount = 0 %}
-        {% assign commonTags = '' %}
-
-		{% for tag in post.tags %}
-        	{% if post.url != page.url %}
-            	{% if page.tags contains tag %}
-            	{% assign sameTagCount = sameTagCount | plus: 1 %}
-            	{% endif %}
-            {% endif %}
-		{% endfor %}
-
-        {% if sameTagCount >= minCommonTags %}
-    		<li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-
-            {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
-            {% if maxRelatedCounter >= maxRelated %}
-                {% break %}
-            {% endif %}
-		{% endif %}
-	{% endfor %}
-	{% assign newestCount = maxRelated | minus: maxRelatedCounter %}
-	{% for post in site.posts limit: newestCount %}
-    		<li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-	{% endfor %}
->>>>>>> c0f276a (added switch project)
-
 </ul>
-```
 {% endraw %}
+{% endhighlight %}
 
 I knew how to do none of this a month ago, but now I can edit my website to statically generate a ton of stuff.
 
