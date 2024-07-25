@@ -1,195 +1,193 @@
-/* Use this file to add any custom css you like */`
-
-/* Use Jetbrains Mono*/
-
-@font-face {
-  font-family: jetbrains;
-  font-style: bold;
-  src: url("/assets/fonts/JetBrainsMono-Bold.woff2") format("woff2");
-  font-display: swap;
+` @font-face {
+  font-family:jetbrains;
+  font-style:bold;
+  src:url(/assets/fonts/JetBrainsMono-Bold.woff2) format("woff2");
+  font-display:swap
 }
 @font-face {
-  font-family: jetbrains;
-  font-weight: italic;
-  src: url("/assets/fonts/JetBrainsMono-Italic.woff2") format("woff2");
-  font-display: swap;
+  font-family:jetbrains;
+  font-weight:italic;
+  src:url(/assets/fonts/JetBrainsMono-Italic.woff2) format("woff2");
+  font-display:swap
 }
 @font-face {
-  font-family: jetbrains;
-  font-weight: normal;
-  font-style: normal;
-  src: url("/assets/fonts/JetBrainsMono-Regular.woff2") format("woff2");
-  font-display: swap;
+  font-family:jetbrains;
+  font-weight:400;
+  font-style:normal;
+  src:url(/assets/fonts/JetBrainsMono-Regular.woff2) format("woff2");
+  font-display:swap
 }
-
 :root {
-  --base-fontsize: 20.8px;
-  --header-scale: 1.15;
-  --bg: #1e1e2e;
-  --accent-bg: #313244;
-  --text: #cdd6f4;
-  --text-light: #89b4f4;
-  --border: var(--text); /*#181825*/
-  --border-light: #313244;
-  --accent: #a6e3a1;
-  --accent-light: #cba6f7;
-  --code: #fab387;
-  --disabled: #f4776d;
-  --drop-shadow: #1e1e2e;
+  --base-fontsize:20.8px;
+  --header-scale:1.15;
+  --bg:#1e1e2e;
+  --accent-bg:#313244;
+  --text:#cdd6f4;
+  --text-light:#89b4f4;
+  --border:var(--text);
+  --border-light:#313244;
+  --accent:#a6e3a1;
+  --accent-light:#cba6f7;
+  --code:#fab387;
+  --disabled:#f4776d;
+  --drop-shadow:#111;
 }
-
-* { /* set font and family on everything */
-  font-family: jetbrains, system-ui;
-  font-style: normal;
-  caret-color: transparent;
+* {
+  font-family:jetbrains,system-ui;
+  font-style:normal;
+  caret-color:transparent;
+  transition:.15s;
+  transition-timing-function:ease-out
 }
 header {
-  padding:5px;
+  padding:5px
 }
 .CodeRay {
-  text-align: left;
+  text-align:left
 }
-.invisible, main form button {
-  color: unset;
-  background: transparent;
-  border: none !important;
-  width: 100%; /* sets button to max */
-  padding: 0px;
-  margin: 0px;
+.invisible,
+main form button {
+  color:unset;
+  background:0 0;
+  border:none!important;
+  width:100%;
+  padding:0;
+  margin:0
 }
 blockquote {
-  background: var(--accent-bg);
-  border-radius: 20px;
-  border-left: 0px;
-  margin-left: 0px;
-  margin-top: 0px;
+  background:var(--accent-bg);
+  border-radius:20px;
+  border-left:0;
+  margin-left:0;
+  margin-top:0
 }
 hr {
-  width: 90%;
-  margin-top: 0px;
+  width:90%;
+  margin-top:0
 }
-/* Media rounded corners and target width */
 main img,
 main video {
-  border-radius: 20px;
-  width: 880px;
+  border-radius:20px;
+  width:880px;
+  filter:drop-shadow(1px 3px 3px var(--drop-shadow));
 }
-
+a img:hover,
+a video:hover {
+  transform:translate(-3px,-3px);
+  filter:drop-shadow(1px 13px 15px var(--drop-shadow));
+}
 pre {
-  text-align: left;
+  text-align:left
 }
-
 body main {
-  margin: 0px;
-  padding: 0px;
+  margin:0;
+  padding:0
 }
-
-/* reduces size of nav */
 nav.desktop-only {
-  padding-top: 0px;
+  padding-top:0
 }
-/* nav buttons and menus */
-nav a, nav details {
-  border: none;
-  font-size: 120%;
-  font-style: bold;
-  margin-inline: .9%;
-  background: var(--bg);
+nav a,
+nav details {
+  border:0;
+  font-size:120%;
+  font-style:bold;
+  margin-inline:.9%;
+  background:var(--bg)
 }
 details summary {
-  cursor: pointer;
+  cursor:pointer
 }
-/* diff on hover */
 nav a:hover {
-  transform: translate(-3px, -3px);
-  border-color: var(--accent-light);
-  background: var(--accent-light);
-  color: var(--bg) !important;
+  transform:translate(-3px,-3px);
+  border-color:var(--accent-light) !important;
+  background:var(--accent-light) !important;
+  color:var(--bg)!important
 }
-/* diff of current-nav */
 nav a.nav-current {
-  font-style: bold;
-  color: var(--accent-light) !important;
+  font-style:bold;
+  color:var(--accent-light)!important
 }
 nav a.nav-current:hover {
-  color: var(--bg) !important;
+  color:var(--bg)!important
 }
 footer {
-  margin-top: 0px;
+  margin-top:0
 }
-h1,h2,h3,h4,h5,h6{
-  padding-top: 10px;
-  text-align: center;
-  color: var(--text-light);
-  margin: 10px;
-  line-height: 135%;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding-top:10px;
+  text-align:center;
+  color:var(--text-light);
+  margin:10px;
+  line-height:135%
 }
 a {
-  text-decoration-line: underline;
-  /*background: var(--accent-bg);*/
-  border-radius: 5px;
-  padding: 2.5px;
-  padding-top: 2px;
-  padding-bottom: 0px;
-  transition: 0.15s;
-  transition-timing-function: ease-out;
+  text-decoration-line:underline;
+  border-radius:5px;
+  padding:2.5px;
+  padding-top:2px;
+  padding-bottom:0;
 }
 li p {
-  text-align: left;
+  text-align:left
 }
 p {
-  text-align: center;
+  text-align:center
 }
-
-a:hover {
-  filter: drop-shadow(1px 5px 5px var(--drop-shadow));
-  background: var(--accent);
-  color: var(--bg);
+a:hover:not(:has(img)) {
+  filter:drop-shadow(1px 5px 5px var(--drop-shadow));
+  background:var(--accent);
+  color:var(--bg)
 }
-
 .mobile-only {
-  display: none;
+  display:none
 }
-
-/* Mobile Settings*/
-@media screen and (max-width: 800px) {
+@media screen and (max-width:800px) {
   .desktop-only {
-    display: none;
+    display:none
   }
   .mobile-only {
-    display: inline-block;
+    display:inline-block
   }
-  h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-    margin: 4px;
-  }
-  p {
+  h1 a,
+  h2 a,
+  h3 a,
+  h4 a,
+  h5 a,
+  h6 a {
+    margin:4px
   }
   header {
-    padding:5px;
+    padding:5px
   }
   header i {
-    font-size: 14px;
+    font-size:14px
   }
   nav {
-    padding-top: 0px;
-    padding-bottom: 0px;
+    padding-top:0;
+    padding-bottom:0
   }
   nav a {
-    background: none;
-    margin-inline: 0px;
-    padding-inline: 5px;
+    background:0;
+    margin-inline:0;
+    padding-inline:5px
   }
-  details summary, details div {
-    display: block; /* hides marker */
-    width: min(75vw, 400px);
+  details summary,
+  details div {
+    display:block;
+    width:min(75vw,400px)
   }
   nav a:hover {
-    transform: none;
-    border-color: none;
-    background: none;
-    color: var(--text-light) !important;
+    transform:none;
+    border-color:none;
+    background:0;
+    color:var(--text-light)!important
   }
   nav a.nav-current:hover {
-    color: var(--accent-light) !important;
+    color:var(--accent-light)!important
   }
 }
