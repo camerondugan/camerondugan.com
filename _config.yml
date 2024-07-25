@@ -16,6 +16,7 @@ kramdown:
 # highlighter: rogue
 
 plugins:
+  - jekyll-target-blank
   - jekyll-feed
   - jekyll-loading-lazy
   - jekyll-sitemap
