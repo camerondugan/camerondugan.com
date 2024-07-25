@@ -1,21 +1,24 @@
 /* Use this file to add any custom css you like */`
 
 /* Use Jetbrains Mono*/
+
 @font-face {
   font-family: jetbrains;
-  src: url("/assets/fonts/JetBrainsMono-Regular.woff2") format("woff2");
-  font-display: swap;
-}
-@font-face {
-  font-family: jetbrains;
-  font-weight: bold;
+  font-style: bold;
   src: url("/assets/fonts/JetBrainsMono-Bold.woff2") format("woff2");
   font-display: swap;
 }
 @font-face {
   font-family: jetbrains;
-  font-style: italic;
+  font-weight: italic;
   src: url("/assets/fonts/JetBrainsMono-Italic.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: jetbrains;
+  font-weight: normal;
+  font-style: normal;
+  src: url("/assets/fonts/JetBrainsMono-Regular.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -37,6 +40,7 @@
 
 * { /* set font and family on everything */
   font-family: jetbrains, system-ui;
+  font-style: normal;
   caret-color: transparent;
 }
 header {
@@ -88,7 +92,7 @@ nav.desktop-only {
 nav a, nav details {
   border: none;
   font-size: 120%;
-  font-weight: italic;
+  font-style: bold;
   margin-inline: .9%;
   background: var(--bg);
 }
@@ -104,7 +108,7 @@ nav a:hover {
 }
 /* diff of current-nav */
 nav a.nav-current {
-  font-weight: bold;
+  font-style: bold;
   color: var(--accent-light) !important;
 }
 nav a.nav-current:hover {
