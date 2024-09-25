@@ -39,6 +39,14 @@
   transition:.15s;
   transition-timing-function:ease-out
 }
+header h1 {
+  background: linear-gradient(45deg, var(--text-light) 0%, var(--accent-light) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  scale: 1.15;
+  color: transparent;
+  display: inline-block;
+}
 header {
   padding:5px
 }
@@ -100,7 +108,8 @@ details summary {
 nav a:hover {
   transform:translate(-3px,-3px);
   border-color:var(--accent-light) !important;
-  background:var(--accent-light) !important;
+  /* background:var(--accent-light) !important; */
+  background: linear-gradient(45deg, var(--text-light) 0%, var(--accent-light) 100%) !important;
   color:var(--bg)!important
 }
 nav a.nav-current {
@@ -123,7 +132,7 @@ h6 {
   text-align:center;
   color:var(--text-light);
   margin:10px;
-  line-height:135%
+  line-height:125%
 }
 a {
   text-decoration-line:underline;
@@ -140,7 +149,7 @@ p {
 }
 a:hover:not(:has(img)) {
   filter:drop-shadow(1px 5px 5px var(--drop-shadow));
-  background:var(--accent);
+  background: linear-gradient(45deg, var(--accent) 0%, var(--text-light) 100%);
   color:var(--bg)
 }
 .mobile-only {
