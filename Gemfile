@@ -20,6 +20,6 @@ group :jekyll_plugins do
   gem 'liquid_pluralize'
 end
 
-gem "webrick", "~> 1.7"
+gem "webrick", "~> 1.8"
 
 gem "rogue", "~> 0.1.1"

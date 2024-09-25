@@ -226,7 +226,7 @@ GEM
     uglifier (4.2.0)
       execjs (>= 0.3.0, < 3)
     unicode-display_width (2.5.0)
-    webrick (1.8.1)
+    webrick (1.8.2)
     websocket-driver (0.6.5)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
@@ -248,7 +248,7 @@ DEPENDENCIES
   liquid_pluralize
   liquid_reading_time
   rogue (~> 0.1.1)
-  webrick (~> 1.7)
+  webrick (~> 1.8)
 
 BUNDLED WITH
    2.5.11
