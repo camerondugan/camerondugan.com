@@ -5,7 +5,11 @@
   env.GREET = "devenv";
 
   # https://devenv.sh/packages/
-  packages = [ pkgs.git ];
+  packages = with pkgs; [ 
+    git 
+    optipng
+    jpegoptim
+  ];
 
   # https://devenv.sh/languages/
   languages.ruby.enable = true;
