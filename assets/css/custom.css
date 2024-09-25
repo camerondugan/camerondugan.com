@@ -194,9 +194,11 @@ a:hover:not(:has(img)) {
     transform:none;
     border-color:none;
     background:0;
-    color:var(--text-light)!important
   }
-  nav a.nav-current:hover {
-    color:var(--accent-light)!important
-  }
+}
+.oldContent {
+  background: linear-gradient(45deg, var(--code) 0%, var(--disabled) 100%);
+  color: var(--bg);
+  border-radius:5px;
+  padding:8px;
 }

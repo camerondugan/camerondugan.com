@@ -19,9 +19,9 @@ plugins:
   - jekyll-target-blank
   - jekyll-feed
   - jekyll-loading-lazy
-  - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-minifier
+  - jekyll-sitemap
 
 # RSS feeds
 feed:

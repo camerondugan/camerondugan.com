@@ -8,9 +8,16 @@ layout: default
 <!-- post_date needs post set -->
 {% assign post = page %}
 <center><small><i>{% include reading_time.html %} | {% include post_date.html %}</i></small></center>
-<!-- This: {{this_date}} -->
-<!-- Old: {{ tooOld }} -->
-<!-- {% if this_date <= tooOld %} HEHEHEHEHEH {% endif %} {{ content }} <br> -->
+{% assign minYearsOld = 2 %}
+{% assign postYear = post.date | date: "%Y" | to_integer | plus: minYearsOld %}
+{% assign thisYear = site.time | date: "%Y" | to_integer %}
+{% if thisYear >= postYear and post.tags.first != "project" %}
+<div class="oldContent">
+	Keep in mind this content is at least {{ thisYear | minus: postYear | plus:
+	minYearsOld }} years old.
+</div>
+{% endif %}
+{{ content }} <br>
 {{ content }}
 
 <hr>
