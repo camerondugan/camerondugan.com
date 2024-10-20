@@ -8,3 +8,6 @@ wm
 coding
 linux
 nixos
+vim
+nix
+devenv
