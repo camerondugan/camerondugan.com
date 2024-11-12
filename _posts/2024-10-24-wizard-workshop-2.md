@@ -12,21 +12,21 @@ Here's another sneak preview at what I've been working on so far:
 
 ### Pip Drawer
 
-![Drawer in game](/assets/gifs/Drawer.gif)
+![Drawer in game](http://files.camerondugan.com/Drawer.gif)
 
 The drawer you saw holds pips. Pips are magic trinkets that can bestow you great
 power if used correctly.
 
 ### Shop
 
-![Shop](/assets/gifs/Shop.gif)
+![Shop](https://files.camerondugan.com/Shop.gif)
 
 I've also created a shop between fights to let you buy and sell cards, pips,
 and upgrades.
 
 ### More Colors
 
-![More Colors](/assets/gifs/Cards.gif)
+![More Colors](https://files.camerondugan.com/Cards.gif)
 
 I've swapped the color palette to something more modern. I've realized that I
 don't like the mono-color palette as much as a palette with a wider selection.
