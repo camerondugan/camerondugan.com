@@ -1,5 +1,5 @@
 ---
-title: Wizard Workshop 2
+title: Wizard Workshop Part 2
 description: Progress and cool in-engine gifs
 layout: post
 category: blog
